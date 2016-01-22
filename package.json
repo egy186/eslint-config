@@ -1,0 +1,23 @@
+{
+  "name": "eslint-config-egy186",
+  "description": "Eslint shareable config",
+  "version": "0.1.0",
+  "author": "egy186",
+  "bugs": {
+    "url": "https://github.com/egy186/eslint-config-egy186/issues"
+  },
+  "homepage": "https://github.com/egy186/eslint-config-egy186#readme",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egy186/eslint-config-egy186.git"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^3.1.0"
+  }
+}
