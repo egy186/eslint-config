@@ -1,6 +1,9 @@
 'use strict';
 
 module.exports = {
+  env: {
+    node: false
+  },
   extends: [
     'airbnb/rules/best-practices',
     'airbnb/rules/errors',
