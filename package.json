@@ -7,7 +7,7 @@
     "url": "https://github.com/egy186/eslint-config-egy186/issues"
   },
   "dependencies": {
-    "eslint-config-airbnb": "^3.1.0"
+    "eslint-config-airbnb": "^5.0.0"
   },
   "homepage": "https://github.com/egy186/eslint-config-egy186#readme",
   "keywords": [
