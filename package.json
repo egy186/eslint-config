@@ -7,7 +7,8 @@
     "url": "https://github.com/egy186/eslint-config-egy186/issues"
   },
   "dependencies": {
-    "eslint-config-airbnb": "^5.0.0"
+    "eslint-config-airbnb": "^5.0.0",
+    "extend": "^3.0.0"
   },
   "homepage": "https://github.com/egy186/eslint-config-egy186#readme",
   "keywords": [
@@ -16,6 +17,9 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^2.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/egy186/eslint-config-egy186.git"

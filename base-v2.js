@@ -1,7 +1,9 @@
 'use strict';
 
-module.exports = {
-  extends: 'egy186/base',
+const base = require('./base');
+const extend = require('extend');
+
+module.exports = extend(true, base, {
   rules: {
     'array-callback-return': 2,
     'keyword-spacing': [2, {
@@ -19,4 +21,4 @@ module.exports = {
     'no-whitespace-before-property': 2,
     strict: [2, 'safe']
   }
-};
+});
