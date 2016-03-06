@@ -5,35 +5,35 @@ module.exports = {
     es6: true
   },
   rules: {
-    'arrow-body-style': [2, 'as-needed'],
-    'arrow-parens': [2, 'as-needed'],
-    'arrow-spacing': [2, {
+    'arrow-body-style': ['error', 'as-needed'],
+    'arrow-parens': ['error', 'as-needed'],
+    'arrow-spacing': ['error', {
       before: true,
       after: true
     }],
-    'constructor-super': 2,
-    'generator-star-spacing': [2, {
+    'constructor-super': 'error',
+    'generator-star-spacing': ['error', {
       before: false,
       after: true
     }],
-    'no-class-assign': 2,
-    'no-confusing-arrow': 2,
-    'no-const-assign': 2,
-    'no-dupe-class-members': 2,
-    'no-new-symbol': 2,
-    'no-this-before-super': 2,
-    'no-var': 2,
-    'no-useless-constructor': 2,
-    'object-shorthand': [2, 'always'],
-    'prefer-arrow-callback': 2,
-    'prefer-const': 2,
-    'prefer-reflect': 2,
-    'prefer-rest-params': 2,
-    'prefer-spread': 2,
-    'prefer-template': 2,
-    'require-yield': 2,
-    'template-curly-spacing': [2, 'never'],
-    'yield-star-spacing': [2, {
+    'no-class-assign': 'error',
+    'no-confusing-arrow': 'error',
+    'no-const-assign': 'error',
+    'no-dupe-class-members': 'error',
+    'no-new-symbol': 'error',
+    'no-this-before-super': 'error',
+    'no-var': 'error',
+    'no-useless-constructor': 'error',
+    'object-shorthand': ['error', 'always'],
+    'prefer-arrow-callback': 'error',
+    'prefer-const': 'error',
+    'prefer-reflect': 'error',
+    'prefer-rest-params': 'error',
+    'prefer-spread': 'error',
+    'prefer-template': 'error',
+    'require-yield': 'error',
+    'template-curly-spacing': ['error', 'never'],
+    'yield-star-spacing': ['error', {
       before: false,
       after: true
     }]

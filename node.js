@@ -5,7 +5,7 @@ module.exports = {
     node: true
   },
   rules: {
-    'prefer-reflect': 0,
-    'prefer-rest-params': 0
+    'prefer-reflect': 'off',
+    'prefer-rest-params': 'off'
   }
 };
