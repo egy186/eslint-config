@@ -97,6 +97,7 @@ module.exports = {
     'no-unused-labels': 'off',
     'no-useless-call': 'error',
     'no-useless-concat': 'error',
+    'no-useless-escape': 'error',
     'no-void': 'error',
     'no-warning-comments': 'off',
     'no-with': 'error',
@@ -120,8 +121,9 @@ module.exports = {
     'no-undef-init': 'error',
     'no-undefined': 'off',
     'no-unused-vars': ['error', {
-      vars: 'local',
-      args: 'after-used'
+      vars: 'all',
+      args: 'after-used',
+      caughtErrors: 'all'
     }],
     'no-use-before-define': 'error',
 
@@ -178,6 +180,7 @@ module.exports = {
     'max-nested-callbacks': 'off',
     'max-params': 'off',
     'max-statements': 'off',
+    'max-statements-per-line': 'error',
     'new-cap': 'error',
     'new-parens': 'error',
     'newline-after-var': 'off',
