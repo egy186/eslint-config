@@ -1,8 +1,15 @@
-# eslint-config-egy186
+# @egy186/eslint-config
 
-.eslintrc.json:
+## Install
+
+```sh
+npm install @egy186/eslint-config
+```
+
+## `.eslintrc.json`
+
 ```json
 {
-  "extends": ["egy186"]
+  "extends": ["@egy186/eslint-config"]
 }
 ```
