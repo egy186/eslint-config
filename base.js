@@ -28,6 +28,7 @@ module.exports = {
     'no-sparse-arrays': 'error',
     'no-unexpected-multiline': 'error',
     'no-unreachable': 'error',
+    'no-unsafe-finally': 'error',
     'use-isnan': 'error',
     'valid-jsdoc': ['error', {
       prefer: {
@@ -226,7 +227,6 @@ module.exports = {
       before: false,
       after: true
     }],
-    'sort-imports': 'error',
     'sort-vars': 'error',
     'space-before-blocks': 'error',
     'space-before-function-paren': ['error', 'always'],

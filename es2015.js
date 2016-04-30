@@ -23,6 +23,7 @@ module.exports = {
     'no-duplicate-imports': 'error',
     'no-new-symbol': 'error',
     'no-this-before-super': 'error',
+    'no-useless-computed-key': 'error',
     'no-useless-constructor': 'error',
     'no-var': 'error',
     'object-shorthand': ['error', 'always'],
@@ -33,6 +34,7 @@ module.exports = {
     'prefer-spread': 'error',
     'prefer-template': 'error',
     'require-yield': 'error',
+    'sort-imports': 'error',
     'template-curly-spacing': ['error', 'never'],
     'yield-star-spacing': ['error', {
       before: false,
