@@ -6,3 +6,10 @@ node_js:
 script:
 - npm run lint
 - npm test
+deploy:
+  provider: npm
+  api_key:
+    secure: Ph3/FfY6PlW2zcmHRlRilZYGNFXLyDP6YFPBrErY3XVWBzANbGYnHiqQgy61zIaPhSlq+G71D+iRrrJrBZOo5GRB+dLkJK6UHEX+qJQnXaCR4LCfFictZ71d0UCn/0mDmvxS1oMvLDnLDbL4JvVl/9vnSjcraghweRuS2oBiZDbBfK1eYYVUG2XYKVJqY2YzGGnGGERaRrd11O6cxP/RTqbLm1BbsSp7+ZnKKzP9smAafwNc+NZimOBYnqKLsHSLFM9efJmcZ1e96s8q9mr4mI16nsUQ637asW4gD6N0CZ1uUR0feXRpwXvY09yvIIUuS76+upwoFIPNBim6a8eXiE0+aPmQZSAHdquAu4Dwd2C9A6RW4QU9zomNEu915f59CxHw0tsjDahF2HB0saQNb52vL2JCsQS8RhYQ4WkHkk3PAihGXaJwRbEd0bVCK2DikliD4s7whgV2hbdDfAUdaREd3dB8pJ95Gz5LuJQWu5szmfB2Sa4pSa8mg2LOCtgYCVy2/SgawG2Lv14S349+PcG6jy1yMRmXU1cj7ZL3rS4lY2xGH0yNi/4PQ1svZwkpmFQTBO0ANypAmuCjKBXRr+Km2jHUJVYMCiYI7CUJWuMN47pC6BvxEjw/Rr6/WaahVgwn8aZLQXkGNAQxETYfOawcZmqONI/QnwmEsnWvAXw=
+  on:
+    tags: true
+    repo: egy186/eslint-config
