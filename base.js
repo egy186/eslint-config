@@ -214,6 +214,7 @@ module.exports = {
     }],
     'no-whitespace-before-property': 'error',
     'object-curly-spacing': ['error', 'always'],
+    'object-property-newline': 'error',
     'one-var': ['error', 'never'],
     'one-var-declaration-per-line': 'off',
     'operator-assignment': 'off',
