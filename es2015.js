@@ -1,9 +1,7 @@
 'use strict';
 
 module.exports = {
-  env: {
-    es6: true
-  },
+  env: { es6: true },
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'as-needed'],
@@ -35,6 +33,7 @@ module.exports = {
     'prefer-spread': 'error',
     'prefer-template': 'error',
     'require-yield': 'error',
+    'rest-spread-spacing': ['error', 'never'],
     'sort-imports': 'error',
     'template-curly-spacing': ['error', 'never'],
     'yield-star-spacing': ['error', {

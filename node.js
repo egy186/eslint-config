@@ -1,7 +1,3 @@
 'use strict';
 
-module.exports = {
-  env: {
-    node: true
-  }
-};
+module.exports = { env: { node: true } };
