@@ -20,6 +20,7 @@ module.exports = {
     'no-dupe-class-members': 'error',
     'no-duplicate-imports': 'error',
     'no-new-symbol': 'error',
+    'no-restricted-imports': 'off',
     'no-this-before-super': 'error',
     'no-useless-computed-key': 'error',
     'no-useless-constructor': 'error',

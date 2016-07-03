@@ -3,7 +3,6 @@
 module.exports = {
   rules: {
     // Possible Errors
-    'comma-dangle': ['error', 'never'],
     'no-cond-assign': ['error', 'always'],
     'no-console': 'warn',
     'no-constant-condition': 'error',
@@ -81,7 +80,6 @@ module.exports = {
     'no-octal': 'error',
     'no-octal-escape': 'error',
     'no-param-reassign': ['error', { props: false }],
-    'no-process-env': 'warn',
     'no-proto': 'error',
     'no-redeclare': 'error',
     'no-return-assign': 'error',
@@ -132,8 +130,8 @@ module.exports = {
     'no-mixed-requires': 'off',
     'no-new-require': 'error',
     'no-path-concat': 'error',
+    'no-process-env': 'warn',
     'no-process-exit': 'warn',
-    'no-restricted-imports': 'off',
     'no-restricted-modules': 'off',
     'no-sync': 'off',
 
@@ -142,6 +140,7 @@ module.exports = {
     'block-spacing': ['error', 'always'],
     'brace-style': ['error', '1tbs', { allowSingleLine: false }],
     camelcase: ['error', { properties: 'never' }],
+    'comma-dangle': ['error', 'never'],
     'comma-spacing': ['error', {
       before: false,
       after: true
