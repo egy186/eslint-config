@@ -173,6 +173,7 @@ module.exports = {
     'max-params': 'off',
     'max-statements': 'off',
     'max-statements-per-line': 'error',
+    'multiline-ternary': 'off',
     'new-cap': 'error',
     'new-parens': 'error',
     'newline-after-var': 'off',
@@ -223,7 +224,7 @@ module.exports = {
     'space-in-parens': ['error', 'never'],
     'space-infix-ops': 'error',
     'space-unary-ops': 'error',
-    'spaced-comment': ['error', 'always'],
+    'spaced-comment': ['error', 'always', { block: { balanced: true } }],
     'unicode-bom': ['error', 'never'],
     'wrap-regex': 'off'
   }
