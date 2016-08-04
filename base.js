@@ -154,7 +154,10 @@ module.exports = {
     'id-blacklist': 'off',
     'id-length': 'off',
     'id-match': 'off',
-    indent: ['error', 2, { SwitchCase: 1 }],
+    indent: ['error', 2, {
+      MemberExpression: 1,
+      SwitchCase: 1
+    }],
     'jsx-quotes': ['error', 'prefer-double'],
     'key-spacing': ['error', {
       beforeColon: false,
@@ -197,6 +200,7 @@ module.exports = {
     'no-plusplus': 'off',
     'no-restricted-syntax': 'off',
     'no-spaced-func': 'error',
+    'no-tabs': 'off',
     'no-ternary': 'off',
     'no-trailing-spaces': 'error',
     'no-underscore-dangle': ['error', { allowAfterThis: true }],
