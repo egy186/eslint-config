@@ -6,13 +6,13 @@ module.exports = {
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'as-needed'],
     'arrow-spacing': ['error', {
-      before: true,
-      after: true
+      after: true,
+      before: true
     }],
     'constructor-super': 'error',
     'generator-star-spacing': ['error', {
-      before: false,
-      after: true
+      after: true,
+      before: false
     }],
     'no-class-assign': 'error',
     'no-confusing-arrow': 'error',
@@ -38,8 +38,8 @@ module.exports = {
     'sort-imports': 'error',
     'template-curly-spacing': ['error', 'never'],
     'yield-star-spacing': ['error', {
-      before: false,
-      after: true
+      after: true,
+      before: false
     }]
   }
 };

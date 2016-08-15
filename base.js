@@ -1,5 +1,7 @@
 'use strict';
 
+/* eslint sort-keys: "off" */
+
 module.exports = {
   rules: {
     // Possible Errors
@@ -26,9 +28,11 @@ module.exports = {
     'no-prototype-builtins': 'error',
     'no-regex-spaces': 'error',
     'no-sparse-arrays': 'error',
+    'no-template-curly-in-string': 'error',
     'no-unexpected-multiline': 'error',
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
+    'no-unsafe-negation': 'error',
     'use-isnan': 'error',
     'valid-jsdoc': ['error', {
       prefer: { return: 'return' },
@@ -62,6 +66,7 @@ module.exports = {
     'no-extra-label': 'off',
     'no-fallthrough': 'error',
     'no-floating-decimal': 'error',
+    'no-global-assign': 'error',
     'no-implicit-coercion': 'error',
     'no-implicit-globals': 'error',
     'no-implied-eval': 'error',
@@ -117,9 +122,9 @@ module.exports = {
     'no-undef-init': 'error',
     'no-undefined': 'off',
     'no-unused-vars': ['error', {
-      vars: 'all',
       args: 'after-used',
-      caughtErrors: 'all'
+      caughtErrors: 'all',
+      vars: 'all'
     }],
     'no-use-before-define': 'error',
 
@@ -142,13 +147,14 @@ module.exports = {
     camelcase: ['error', { properties: 'never' }],
     'comma-dangle': ['error', 'never'],
     'comma-spacing': ['error', {
-      before: false,
-      after: true
+      after: true,
+      before: false
     }],
     'comma-style': ['error', 'last'],
     'computed-property-spacing': ['error', 'never'],
     'consistent-this': 'off',
     'eol-last': 'error',
+    'func-call-spacing': ['error', 'never'],
     'func-names': 'warn',
     'func-style': ['error', 'expression'],
     'id-blacklist': 'off',
@@ -160,8 +166,8 @@ module.exports = {
     }],
     'jsx-quotes': ['error', 'prefer-double'],
     'key-spacing': ['error', {
-      beforeColon: false,
-      afterColon: true
+      afterColon: true,
+      beforeColon: false
     }],
     'keyword-spacing': ['error', {
       after: true,
@@ -191,8 +197,8 @@ module.exports = {
     'no-mixed-spaces-and-tabs': 'error',
     'no-multiple-empty-lines': ['error', {
       max: 2,
-      maxEOF: 1,
-      maxBOF: 0
+      maxBOF: 0,
+      maxEOF: 1
     }],
     'no-negated-condition': 'off',
     'no-nested-ternary': 'error',
@@ -219,9 +225,10 @@ module.exports = {
     'require-jsdoc': 'off',
     semi: ['error', 'always'],
     'semi-spacing': ['error', {
-      before: false,
-      after: true
+      after: true,
+      before: false
     }],
+    'sort-keys': 'error',
     'sort-vars': 'error',
     'space-before-blocks': 'error',
     'space-before-function-paren': ['error', 'always'],
