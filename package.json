@@ -10,7 +10,8 @@
     "extend": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^3.3.0"
+    "eslint": "^3.3.0",
+    "lodash.difference": "^4.5.0"
   },
   "files": [
     "base.js",
@@ -34,6 +35,6 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "node lib/test.js"
+    "test": "cd lib && node test.js"
   }
 }
