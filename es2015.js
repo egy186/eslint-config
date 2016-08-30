@@ -36,6 +36,7 @@ module.exports = {
     'require-yield': 'error',
     'rest-spread-spacing': ['error', 'never'],
     'sort-imports': 'error',
+    'symbol-description': 'error',
     'template-curly-spacing': ['error', 'never'],
     'yield-star-spacing': ['error', {
       after: true,
