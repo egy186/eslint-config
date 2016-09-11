@@ -29,6 +29,7 @@ module.exports = {
     'object-shorthand': ['error', 'always'],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
+    'prefer-numeric-literals': 'error',
     'prefer-reflect': 'error',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
@@ -36,6 +37,7 @@ module.exports = {
     'require-yield': 'error',
     'rest-spread-spacing': ['error', 'never'],
     'sort-imports': 'error',
+    'symbol-description': 'error',
     'template-curly-spacing': ['error', 'never'],
     'yield-star-spacing': ['error', {
       after: true,

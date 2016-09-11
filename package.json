@@ -1,7 +1,7 @@
 {
   "name": "@egy186/eslint-config",
   "description": "Eslint shareable config",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "author": "egy186",
   "bugs": {
     "url": "https://github.com/egy186/eslint-config/issues"
@@ -11,7 +11,7 @@
     "extend": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^3.3.0",
+    "eslint": "^3.5.0",
     "lodash.difference": "^4.5.0"
   },
   "files": [
@@ -28,7 +28,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^3.3.0"
+    "eslint": "^3.5.0"
   },
   "repository": {
     "type": "git",

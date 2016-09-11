@@ -43,6 +43,7 @@ module.exports = {
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
+    'class-methods-use-this': 'error',
     complexity: ['warn', 12],
     'consistent-return': 'error',
     curly: ['error', 'all'],
@@ -136,6 +137,7 @@ module.exports = {
     'no-process-env': 'warn',
     'no-process-exit': 'warn',
     'no-restricted-modules': 'off',
+    'no-restricted-properties': 'off',
     'no-sync': 'off',
 
     // Stylistic Issues
@@ -171,8 +173,10 @@ module.exports = {
       after: true,
       before: true
     }],
+    'line-comment-position': 'off',
     'linebreak-style': 'error',
     'lines-around-comment': 'off',
+    'lines-around-directive': ['error', 'always'],
     'max-depth': 'off',
     'max-len': 'off',
     'max-lines': 'warn',
