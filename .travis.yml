@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-- 'node'
-- 'lts/boron'
-- 'lts/argon'
+- node
+- lts/boron
+- lts/argon
 script:
 - npm run lint
 - npm test
