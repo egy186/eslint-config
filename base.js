@@ -104,6 +104,7 @@ module.exports = {
     'no-warning-comments': 'off',
     'no-with': 'error',
     radix: 'error',
+    'require-await': 'error',
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'inside'],
     yoda: 'error',
@@ -147,6 +148,7 @@ module.exports = {
     'block-spacing': ['error', 'always'],
     'brace-style': ['error', '1tbs', { allowSingleLine: false }],
     camelcase: ['error', { properties: 'never' }],
+    'capitalized-comments': 'error',
     'comma-dangle': ['error', 'never'],
     'comma-spacing': ['error', {
       after: true,
