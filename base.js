@@ -5,6 +5,7 @@
 module.exports = {
   rules: {
     // Possible Errors
+    'no-await-in-loop': 'error',
     'no-cond-assign': ['error', 'always'],
     'no-console': 'warn',
     'no-constant-condition': 'error',
