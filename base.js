@@ -104,6 +104,7 @@ module.exports = {
     'no-void': 'error',
     'no-warning-comments': 'off',
     'no-with': 'error',
+    'prefer-promise-reject-errors': 'error',
     radix: 'error',
     'require-await': 'error',
     'vars-on-top': 'error',
@@ -203,6 +204,7 @@ module.exports = {
     'no-lonely-if': 'off',
     'no-mixed-operators': 'error',
     'no-mixed-spaces-and-tabs': 'error',
+    'no-multi-assign': 'error',
     'no-multiple-empty-lines': ['error', {
       max: 2,
       maxBOF: 0,
