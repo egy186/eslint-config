@@ -245,6 +245,7 @@ module.exports = {
     'space-infix-ops': 'error',
     'space-unary-ops': 'error',
     'spaced-comment': ['error', 'always', { block: { balanced: true } }],
+    'template-tag-spacing': ['error', 'never'],
     'unicode-bom': ['error', 'never'],
     'wrap-regex': 'off'
   }
