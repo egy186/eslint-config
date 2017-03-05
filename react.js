@@ -6,6 +6,8 @@ module.exports = {
   rules: {
     'react/display-name': 'error',
     'react/forbid-component-props': 'error',
+    'react/forbid-elements': 'off',
+    'react/forbid-foreign-prop-types': 'error',
     'react/forbid-prop-types': 'error',
     'react/jsx-boolean-value': 'error',
     'react/jsx-closing-bracket-location': 'error',
@@ -58,6 +60,7 @@ module.exports = {
     'react/self-closing-comp': 'error',
     'react/sort-comp': 'error',
     'react/sort-prop-types': 'error',
-    'react/style-prop-object': 'error'
+    'react/style-prop-object': 'error',
+    'react/void-dom-elements-no-children': 'error'
   }
 };
