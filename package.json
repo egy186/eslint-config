@@ -23,6 +23,7 @@
     "base.js",
     "es2015.js",
     "index.js",
+    "modules.js",
     "node.js",
     "react.js"
   ],
