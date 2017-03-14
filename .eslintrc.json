@@ -1,6 +1,6 @@
 {
-  "env": {
-    "node": true
-  },
-  "extends": ["./index.js"]
+  "extends": [
+    "./index.js",
+    "./node.js"
+  ]
 }
