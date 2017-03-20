@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "eslint-plugin-import": "~2.2.0",
+    "eslint-plugin-node": "~4.2.1",
     "eslint-plugin-react": "~6.10.0",
     "extend": "^3.0.0"
   },
@@ -21,6 +22,7 @@
   },
   "files": [
     "base.js",
+    "browser.js",
     "es2015.js",
     "index.js",
     "modules.js",
