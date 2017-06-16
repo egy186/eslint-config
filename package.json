@@ -9,7 +9,7 @@
   "dependencies": {
     "eslint-plugin-import": "~2.3.0",
     "eslint-plugin-node": "~5.0.0",
-    "eslint-plugin-react": "~6.10.0",
+    "eslint-plugin-react": "~7.1.0",
     "extend": "^3.0.0"
   },
   "devDependencies": {
