@@ -6,6 +6,8 @@ module.exports = {
   rules: {
     'node/exports-style': 'error',
     'node/no-deprecated-api': 'error',
+    'node/no-extraneous-import': 'error',
+    'node/no-extraneous-require': 'error',
     'node/no-missing-import': 'error',
     'node/no-missing-require': 'error',
     'node/no-unpublished-bin': 'error',
