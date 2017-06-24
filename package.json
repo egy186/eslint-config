@@ -7,13 +7,13 @@
     "url": "https://github.com/egy186/eslint-config/issues"
   },
   "dependencies": {
-    "eslint-plugin-import": "~2.3.0",
+    "eslint-plugin-import": "~2.6.0",
     "eslint-plugin-node": "~5.0.0",
     "eslint-plugin-react": "~7.1.0",
     "extend": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "~3.17.0",
+    "eslint": "~4.0.0",
     "lodash.difference": "^4.5.0",
     "require-dir": "^0.3.1"
   },
@@ -37,7 +37,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^3.17.0"
+    "eslint": "^4.0.0"
   },
   "repository": {
     "type": "git",
