@@ -5,15 +5,21 @@ module.exports = {
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'as-needed'],
-    'arrow-spacing': ['error', {
-      after: true,
-      before: true
-    }],
+    'arrow-spacing': [
+      'error',
+      {
+        after: true,
+        before: true
+      }
+    ],
     'constructor-super': 'error',
-    'generator-star-spacing': ['error', {
-      after: true,
-      before: false
-    }],
+    'generator-star-spacing': [
+      'error',
+      {
+        after: true,
+        before: false
+      }
+    ],
     'no-class-assign': 'error',
     'no-confusing-arrow': 'error',
     'no-const-assign': 'error',
@@ -39,9 +45,12 @@ module.exports = {
     'sort-imports': 'error',
     'symbol-description': 'error',
     'template-curly-spacing': ['error', 'never'],
-    'yield-star-spacing': ['error', {
-      after: true,
-      before: false
-    }]
+    'yield-star-spacing': [
+      'error',
+      {
+        after: true,
+        before: false
+      }
+    ]
   }
 };
