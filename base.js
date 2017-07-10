@@ -7,6 +7,7 @@ module.exports = {
   rules: {
     // Possible Errors
     'for-direction': 'error',
+    'getter-return': 'error',
     'no-await-in-loop': 'error',
     'no-compare-neg-zero': 'error',
     'no-cond-assign': ['error', 'always'],
@@ -239,7 +240,7 @@ module.exports = {
     'max-params': 'off',
     'max-statements': 'off',
     'max-statements-per-line': 'error',
-    'multiline-ternary': 'off',
+    'multiline-ternary': ['error', 'always-multiline'],
     'new-cap': 'error',
     'new-parens': 'error',
     'newline-per-chained-call': 'off',
