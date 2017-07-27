@@ -35,7 +35,7 @@ module.exports = {
     'object-shorthand': ['error', 'always'],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
-    'prefer-destructuring': 'off',
+    'prefer-destructuring': 'error',
     'prefer-numeric-literals': 'error',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
