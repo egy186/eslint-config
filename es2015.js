@@ -13,13 +13,7 @@ module.exports = {
       }
     ],
     'constructor-super': 'error',
-    'generator-star-spacing': [
-      'error',
-      {
-        after: true,
-        before: false
-      }
-    ],
+    'generator-star-spacing': ['error', 'after'],
     'no-class-assign': 'error',
     'no-confusing-arrow': 'error',
     'no-const-assign': 'error',
