@@ -14,7 +14,13 @@ module.exports = {
     'react/jsx-boolean-value': 'error',
     'react/jsx-closing-bracket-location': 'error',
     'react/jsx-closing-tag-location': 'error',
-    'react/jsx-curly-brace-presence': 'error',
+    'react/jsx-curly-brace-presence': [
+      'error',
+      {
+        children: 'ignore',
+        props: 'never'
+      }
+    ],
     'react/jsx-curly-spacing': 'error',
     'react/jsx-equals-spacing': 'error',
     'react/jsx-filename-extension': 'error',
