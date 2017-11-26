@@ -208,6 +208,7 @@ module.exports = {
     'id-blacklist': 'off',
     'id-length': 'off',
     'id-match': 'off',
+    'implicit-arrow-linebreak': ['error', 'beside'],
     indent: [
       'error',
       2,
