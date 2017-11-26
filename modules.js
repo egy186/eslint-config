@@ -6,6 +6,7 @@ module.exports = {
   rules: {
     'import/default': 'error',
     'import/export': 'error',
+    'import/exports-last': 'error',
     'import/extensions': 'error',
     'import/first': 'error',
     'import/max-dependencies': 'error',
