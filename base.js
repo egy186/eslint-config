@@ -1,10 +1,9 @@
 'use strict';
 
 /* eslint max-lines: "off" */
-/* eslint sort-keys: "off" */
 
 module.exports = {
-  rules: {
+  rules: Object.assign({
     // Possible Errors
     'for-direction': 'error',
     'getter-return': 'error',
@@ -52,8 +51,8 @@ module.exports = {
         requireReturn: false
       }
     ],
-    'valid-typeof': 'error',
-
+    'valid-typeof': 'error'
+  }, {
     // Best Practices
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
@@ -123,11 +122,11 @@ module.exports = {
     'require-await': 'error',
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'inside'],
-    yoda: 'error',
-
+    yoda: 'error'
+  }, {
     // Strict Mode
-    strict: ['error', 'safe'],
-
+    strict: ['error', 'safe']
+  }, {
     // Variables
     'init-declarations': 'error',
     'no-catch-shadow': 'error',
@@ -147,8 +146,8 @@ module.exports = {
         vars: 'all'
       }
     ],
-    'no-use-before-define': 'error',
-
+    'no-use-before-define': 'error'
+  }, {
     // Node.js and CommonJS
     'callback-return': [
       'warn',
@@ -168,16 +167,16 @@ module.exports = {
     'no-process-exit': 'warn',
     'no-restricted-modules': 'off',
     'no-restricted-properties': 'off',
-    'no-sync': 'off',
-
+    'no-sync': 'off'
+  }, {
     // Stylistic Issues
     'array-bracket-newline': 'error',
     'array-bracket-spacing': ['error', 'never'],
     'array-element-newline': [
       'error',
       {
-        multiline: true,
-        minItems: 3
+        minItems: 3,
+        multiline: true
       }
     ],
     'block-spacing': ['error', 'always'],
@@ -317,5 +316,5 @@ module.exports = {
     'template-tag-spacing': ['error', 'never'],
     'unicode-bom': ['error', 'never'],
     'wrap-regex': 'off'
-  }
+  })
 };
