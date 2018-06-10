@@ -5,6 +5,7 @@ module.exports = {
   plugins: ['import'],
   rules: {
     'import/default': 'error',
+    'import/dynamic-import-chunkname': 'error',
     'import/export': 'error',
     'import/exports-last': 'error',
     'import/extensions': 'error',
@@ -18,6 +19,7 @@ module.exports = {
     'import/no-amd': 'error',
     'import/no-anonymous-default-export': 'error',
     'import/no-commonjs': 'error',
+    'import/no-cycle': 'error',
     'import/no-default-export': 'off',
     'import/no-deprecated': 'error',
     'import/no-duplicates': 'error',
