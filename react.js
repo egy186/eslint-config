@@ -43,6 +43,7 @@ module.exports = {
     'react/jsx-no-undef': 'error',
     'react/jsx-one-expression-per-line': 'error',
     'react/jsx-pascal-case': 'error',
+    'react/jsx-props-no-multi-spaces': 'error',
     'react/jsx-sort-default-props': 'error',
     'react/jsx-sort-props': 'error',
     'react/jsx-tag-spacing': ['error', { beforeClosing: 'never' }],
