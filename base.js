@@ -130,7 +130,6 @@ module.exports = {
   }, {
     // Variables
     'init-declarations': 'error',
-    'no-catch-shadow': 'error',
     'no-delete-var': 'error',
     'no-label-var': 'off',
     'no-restricted-globals': 'off',

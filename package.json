@@ -13,7 +13,7 @@
     "lodash": "^4.17.5"
   },
   "devDependencies": {
-    "eslint": "~5.0.1",
+    "eslint": "~5.1.0",
     "husky": "^0.14.3",
     "require-dir": "^1.0.0"
   },
