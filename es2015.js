@@ -34,6 +34,7 @@ module.exports = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
+    'require-unicode-regexp': 'error',
     'require-yield': 'error',
     'rest-spread-spacing': ['error', 'never'],
     'sort-imports': 'error',
