@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "eslint-plugin-import": "~2.13.0",
+    "eslint-plugin-jsdoc": "~3.12.1",
     "eslint-plugin-node": "~7.0.1",
     "eslint-plugin-react": "~7.10.0",
     "lodash": "^4.17.5"
@@ -26,6 +27,7 @@
     "es2015.js",
     "es2018.js",
     "index.js",
+    "jsdoc.js",
     "modules.js",
     "node.js",
     "react.js"
