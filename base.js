@@ -47,13 +47,6 @@ module.exports = {
     'no-unsafe-negation': 'error',
     'require-atomic-updates': 'error',
     'use-isnan': 'error',
-    'valid-jsdoc': [
-      'error',
-      {
-        prefer: { return: 'return' },
-        requireReturn: false
-      }
-    ],
     'valid-typeof': 'error'
   }, {
     // Best Practices
@@ -295,7 +288,6 @@ module.exports = {
       'single',
       'avoid-escape'
     ],
-    'require-jsdoc': 'off',
     semi: ['error', 'always'],
     'semi-spacing': [
       'error',
