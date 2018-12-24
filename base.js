@@ -108,6 +108,7 @@ module.exports = {
     'no-unused-expressions': 'error',
     'no-unused-labels': 'off',
     'no-useless-call': 'error',
+    'no-useless-catch': 'error',
     'no-useless-concat': 'error',
     'no-useless-escape': 'error',
     'no-useless-return': 'error',
