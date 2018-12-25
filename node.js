@@ -19,6 +19,8 @@ module.exports = {
     'node/prefer-global/buffer': 'error',
     'node/prefer-global/console': 'error',
     'node/prefer-global/process': 'error',
+    'node/prefer-global/text-decoder': 'error',
+    'node/prefer-global/text-encoder': 'error',
     'node/prefer-global/url': 'error',
     'node/prefer-global/url-search-params': 'error',
     'node/process-exit-as-throw': 'error',
