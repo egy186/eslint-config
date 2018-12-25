@@ -3,6 +3,7 @@
 module.exports = {
   plugins: ['jsdoc'],
   rules: {
+    'jsdoc/check-examples': 'error',
     'jsdoc/check-param-names': 'error',
     'jsdoc/check-tag-names': 'error',
     'jsdoc/check-types': 'error',
