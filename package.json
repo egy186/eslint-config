@@ -1,7 +1,7 @@
 {
   "name": "@egy186/eslint-config",
   "description": "Eslint shareable config",
-  "version": "0.35.0",
+  "version": "0.35.1",
   "author": "egy186",
   "bugs": {
     "url": "https://github.com/egy186/eslint-config/issues"
