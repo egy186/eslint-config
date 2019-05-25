@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "eslint": "~5.15.0",
-    "husky": "^1.2.1",
+    "husky": "^2.3.0",
     "require-dir": "^1.2.0"
   },
   "engines": {
