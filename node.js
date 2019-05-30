@@ -5,6 +5,7 @@ module.exports = {
   plugins: ['node'],
   rules: {
     'node/exports-style': 'error',
+    'node/file-extension-in-import': 'off',
     'node/no-deprecated-api': 'error',
     'node/no-extraneous-import': 'error',
     'node/no-extraneous-require': 'error',
@@ -23,6 +24,8 @@ module.exports = {
     'node/prefer-global/text-encoder': 'error',
     'node/prefer-global/url': 'error',
     'node/prefer-global/url-search-params': 'error',
+    'node/prefer-promises/dns': 'error',
+    'node/prefer-promises/fs': 'error',
     'node/process-exit-as-throw': 'error',
     'node/shebang': 'error'
   }
