@@ -25,6 +25,7 @@ module.exports = {
         props: 'never'
       }
     ],
+    'react/jsx-curly-newline': ['error', 'never'],
     'react/jsx-curly-spacing': 'error',
     'react/jsx-equals-spacing': 'error',
     'react/jsx-filename-extension': 'error',
