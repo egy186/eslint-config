@@ -3,6 +3,7 @@
 /* eslint max-lines: "off" */
 
 module.exports = {
+  reportUnusedDisableDirectives: true,
   rules: Object.assign({
     // Possible Errors
     'for-direction': 'error',
@@ -32,6 +33,7 @@ module.exports = {
     ],
     'no-extra-semi': 'error',
     'no-func-assign': 'error',
+    'no-import-assign': 'error',
     'no-inner-declarations': 'error',
     'no-invalid-regexp': 'error',
     'no-irregular-whitespace': 'error',
@@ -58,6 +60,7 @@ module.exports = {
     'consistent-return': 'error',
     curly: ['error', 'all'],
     'default-case': 'error',
+    'default-param-last': 'error',
     'dot-location': ['error', 'property'],
     'dot-notation': 'error',
     eqeqeq: 'error',
@@ -117,6 +120,7 @@ module.exports = {
     'no-with': 'error',
     'prefer-named-capture-group': 'off',
     'prefer-promise-reject-errors': 'error',
+    'prefer-regex-literals': 'error',
     radix: 'error',
     'require-await': 'error',
     'vars-on-top': 'error',
