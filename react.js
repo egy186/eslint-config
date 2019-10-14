@@ -2,8 +2,10 @@
 
 module.exports = {
   parserOptions: { ecmaFeatures: { jsx: true } },
-  plugins: ['react'],
+  plugins: ['react', 'react-hooks'],
   rules: {
+    'react-hooks/exhaustive-deps': 'error',
+    'react-hooks/rules-of-hooks': 'error',
     'react/boolean-prop-naming': 'error',
     'react/button-has-type': 'error',
     'react/default-props-match-prop-types': 'error',
