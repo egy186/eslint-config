@@ -45,6 +45,7 @@ module.exports = {
     'react/jsx-no-literals': 'error',
     'react/jsx-no-target-blank': 'error',
     'react/jsx-no-undef': 'error',
+    'react/jsx-no-useless-fragment': 'error',
     'react/jsx-one-expression-per-line': 'error',
     'react/jsx-pascal-case': 'error',
     'react/jsx-props-no-multi-spaces': 'error',
