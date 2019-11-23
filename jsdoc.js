@@ -3,6 +3,7 @@
 module.exports = {
   plugins: ['jsdoc'],
   rules: {
+    'jsdoc/check-access': 'error',
     'jsdoc/check-alignment': 'error',
     'jsdoc/check-examples': 'error',
     'jsdoc/check-indentation': 'error',
@@ -10,6 +11,8 @@ module.exports = {
     'jsdoc/check-syntax': 'error',
     'jsdoc/check-tag-names': 'error',
     'jsdoc/check-types': 'error',
+    'jsdoc/check-values': 'error',
+    'jsdoc/empty-tags': 'error',
     'jsdoc/implements-on-classes': 'error',
     'jsdoc/match-description': 'error',
     'jsdoc/newline-after-description': 'error',
