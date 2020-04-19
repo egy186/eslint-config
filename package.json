@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "eslint-plugin-import": "~2.20.1",
-    "eslint-plugin-jsdoc": "~22.1.0",
+    "eslint-plugin-jsdoc": "~23.0.1",
     "eslint-plugin-node": "~11.1.0",
     "eslint-plugin-react": "~7.19.0",
     "eslint-plugin-react-hooks": "~3.0.0",
