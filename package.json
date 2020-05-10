@@ -15,7 +15,7 @@
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "eslint": "~6.8.0",
+    "eslint": "~7.0.0",
     "husky": "^4.2.3",
     "require-dir": "^1.2.0"
   },
@@ -25,8 +25,6 @@
   "files": [
     "base.js",
     "browser.js",
-    "es2015.js",
-    "es2018.js",
     "index.js",
     "jsdoc.js",
     "modules.js",
@@ -41,7 +39,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^7.0.0"
   },
   "repository": {
     "type": "git",
