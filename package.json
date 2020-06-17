@@ -7,15 +7,15 @@
     "url": "https://github.com/egy186/eslint-config/issues"
   },
   "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "eslint": "~7.2.0",
     "eslint-plugin-import": "~2.21.1",
     "eslint-plugin-jsdoc": "~27.0.4",
     "eslint-plugin-node": "~11.1.0",
     "eslint-plugin-react": "~7.20.0",
     "eslint-plugin-react-hooks": "~4.0.2",
-    "lodash": "^4.17.15"
-  },
-  "devDependencies": {
-    "eslint": "~7.2.0",
     "husky": "^4.2.3",
     "require-dir": "^1.2.0"
   },
@@ -39,7 +39,26 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^7.2.0"
+    "eslint": "^7.2.0",
+    "eslint-plugin-import": "^2.21.1",
+    "eslint-plugin-jsdoc": "^27.0.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-import": {
+      "optional": true
+    },
+    "eslint-plugin-node": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    }
   },
   "repository": {
     "type": "git",
