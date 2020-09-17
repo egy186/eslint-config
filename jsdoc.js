@@ -7,6 +7,7 @@ module.exports = {
     'jsdoc/check-alignment': 'error',
     'jsdoc/check-examples': 'error',
     'jsdoc/check-indentation': 'error',
+    'jsdoc/check-line-alignment': 'off',
     'jsdoc/check-param-names': 'error',
     'jsdoc/check-property-names': 'error',
     'jsdoc/check-syntax': 'error',
