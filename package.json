@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "eslint": "~7.9.0",
-    "eslint-plugin-import": "~2.21.1",
+    "eslint-plugin-import": "~2.22.0",
     "eslint-plugin-jsdoc": "~30.5.1",
     "eslint-plugin-node": "~11.1.0",
     "eslint-plugin-react": "~7.20.0",
@@ -40,7 +40,7 @@
   "main": "index.js",
   "peerDependencies": {
     "eslint": "^7.9.0",
-    "eslint-plugin-import": "^2.21.1",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsdoc": "^30.5.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.20.0",
