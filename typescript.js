@@ -12,6 +12,7 @@ module.exports = {
     '@typescript-eslint/ban-types': 'error',
     '@typescript-eslint/brace-style': 'error',
     '@typescript-eslint/class-literal-property-style': 'error',
+    '@typescript-eslint/comma-dangle': ['error', 'never'],
     '@typescript-eslint/comma-spacing': 'error',
     '@typescript-eslint/consistent-type-assertions': 'error',
     '@typescript-eslint/consistent-type-definitions': 'error',
@@ -35,7 +36,30 @@ module.exports = {
     '@typescript-eslint/member-delimiter-style': 'error',
     '@typescript-eslint/member-ordering': 'error',
     '@typescript-eslint/method-signature-style': 'error',
-    '@typescript-eslint/naming-convention': 'error',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        format: ['camelCase'],
+        leadingUnderscore: 'allow',
+        selector: 'default',
+        trailingUnderscore: 'allow'
+      },
+      {
+        format: ['camelCase', 'UPPER_CASE'],
+        leadingUnderscore: 'allow',
+        selector: 'variable',
+        trailingUnderscore: 'allow'
+      },
+      {
+        format: ['camelCase', 'snake_case'],
+        leadingUnderscore: 'allow',
+        selector: 'property'
+      },
+      {
+        format: ['PascalCase'],
+        selector: 'typeLike'
+      }
+    ],
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-base-to-string': 'error',
     '@typescript-eslint/no-confusing-non-null-assertion': 'error',
@@ -87,7 +111,7 @@ module.exports = {
     '@typescript-eslint/prefer-as-const': 'error',
     '@typescript-eslint/prefer-enum-initializers': 'error',
     '@typescript-eslint/prefer-for-of': 'error',
-    '@typescript-eslint/prefer-function-type': 'error',
+    '@typescript-eslint/prefer-function-type': 'off',
     '@typescript-eslint/prefer-includes': 'error',
     '@typescript-eslint/prefer-literal-enum-member': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
@@ -115,6 +139,7 @@ module.exports = {
     '@typescript-eslint/typedef': 'error',
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'error',
+    'comma-dangle': 'off',
     'dot-notation': 'off',
     'init-declarations': 'off',
     'keyword-spacing': 'off',
