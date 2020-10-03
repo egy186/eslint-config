@@ -151,6 +151,8 @@ module.exports = {
     'no-loss-of-precision': 'off',
     'no-redeclare': 'off',
     'no-shadow': 'off',
+    'no-use-before-define': 'off',
+    'require-await': 'off',
     'space-before-function-paren': 'off'
   }
 };
