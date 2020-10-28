@@ -41,20 +41,27 @@ module.exports = {
       'error',
       {
         format: ['camelCase'],
-        leadingUnderscore: 'allow',
-        selector: 'default',
-        trailingUnderscore: 'allow'
+        selector: 'default'
       },
       {
         format: ['camelCase', 'UPPER_CASE'],
-        leadingUnderscore: 'allow',
-        selector: 'variable',
-        trailingUnderscore: 'allow'
+        selector: 'variable'
       },
       {
         format: ['camelCase', 'snake_case'],
         leadingUnderscore: 'allow',
         selector: 'property'
+      },
+      {
+        format: ['camelCase'],
+        leadingUnderscore: 'allow',
+        selector: 'parameter'
+      },
+      {
+        format: ['camelCase'],
+        leadingUnderscore: 'require',
+        modifiers: ['private'],
+        selector: 'memberLike'
       },
       {
         format: ['PascalCase'],
@@ -71,7 +78,14 @@ module.exports = {
     '@typescript-eslint/no-empty-interface': 'error',
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/no-extra-non-null-assertion': 'error',
-    '@typescript-eslint/no-extra-parens': 'error',
+    '@typescript-eslint/no-extra-parens': [
+      'error',
+      'all',
+      {
+        ignoreJSX: 'multi-line',
+        nestedBinaryExpressions: false
+      }
+    ],
     '@typescript-eslint/no-extra-semi': 'error',
     '@typescript-eslint/no-extraneous-class': 'error',
     '@typescript-eslint/no-floating-promises': ['error', { ignoreVoid: true }],
@@ -126,7 +140,11 @@ module.exports = {
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     '@typescript-eslint/prefer-ts-expect-error': 'error',
     '@typescript-eslint/promise-function-async': 'error',
-    '@typescript-eslint/quotes': ['error', 'single'],
+    '@typescript-eslint/quotes': [
+      'error',
+      'single',
+      'avoid-escape'
+    ],
     '@typescript-eslint/require-array-sort-compare': 'error',
     '@typescript-eslint/require-await': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
@@ -141,6 +159,7 @@ module.exports = {
     '@typescript-eslint/typedef': 'error',
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'error',
+    camelcase: 'off',
     'comma-dangle': 'off',
     'dot-notation': 'off',
     'init-declarations': 'off',
@@ -148,6 +167,7 @@ module.exports = {
     'lines-between-class-members': 'off',
     'no-dupe-class-members': 'off',
     'no-duplicate-imports': 'off',
+    'no-extra-parens': 'off',
     'no-extra-semi': 'off',
     'no-invalid-this': 'off',
     'no-loop-func': 'off',

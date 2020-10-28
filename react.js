@@ -37,7 +37,7 @@ module.exports = {
     'react/jsx-curly-newline': ['error', 'never'],
     'react/jsx-curly-spacing': 'error',
     'react/jsx-equals-spacing': 'error',
-    'react/jsx-filename-extension': 'error',
+    'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
     'react/jsx-first-prop-new-line': 'error',
     'react/jsx-fragments': ['error', 'element'],
     'react/jsx-handler-names': [
@@ -112,11 +112,23 @@ module.exports = {
     'react/require-optimization': 'error',
     'react/require-render-return': 'error',
     'react/self-closing-comp': 'error',
-    'react/sort-comp': 'error',
+    'react/sort-comp': [
+      'error',
+      {
+        order: [
+          'constructor',
+          'static-methods',
+          'lifecycle',
+          'everything-else',
+          'render'
+        ]
+      }
+    ],
     'react/sort-prop-types': 'error',
     'react/state-in-constructor': 'error',
     'react/static-property-placement': 'error',
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error'
-  }
+  },
+  settings: { react: { version: 'detect' } }
 };
