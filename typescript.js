@@ -115,6 +115,7 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+    '@typescript-eslint/no-unnecessary-type-constraint': 'error',
     '@typescript-eslint/no-unsafe-assignment': 'error',
     '@typescript-eslint/no-unsafe-call': 'error',
     '@typescript-eslint/no-unsafe-member-access': 'error',
@@ -152,6 +153,7 @@ module.exports = {
     '@typescript-eslint/return-await': 'error',
     '@typescript-eslint/semi': 'error',
     '@typescript-eslint/space-before-function-paren': ['error', 'always'],
+    '@typescript-eslint/space-infix-ops': 'error',
     '@typescript-eslint/strict-boolean-expressions': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
     '@typescript-eslint/triple-slash-reference': 'error',
@@ -176,6 +178,7 @@ module.exports = {
     'no-shadow': 'off',
     'no-use-before-define': 'off',
     'require-await': 'off',
-    'space-before-function-paren': 'off'
+    'space-before-function-paren': 'off',
+    'space-infix-ops': 'off'
   }
 };
