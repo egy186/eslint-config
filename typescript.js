@@ -127,6 +127,7 @@ module.exports = {
     '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/non-nullable-type-assertion-style': 'off',
+    '@typescript-eslint/object-curly-spacing': ['error', 'always'],
     '@typescript-eslint/prefer-as-const': 'error',
     '@typescript-eslint/prefer-enum-initializers': 'error',
     '@typescript-eslint/prefer-for-of': 'error',
@@ -181,6 +182,7 @@ module.exports = {
     'no-shadow': 'off',
     'no-unused-expressions': 'off',
     'no-use-before-define': 'off',
+    'object-curly-spacing': 'off',
     'require-await': 'off',
     'space-before-function-paren': 'off',
     'space-infix-ops': 'off'
