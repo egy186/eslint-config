@@ -41,6 +41,8 @@ module.exports = {
     'jsdoc/require-returns-description': 'error',
     'jsdoc/require-returns-type': 'error',
     'jsdoc/require-throws': 'error',
+    'jsdoc/require-yields': 'error',
+    'jsdoc/require-yields-check': 'error',
     'jsdoc/valid-types': 'error'
   }
 };
