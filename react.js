@@ -52,8 +52,10 @@ module.exports = {
     'react/jsx-key': 'error',
     'react/jsx-max-depth': 'error',
     'react/jsx-max-props-per-line': 'error',
+    'react/jsx-newline': 'off',
     'react/jsx-no-bind': 'error',
     'react/jsx-no-comment-textnodes': 'error',
+    'react/jsx-no-constructed-context-values': 'error',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-literals': 'error',
     'react/jsx-no-script-url': [
