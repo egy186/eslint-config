@@ -18,7 +18,7 @@
     "eslint-plugin-node": "~11.1.0",
     "eslint-plugin-react": "~7.23.2",
     "eslint-plugin-react-hooks": "~4.2.0",
-    "husky": "^4.2.3",
+    "husky": "^6.0.0",
     "require-dir": "^1.2.0",
     "typescript": "^4.2.4"
   },
@@ -82,6 +82,7 @@
   },
   "scripts": {
     "lint": "eslint .",
+    "prepare": "husky install",
     "test": "cd lib && node test.js"
   }
 }
