@@ -81,8 +81,8 @@
     "url": "git+https://github.com/egy186/eslint-config.git"
   },
   "scripts": {
+    "husky": "husky install",
     "lint": "eslint .",
-    "prepare": "husky install",
     "test": "cd lib && node test.js"
   }
 }
