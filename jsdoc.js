@@ -17,6 +17,7 @@ module.exports = {
     'jsdoc/empty-tags': 'error',
     'jsdoc/implements-on-classes': 'error',
     'jsdoc/match-description': 'error',
+    'jsdoc/match-name': 'off',
     'jsdoc/multiline-blocks': 'error',
     'jsdoc/newline-after-description': 'error',
     'jsdoc/no-bad-blocks': 'error',
