@@ -8,9 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-node@v1
-    - run: npm install
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: lts/*
+    - run: npm ci
     - run: npm run lint
 
   test:
@@ -19,15 +21,15 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x]
+        node-version: [12.x, 14.x, 16.x, node]
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Test on Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
+    - run: npm ci
     - run: npm test
 
   publish:
@@ -37,10 +39,10 @@ jobs:
     needs: [lint, test]
 
     steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-node@v1
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
       with:
-        node-version: 12.x
+        node-version: lts/*
         registry-url: https://registry.npmjs.org/
         scope: egy186
     - run: npm publish --access public
