@@ -56,6 +56,7 @@ module.exports = {
       'no-unsafe-finally': 'error',
       'no-unsafe-negation': 'error',
       'no-unsafe-optional-chaining': ['error', { disallowArithmeticOperators: true }],
+      'no-unused-private-class-members': 'error',
       'no-useless-backreference': 'error',
       'require-atomic-updates': 'error',
       'use-isnan': 'error',
