@@ -5,7 +5,7 @@ module.exports = {
   rules: {
     'jsdoc/check-access': 'error',
     'jsdoc/check-alignment': 'error',
-    'jsdoc/check-examples': 'error',
+    'jsdoc/check-examples': 'off',
     'jsdoc/check-indentation': 'error',
     'jsdoc/check-line-alignment': 'off',
     'jsdoc/check-param-names': 'error',
