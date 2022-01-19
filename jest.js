@@ -29,6 +29,8 @@ module.exports = {
     'jest/no-test-prefixes': 'error',
     'jest/no-test-return-statement': 'error',
     'jest/prefer-called-with': 'error',
+    'jest/prefer-comparison-matcher': 'error',
+    'jest/prefer-equality-matcher': 'error',
     'jest/prefer-expect-assertions': ['warn', { onlyFunctionsWithAsyncKeyword: true }],
     'jest/prefer-expect-resolves': 'error',
     'jest/prefer-hooks-on-top': 'error',
