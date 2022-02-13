@@ -3,8 +3,7 @@
 /* eslint max-lines: "off" */
 
 module.exports = {
-  env: { es2017: true },
-  parserOptions: { ecmaVersion: 2018 },
+  env: { es2019: true },
   reportUnusedDisableDirectives: true,
   rules: {
     ...{
