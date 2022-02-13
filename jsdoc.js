@@ -49,6 +49,7 @@ module.exports = {
     'jsdoc/require-throws': 'error',
     'jsdoc/require-yields': 'error',
     'jsdoc/require-yields-check': 'error',
+    'jsdoc/sort-tags': 'error',
     'jsdoc/tag-lines': 'error',
     'jsdoc/valid-types': 'error'
   }
