@@ -23,6 +23,8 @@ module.exports = {
         unnamedComponents: 'arrow-function'
       }
     ],
+    'react/hook-use-state': 'error',
+    'react/iframe-missing-sandbox': 'error',
     'react/jsx-boolean-value': 'error',
     'react/jsx-child-element-spacing': 'error',
     'react/jsx-closing-bracket-location': 'error',
@@ -49,7 +51,14 @@ module.exports = {
     ],
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
-    'react/jsx-key': 'error',
+    'react/jsx-key': [
+      'error',
+      {
+        checkFragmentShorthand: true,
+        checkKeyMustBeforeSpread: true,
+        warnOnDuplicates: true
+      }
+    ],
     'react/jsx-max-depth': 'error',
     'react/jsx-max-props-per-line': 'error',
     'react/jsx-newline': 'off',
