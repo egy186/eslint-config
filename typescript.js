@@ -108,6 +108,7 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'error',
     '@typescript-eslint/no-parameter-properties': 'error',
     '@typescript-eslint/no-redeclare': 'error',
+    '@typescript-eslint/no-redundant-type-constituents': 'error',
     '@typescript-eslint/no-require-imports': 'error',
     '@typescript-eslint/no-restricted-imports': 'error',
     '@typescript-eslint/no-shadow': 'error',
@@ -129,6 +130,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/no-useless-constructor': 'error',
+    '@typescript-eslint/no-useless-empty-export': 'error',
     '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/non-nullable-type-assertion-style': 'off',
     '@typescript-eslint/object-curly-spacing': ['error', 'always'],
@@ -162,6 +164,7 @@ module.exports = {
     '@typescript-eslint/return-await': 'error',
     '@typescript-eslint/semi': 'error',
     '@typescript-eslint/sort-type-union-intersection-members': 'error',
+    '@typescript-eslint/space-before-blocks': 'error',
     '@typescript-eslint/space-before-function-paren': ['error', 'always'],
     '@typescript-eslint/space-infix-ops': 'error',
     '@typescript-eslint/strict-boolean-expressions': 'error',
@@ -192,6 +195,7 @@ module.exports = {
     'object-curly-spacing': 'off',
     'padding-line-between-statements': 'off',
     'require-await': 'off',
+    'space-before-blocks': 'off',
     'space-before-function-paren': 'off',
     'space-infix-ops': 'off'
   }
