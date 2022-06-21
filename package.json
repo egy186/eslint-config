@@ -66,6 +66,9 @@
     "eslint-plugin-import": {
       "optional": true
     },
+    "eslint-plugin-jest": {
+      "optional": true
+    },
     "eslint-plugin-node": {
       "optional": true
     },
