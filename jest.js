@@ -6,6 +6,7 @@ module.exports = {
   rules: {
     'jest/consistent-test-it': 'error',
     'jest/expect-expect': 'error',
+    'jest/max-expects': 'error',
     'jest/max-nested-describe': 'error',
     'jest/no-alias-methods': 'error',
     'jest/no-commented-out-tests': 'error',
