@@ -3,7 +3,7 @@
 /* eslint max-lines: "off" */
 
 module.exports = {
-  env: { es2020: true },
+  env: { es2021: true },
   reportUnusedDisableDirectives: true,
   rules: {
     ...{
