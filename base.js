@@ -99,6 +99,7 @@ module.exports = {
       'id-length': 'off',
       'id-match': 'off',
       'init-declarations': 'error',
+      'logical-assignment-operators': 'off',
       'max-classes-per-file': 'error',
       'max-depth': 'error',
       'max-lines': 'warn',
