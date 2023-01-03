@@ -29,7 +29,7 @@ module.exports = {
     'jest/no-standalone-expect': 'error',
     'jest/no-test-prefixes': 'error',
     'jest/no-test-return-statement': 'error',
-    'jest/no-untyped-mock-factory': 'error',
+    'jest/no-untyped-mock-factory': 'warn',
     'jest/prefer-called-with': 'error',
     'jest/prefer-comparison-matcher': 'error',
     'jest/prefer-each': 'error',
