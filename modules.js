@@ -4,6 +4,7 @@ module.exports = {
   parserOptions: { sourceType: 'module' },
   plugins: ['import'],
   rules: {
+    'import/consistent-type-specifier-style': 'error',
     'import/default': 'error',
     'import/dynamic-import-chunkname': 'error',
     'import/export': 'error',
@@ -24,6 +25,7 @@ module.exports = {
     'import/no-deprecated': 'error',
     'import/no-duplicates': 'error',
     'import/no-dynamic-require': 'error',
+    'import/no-empty-named-blocks': 'error',
     'import/no-extraneous-dependencies': 'off',
     'import/no-import-module-exports': 'error',
     'import/no-internal-modules': 'off',
