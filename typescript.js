@@ -28,6 +28,13 @@ module.exports = {
     '@typescript-eslint/func-call-spacing': 'error',
     '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/init-declarations': 'error',
+    '@typescript-eslint/key-spacing': [
+      'error',
+      {
+        afterColon: true,
+        beforeColon: false
+      }
+    ],
     '@typescript-eslint/keyword-spacing': [
       'error',
       {
@@ -180,6 +187,7 @@ module.exports = {
     'comma-dangle': 'off',
     'dot-notation': 'off',
     'init-declarations': 'off',
+    'key-spacing': 'off',
     'keyword-spacing': 'off',
     'lines-between-class-members': 'off',
     'no-dupe-class-members': 'off',
