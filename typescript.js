@@ -101,6 +101,7 @@ module.exports = {
     '@typescript-eslint/no-floating-promises': ['error', { ignoreVoid: true }],
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-implied-eval': 'error',
+    '@typescript-eslint/no-import-type-side-effects': 'error',
     '@typescript-eslint/no-inferrable-types': 'error',
     '@typescript-eslint/no-invalid-this': 'error',
     '@typescript-eslint/no-invalid-void-type': 'error',
