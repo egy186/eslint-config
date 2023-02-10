@@ -204,6 +204,7 @@ module.exports = {
     'object-curly-spacing': 'off',
     'padding-line-between-statements': 'off',
     'require-await': 'off',
+    semi: 'off',
     'space-before-blocks': 'off',
     'space-before-function-paren': 'off',
     'space-infix-ops': 'off'
