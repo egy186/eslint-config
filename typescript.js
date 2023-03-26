@@ -43,6 +43,7 @@ module.exports = {
         before: true
       }
     ],
+    '@typescript-eslint/lines-around-comment': 'off',
     '@typescript-eslint/lines-between-class-members': 'error',
     '@typescript-eslint/member-delimiter-style': 'error',
     '@typescript-eslint/member-ordering': 'error',
@@ -193,6 +194,7 @@ module.exports = {
     'init-declarations': 'off',
     'key-spacing': 'off',
     'keyword-spacing': 'off',
+    'lines-around-comment': 'off',
     'lines-between-class-members': 'off',
     'no-dupe-class-members': 'off',
     'no-extra-parens': 'off',
