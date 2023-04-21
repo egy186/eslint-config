@@ -24,7 +24,7 @@
     "typescript": "~5.0.4"
   },
   "engines": {
-    "node": ">=14.19.1"
+    "node": ">=16.19.1"
   },
   "files": [
     "base.js",
