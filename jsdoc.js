@@ -22,6 +22,7 @@ module.exports = {
     'jsdoc/multiline-blocks': 'error',
     'jsdoc/no-bad-blocks': 'error',
     'jsdoc/no-blank-block-descriptions': 'error',
+    'jsdoc/no-blank-blocks': 'error',
     'jsdoc/no-defaults': 'error',
     'jsdoc/no-missing-syntax': ['off', { contexts: [] }],
     'jsdoc/no-multi-asterisks': 'error',
