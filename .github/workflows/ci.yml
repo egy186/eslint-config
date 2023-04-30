@@ -35,6 +35,8 @@ jobs:
   publish:
     name: Publish
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
 
     needs: [lint, test]
 
@@ -45,7 +47,7 @@ jobs:
         node-version: lts/*
         registry-url: https://registry.npmjs.org/
         scope: egy186
-    - run: npm publish --access public
+    - run: npm publish --provenance --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       if: contains(github.ref, 'tags/v')
