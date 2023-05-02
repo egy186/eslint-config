@@ -52,7 +52,11 @@ module.exports = {
     'jsdoc/require-yields': 'error',
     'jsdoc/require-yields-check': 'error',
     'jsdoc/sort-tags': 'error',
-    'jsdoc/tag-lines': 'error',
+    'jsdoc/tag-lines': [
+      'error',
+      'never',
+      { startLines: 1 }
+    ],
     'jsdoc/text-escaping': ['error', { escapeHTML: true }],
     'jsdoc/valid-types': 'error'
   }
