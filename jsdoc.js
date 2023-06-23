@@ -16,6 +16,7 @@ module.exports = {
     'jsdoc/check-values': 'error',
     'jsdoc/empty-tags': 'error',
     'jsdoc/implements-on-classes': 'error',
+    'jsdoc/imports-as-dependencies': 'error',
     'jsdoc/informative-docs': 'error',
     'jsdoc/match-description': 'error',
     'jsdoc/match-name': 'off',
