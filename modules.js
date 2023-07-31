@@ -4,7 +4,7 @@ module.exports = {
   parserOptions: { sourceType: 'module' },
   plugins: ['import'],
   rules: {
-    'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
+    'import/consistent-type-specifier-style': 'error',
     'import/default': 'error',
     'import/dynamic-import-chunkname': 'error',
     'import/export': 'error',
