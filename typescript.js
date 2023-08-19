@@ -176,7 +176,7 @@ module.exports = {
     '@typescript-eslint/require-await': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/restrict-template-expressions': 'error',
-    '@typescript-eslint/return-await': 'error',
+    '@typescript-eslint/return-await': ['error', 'always'],
     '@typescript-eslint/semi': 'error',
     '@typescript-eslint/sort-type-constituents': 'error',
     '@typescript-eslint/space-before-blocks': 'error',
