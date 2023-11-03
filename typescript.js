@@ -46,6 +46,7 @@ module.exports = {
     ],
     '@typescript-eslint/lines-around-comment': 'off',
     '@typescript-eslint/lines-between-class-members': 'error',
+    '@typescript-eslint/max-params': 'error',
     '@typescript-eslint/member-delimiter-style': 'error',
     '@typescript-eslint/member-ordering': 'error',
     '@typescript-eslint/method-signature-style': 'error',
@@ -54,6 +55,10 @@ module.exports = {
       {
         format: ['camelCase'],
         selector: 'default'
+      },
+      {
+        format: ['camelCase', 'PascalCase'],
+        selector: 'import'
       },
       {
         format: ['camelCase', 'UPPER_CASE'],
@@ -151,6 +156,7 @@ module.exports = {
     '@typescript-eslint/padding-line-between-statements': 'error',
     '@typescript-eslint/parameter-properties': 'error',
     '@typescript-eslint/prefer-as-const': 'error',
+    '@typescript-eslint/prefer-destructuring': ['error', { enforceForDeclarationWithTypeAnnotation: true }],
     '@typescript-eslint/prefer-enum-initializers': 'error',
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'off',
@@ -199,6 +205,7 @@ module.exports = {
     'keyword-spacing': 'off',
     'lines-around-comment': 'off',
     'lines-between-class-members': 'off',
+    'max-params': 'off',
     'no-dupe-class-members': 'off',
     'no-extra-parens': 'off',
     'no-extra-semi': 'off',
@@ -212,6 +219,7 @@ module.exports = {
     'no-use-before-define': 'off',
     'object-curly-spacing': 'off',
     'padding-line-between-statements': 'off',
+    'prefer-destructuring': 'off',
     'require-await': 'off',
     semi: 'off',
     'space-before-blocks': 'off',
