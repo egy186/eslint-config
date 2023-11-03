@@ -156,7 +156,7 @@ module.exports = {
     '@typescript-eslint/padding-line-between-statements': 'error',
     '@typescript-eslint/parameter-properties': 'error',
     '@typescript-eslint/prefer-as-const': 'error',
-    '@typescript-eslint/prefer-destructuring': ['error', { enforceForDeclarationWithTypeAnnotation: true }],
+    '@typescript-eslint/prefer-destructuring': 'error',
     '@typescript-eslint/prefer-enum-initializers': 'error',
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'off',
