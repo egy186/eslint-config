@@ -26,21 +26,15 @@ module.exports = {
     'react/hook-use-state': 'error',
     'react/iframe-missing-sandbox': 'error',
     'react/jsx-boolean-value': 'error',
-    'react/jsx-child-element-spacing': 'error',
-    'react/jsx-closing-bracket-location': 'error',
-    'react/jsx-closing-tag-location': 'error',
-    'react/jsx-curly-brace-presence': [
-      'error',
-      {
-        children: 'ignore',
-        props: 'never'
-      }
-    ],
-    'react/jsx-curly-newline': ['error', 'never'],
-    'react/jsx-curly-spacing': 'error',
-    'react/jsx-equals-spacing': 'error',
+    'react/jsx-child-element-spacing': 'off', // Migrated to @stylistic/jsx-child-element-spacing
+    'react/jsx-closing-bracket-location': 'off', // Migrated to @stylistic/jsx-closing-bracket-location
+    'react/jsx-closing-tag-location': 'off', // Migrated to @stylistic/jsx-closing-tag-location
+    'react/jsx-curly-brace-presence': 'off', // Migrated to @stylistic/jsx-curly-brace-presence
+    'react/jsx-curly-newline': 'off', // Migrated to @stylistic/jsx-curly-newline
+    'react/jsx-curly-spacing': 'off', // Migrated to @stylistic/jsx-curly-spacing
+    'react/jsx-equals-spacing': 'off', // Migrated to @stylistic/jsx-equals-spacing
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
-    'react/jsx-first-prop-new-line': 'error',
+    'react/jsx-first-prop-new-line': 'off', // Migrated to @stylistic/jsx-first-prop-new-line
     'react/jsx-fragments': ['error', 'element'],
     'react/jsx-handler-names': [
       'error',
@@ -49,8 +43,8 @@ module.exports = {
         checkLocalVariables: true
       }
     ],
-    'react/jsx-indent': ['error', 2],
-    'react/jsx-indent-props': ['error', 2],
+    'react/jsx-indent': 'off', // Migrated to @stylistic/jsx-indent
+    'react/jsx-indent-props': 'off', // Migrated to @stylistic/jsx-indent-props
     'react/jsx-key': [
       'error',
       {
@@ -60,8 +54,8 @@ module.exports = {
       }
     ],
     'react/jsx-max-depth': 'error',
-    'react/jsx-max-props-per-line': 'error',
-    'react/jsx-newline': 'off',
+    'react/jsx-max-props-per-line': 'off', // Migrated to @stylistic/jsx-max-props-per-line
+    'react/jsx-newline': 'off', // Migrated to @stylistic/jsx-newline
     'react/jsx-no-bind': 'error',
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-constructed-context-values': 'error',
@@ -80,15 +74,15 @@ module.exports = {
     'react/jsx-no-target-blank': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-no-useless-fragment': 'error',
-    'react/jsx-one-expression-per-line': 'error',
+    'react/jsx-one-expression-per-line': 'off', // Migrated to @stylistic/jsx-one-expression-per-line
     'react/jsx-pascal-case': 'error',
-    'react/jsx-props-no-multi-spaces': 'error',
+    'react/jsx-props-no-multi-spaces': 'off', // Migrated to @stylistic/jsx-props-no-multi-spaces
     'react/jsx-props-no-spreading': 'off',
-    'react/jsx-sort-props': 'error',
-    'react/jsx-tag-spacing': ['error', { beforeClosing: 'never' }],
+    'react/jsx-sort-props': 'off', // Migrated to @stylistic/jsx-sort-props
+    'react/jsx-tag-spacing': 'off', // Migrated to @stylistic/jsx-tag-spacing
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
-    'react/jsx-wrap-multilines': 'error',
+    'react/jsx-wrap-multilines': 'off', // Migrated to @stylistic/jsx-wrap-multilines
     'react/no-access-state-in-setstate': 'error',
     'react/no-adjacent-inline-elements': 'error',
     'react/no-array-index-key': 'error',
@@ -129,7 +123,7 @@ module.exports = {
     'react/require-default-props': 'error',
     'react/require-optimization': 'error',
     'react/require-render-return': 'error',
-    'react/self-closing-comp': 'error',
+    'react/self-closing-comp': 'off', // Migrated to @stylistic/self-closing-comp
     'react/sort-comp': [
       'error',
       {

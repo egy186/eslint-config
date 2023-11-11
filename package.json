@@ -10,9 +10,11 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@eslint-stylistic/metadata": "~1.0.1",
+    "@stylistic/eslint-plugin": "~1.0.1",
     "@typescript-eslint/eslint-plugin": "~6.10.0",
     "@typescript-eslint/parser": "~6.10.0",
-    "eslint": "~8.52.0",
+    "eslint": "~8.53.0",
     "eslint-plugin-import": "~2.29.0",
     "eslint-plugin-jest": "~27.6.0",
     "eslint-plugin-jsdoc": "~46.9.0",
@@ -35,6 +37,7 @@
     "modules.js",
     "node.js",
     "react.js",
+    "stylistic.js",
     "typescript.js"
   ],
   "homepage": "https://github.com/egy186/eslint-config#readme",
@@ -45,6 +48,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
+    "@stylistic/eslint-plugin": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
     "eslint": "^8.50.0",
