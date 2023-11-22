@@ -40,8 +40,9 @@ module.exports = {
     '@stylistic/computed-property-spacing': ['error', 'never'],
     '@stylistic/dot-location': ['error', 'property'],
     '@stylistic/eol-last': 'error',
-    '@stylistic/func-call-spacing': ['error', 'never'],
+    '@stylistic/func-call-spacing': ['error', 'never'], // Alias of `@stylistic/function-call-spacing`
     '@stylistic/function-call-argument-newline': ['error', 'consistent'],
+    '@stylistic/function-call-spacing': ['error', 'never'],
     '@stylistic/function-paren-newline': ['error', 'multiline'],
     '@stylistic/generator-star-spacing': ['error', 'after'],
     '@stylistic/implicit-arrow-linebreak': ['error', 'beside'],

@@ -10,8 +10,8 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@eslint-stylistic/metadata": "~1.0.1",
-    "@stylistic/eslint-plugin": "~1.0.1",
+    "@eslint-stylistic/metadata": "~1.4.0",
+    "@stylistic/eslint-plugin": "~1.4.0",
     "@typescript-eslint/eslint-plugin": "~6.12.0",
     "@typescript-eslint/parser": "~6.12.0",
     "eslint": "~8.54.0",
@@ -48,7 +48,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "@stylistic/eslint-plugin": "^1.0.1",
+    "@stylistic/eslint-plugin": "^1.2.0",
     "@typescript-eslint/eslint-plugin": "^6.11.0",
     "@typescript-eslint/parser": "^6.11.0",
     "eslint": "^8.50.0",
