@@ -1,7 +1,10 @@
 'use strict';
 
 module.exports = {
-  parserOptions: { ecmaFeatures: { jsx: true } },
+  parserOptions: {
+    ecmaFeatures: { jsx: true },
+    jsxPragma: null
+  },
   plugins: ['react', 'react-hooks'],
   rules: {
     'react-hooks/exhaustive-deps': 'error',
@@ -80,7 +83,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-sort-props': 'off', // Migrated to @stylistic/jsx-sort-props
     'react/jsx-tag-spacing': 'off', // Migrated to @stylistic/jsx-tag-spacing
-    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-react': 'off',
     'react/jsx-uses-vars': 'error',
     'react/jsx-wrap-multilines': 'off', // Migrated to @stylistic/jsx-wrap-multilines
     'react/no-access-state-in-setstate': 'error',
@@ -119,7 +122,7 @@ module.exports = {
     'react/prefer-read-only-props': 'error',
     'react/prefer-stateless-function': 'error',
     'react/prop-types': 'error',
-    'react/react-in-jsx-scope': 'error',
+    'react/react-in-jsx-scope': 'off',
     'react/require-default-props': 'error',
     'react/require-optimization': 'error',
     'react/require-render-return': 'error',
