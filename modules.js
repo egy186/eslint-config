@@ -35,7 +35,7 @@ module.exports = {
     'import/no-named-default': 'error',
     'import/no-named-export': 'off',
     'import/no-namespace': 'error',
-    'import/no-nodejs-modules': 'error',
+    'import/no-nodejs-modules': 'off',
     'import/no-relative-packages': 'error',
     'import/no-relative-parent-imports': 'off',
     'import/no-restricted-paths': 'off',
