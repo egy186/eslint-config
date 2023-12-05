@@ -54,6 +54,7 @@ module.exports = {
         SwitchCase: 1
       }
     ],
+    '@stylistic/indent-binary-ops': ['error', 2],
     '@stylistic/jsx-child-element-spacing': 'error',
     '@stylistic/jsx-closing-bracket-location': 'error',
     '@stylistic/jsx-closing-tag-location': 'error',
@@ -165,6 +166,8 @@ module.exports = {
     '@stylistic/template-curly-spacing': ['error', 'never'],
     '@stylistic/template-tag-spacing': ['error', 'never'],
     '@stylistic/type-annotation-spacing': 'error',
+    '@stylistic/type-generic-spacing': 'error',
+    '@stylistic/type-named-tuple-spacing': 'error',
     '@stylistic/wrap-iife': ['error', 'inside'],
     '@stylistic/wrap-regex': 'off',
     '@stylistic/yield-star-spacing': [
