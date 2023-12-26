@@ -10,12 +10,8 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 'error',
     '@typescript-eslint/ban-tslint-comment': 'error',
     '@typescript-eslint/ban-types': 'error',
-    '@typescript-eslint/block-spacing': 'off', // Migrated to @stylistic/block-spacing
-    '@typescript-eslint/brace-style': 'error',
     '@typescript-eslint/class-literal-property-style': 'error',
     '@typescript-eslint/class-methods-use-this': 'error',
-    '@typescript-eslint/comma-dangle': 'off', // Migrated to @stylistic/comma-dangle
-    '@typescript-eslint/comma-spacing': 'error',
     '@typescript-eslint/consistent-generic-constructors': 'error',
     '@typescript-eslint/consistent-indexed-object-style': ['error', 'index-signature'],
     '@typescript-eslint/consistent-type-assertions': 'error',
@@ -27,15 +23,8 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'error',
     '@typescript-eslint/explicit-member-accessibility': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'error',
-    '@typescript-eslint/func-call-spacing': 'error',
-    '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/init-declarations': 'error',
-    '@typescript-eslint/key-spacing': 'off', // Migrated to @stylistic/key-spacing
-    '@typescript-eslint/keyword-spacing': 'off', // Migrated to @stylistic/keyword-spacing
-    '@typescript-eslint/lines-around-comment': 'off', // Migrated to @stylistic/lines-around-comment
-    '@typescript-eslint/lines-between-class-members': 'off', // Migrated to @stylistic/lines-between-class-members
     '@typescript-eslint/max-params': 'error',
-    '@typescript-eslint/member-delimiter-style': 'off', // Migrated to @stylistic/member-delimiter-style
     '@typescript-eslint/member-ordering': 'error',
     '@typescript-eslint/method-signature-style': 'error',
     '@typescript-eslint/naming-convention': [
@@ -85,8 +74,6 @@ module.exports = {
     '@typescript-eslint/no-empty-interface': 'error',
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/no-extra-non-null-assertion': 'error',
-    '@typescript-eslint/no-extra-parens': 'off', // Migrated to @stylistic/no-extra-parens
-    '@typescript-eslint/no-extra-semi': 'off', // Migrated to @stylistic/no-extra-semi
     '@typescript-eslint/no-extraneous-class': 'error',
     '@typescript-eslint/no-floating-promises': ['error', { ignoreVoid: true }],
     '@typescript-eslint/no-for-in-array': 'error',
@@ -135,7 +122,6 @@ module.exports = {
     '@typescript-eslint/no-useless-template-literals': 'error',
     '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/non-nullable-type-assertion-style': 'off',
-    '@typescript-eslint/padding-line-between-statements': 'off', // Migrated to @stylistic/padding-line-between-statements
     '@typescript-eslint/parameter-properties': 'error',
     '@typescript-eslint/prefer-as-const': 'error',
     '@typescript-eslint/prefer-destructuring': 'error',
@@ -155,25 +141,15 @@ module.exports = {
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     '@typescript-eslint/prefer-ts-expect-error': 'error',
     '@typescript-eslint/promise-function-async': 'error',
-    '@typescript-eslint/quotes': [
-      'error',
-      'single',
-      'avoid-escape'
-    ],
     '@typescript-eslint/require-array-sort-compare': 'error',
     '@typescript-eslint/require-await': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/restrict-template-expressions': 'error',
     '@typescript-eslint/return-await': ['error', 'always'],
-    '@typescript-eslint/semi': 'off', // Migrated to @stylistic/semi
     '@typescript-eslint/sort-type-constituents': 'error',
-    '@typescript-eslint/space-before-blocks': 'off', // Migrated to @stylistic/space-before-blocks
-    '@typescript-eslint/space-before-function-paren': 'off', // Migrated to @stylistic/space-before-function-paren
-    '@typescript-eslint/space-infix-ops': 'off', // Migrated to @stylistic/space-infix-ops
     '@typescript-eslint/strict-boolean-expressions': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
     '@typescript-eslint/triple-slash-reference': 'error',
-    '@typescript-eslint/type-annotation-spacing': 'off', // Migrated to @stylistic/type-annotation-spacing
     '@typescript-eslint/typedef': 'error',
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'error',
