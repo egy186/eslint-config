@@ -1,7 +1,9 @@
 {
   "extends": [
     "./index.js",
-    "./node.js",
-    "./jsdoc.js"
+    "./n.js"
+  ],
+  "ignorePatterns": [
+    "dist/**"
   ]
 }

@@ -12,6 +12,7 @@
   "devDependencies": {
     "@eslint-stylistic/metadata": "~1.5.1",
     "@stylistic/eslint-plugin": "~1.5.1",
+    "@types/node": "^20.10.5",
     "@typescript-eslint/eslint-plugin": "~6.16.0",
     "@typescript-eslint/parser": "~6.16.0",
     "eslint": "~8.56.0",
@@ -29,15 +30,13 @@
     "node": ">=16.19.1"
   },
   "files": [
-    "base.js",
+    "dist",
     "browser.js",
     "index.js",
     "jest.js",
-    "jsdoc.js",
     "modules.js",
     "node.js",
     "react.js",
-    "stylistic.js",
     "typescript.js"
   ],
   "homepage": "https://github.com/egy186/eslint-config#readme",
@@ -91,8 +90,11 @@
     "url": "git+https://github.com/egy186/eslint-config.git"
   },
   "scripts": {
+    "build": "tsc --build",
+    "clean": "npm run build -- --clean",
     "husky": "husky install",
-    "lint": "cd lib && eslint ..",
-    "test": "cd lib && node test.js"
+    "lint": "eslint .",
+    "test": "node lib/test.js",
+    "typecheck": "tsc --project tsconfig.base.json --noEmit"
   }
 }
