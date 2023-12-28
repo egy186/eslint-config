@@ -1,7 +1,6 @@
 {
   "extends": [
     "./index.js",
-    "./node.js",
-    "./jsdoc.js"
+    "./node.js"
   ]
 }

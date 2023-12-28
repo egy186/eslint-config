@@ -16,13 +16,13 @@ const stylisticRules = omitDeprecated(_.keyBy(require('@eslint-stylistic/metadat
 const typeScriptRules = omitDeprecated(require('@typescript-eslint/eslint-plugin').rules);
 
 // My rules
-const eslint = require('../base').rules;
+const eslint = require('../lib/base-rules');
 const jest = require('../jest').rules;
-const jsdoc = require('../jsdoc').rules;
+const jsdoc = require('../lib/jsdoc-rules');
 const modules = require('../modules').rules;
 const node = require('../node').rules;
 const react = require('../react').rules;
-const stylistic = require('../stylistic').rules;
+const stylistic = require('../lib/stylistic-rules');
 const typeScript = require('../typescript').rules;
 
 // Test

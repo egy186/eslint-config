@@ -6,9 +6,6 @@
   "bugs": {
     "url": "https://github.com/egy186/eslint-config/issues"
   },
-  "dependencies": {
-    "lodash": "^4.17.21"
-  },
   "devDependencies": {
     "@eslint-stylistic/metadata": "~1.5.1",
     "@stylistic/eslint-plugin": "~1.5.1",
@@ -22,6 +19,7 @@
     "eslint-plugin-react": "~7.33.2",
     "eslint-plugin-react-hooks": "~4.6.0",
     "husky": "^8.0.1",
+    "lodash": "^4.17.21",
     "require-dir": "^1.2.0",
     "typescript": "~5.3.3"
   },
@@ -29,6 +27,7 @@
     "node": ">=16.19.1"
   },
   "files": [
+    "lib",
     "base.js",
     "browser.js",
     "index.js",
@@ -93,6 +92,6 @@
   "scripts": {
     "husky": "husky install",
     "lint": "cd lib && eslint ..",
-    "test": "cd lib && node test.js"
+    "test": "cd test && node test.js"
   }
 }
