@@ -1,8 +1,8 @@
-'use strict';
-
 /* eslint max-lines: "off" */
 
-module.exports = {
+import type { ESLint } from 'eslint';
+
+const config = {
   ...{
     // Possible Problems
     'array-callback-return': ['error', { checkForEach: true }],
@@ -218,4 +218,6 @@ module.exports = {
     'line-comment-position': 'off',
     'unicode-bom': ['error', 'never']
   }
-};
+} satisfies ESLint.ConfigData['rules'];
+
+export default config;

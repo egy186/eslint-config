@@ -1,6 +1,6 @@
-'use strict';
+import type { ESLint } from 'eslint';
 
-module.exports = {
+const config = {
   'jsdoc/check-access': 'error',
   'jsdoc/check-alignment': 'error',
   'jsdoc/check-examples': 'off',
@@ -58,4 +58,6 @@ module.exports = {
   ],
   'jsdoc/text-escaping': ['error', { escapeHTML: true }],
   'jsdoc/valid-types': 'error'
-};
+} satisfies ESLint.ConfigData['rules'];
+
+export default config;

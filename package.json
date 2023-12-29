@@ -9,9 +9,12 @@
   "devDependencies": {
     "@eslint-stylistic/metadata": "~1.5.1",
     "@stylistic/eslint-plugin": "~1.5.1",
+    "@types/eslint": "^8.56.0",
+    "@types/node": "^20.10.5",
     "@typescript-eslint/eslint-plugin": "~6.16.0",
     "@typescript-eslint/parser": "~6.16.0",
     "eslint": "~8.56.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "~2.29.1",
     "eslint-plugin-jest": "~27.6.0",
     "eslint-plugin-jsdoc": "~46.9.1",
@@ -19,22 +22,20 @@
     "eslint-plugin-react": "~7.33.2",
     "eslint-plugin-react-hooks": "~4.6.0",
     "husky": "^8.0.1",
+    "jiti": "^1.21.0",
     "typescript": "~5.3.3"
   },
   "engines": {
     "node": ">=16.19.1"
   },
   "files": [
-    "lib",
-    "base.js",
+    "dist",
     "browser.js",
     "index.js",
     "jest.js",
-    "jsdoc.js",
     "modules.js",
     "node.js",
     "react.js",
-    "stylistic.js",
     "typescript.js"
   ],
   "homepage": "https://github.com/egy186/eslint-config#readme",
@@ -88,8 +89,12 @@
     "url": "git+https://github.com/egy186/eslint-config.git"
   },
   "scripts": {
+    "build": "tsc --build",
+    "clean": "npm run build -- --clean",
     "husky": "husky install",
-    "lint": "cd lib && eslint ..",
-    "test": "cd test && node test.js"
+    "lint": "eslint --ext .js,.ts .",
+    "prelint": "npm run build",
+    "test": "jiti test/test.ts",
+    "typecheck": "tsc --project tsconfig.base.json --noEmit"
   }
 }

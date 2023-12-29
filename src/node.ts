@@ -1,6 +1,6 @@
-'use strict';
+import type { ESLint } from 'eslint';
 
-module.exports = {
+const config = {
   env: { node: true },
   plugins: ['n'],
   rules: {
@@ -42,4 +42,6 @@ module.exports = {
     'n/process-exit-as-throw': 'error',
     'n/shebang': 'error'
   }
-};
+} satisfies ESLint.ConfigData;
+
+export default config;

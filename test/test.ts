@@ -1,17 +1,15 @@
-'use strict';
-
-const Tester = require('./tester');
-const allRules = require('./all-rules');
+import { Tester } from './tester.js';
+import { allRules } from './all-rules.js';
 
 // My rules
-const baseRules = require('../lib/base-rules');
-const jest = require('../jest');
-const jsdocRules = require('../lib/jsdoc-rules');
-const modules = require('../modules');
-const node = require('../node');
-const react = require('../react');
-const stylisticRules = require('../lib/stylistic-rules');
-const typeScript = require('../typescript');
+import baseRules from '../src/lib/base-rules.js';
+import jest from '../src/jest.js';
+import jsdocRules from '../src/lib/jsdoc-rules.js';
+import modules from '../src/modules.js';
+import node from '../src/node.js';
+import react from '../src/react.js';
+import stylisticRules from '../src/lib/stylistic-rules.js';
+import typeScript from '../src/typescript.js';
 
 // Test
 const tester = new Tester(allRules);
