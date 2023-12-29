@@ -6,9 +6,6 @@
   "bugs": {
     "url": "https://github.com/egy186/eslint-config/issues"
   },
-  "dependencies": {
-    "lodash": "^4.17.21"
-  },
   "devDependencies": {
     "@eslint-stylistic/metadata": "~1.5.1",
     "@stylistic/eslint-plugin": "~1.5.1",
@@ -23,7 +20,6 @@
     "eslint-plugin-react": "~7.33.2",
     "eslint-plugin-react-hooks": "~4.6.0",
     "husky": "^8.0.1",
-    "require-dir": "^1.2.0",
     "typescript": "~5.3.3"
   },
   "engines": {
@@ -94,7 +90,7 @@
     "clean": "npm run build -- --clean",
     "husky": "husky install",
     "lint": "eslint .",
-    "test": "node lib/test.js",
+    "test": "node test/test.js",
     "typecheck": "tsc --project tsconfig.base.json --noEmit"
   }
 }
