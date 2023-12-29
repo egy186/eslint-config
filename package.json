@@ -31,10 +31,9 @@
   "files": [
     "dist",
     "browser.js",
+    "commonjs.js",
     "index.js",
     "jest.js",
-    "modules.js",
-    "node.js",
     "react.js",
     "typescript.js"
   ],
@@ -93,7 +92,6 @@
     "clean": "npm run build -- --clean",
     "husky": "husky install",
     "lint": "eslint --ext .js,.ts .",
-    "prelint": "npm run build",
     "test": "jiti test/test.ts",
     "typecheck": "tsc --project tsconfig.base.json --noEmit"
   }

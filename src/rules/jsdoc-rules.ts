@@ -1,6 +1,6 @@
 import type { ESLint } from 'eslint';
 
-const config = {
+const rules = {
   'jsdoc/check-access': 'error',
   'jsdoc/check-alignment': 'error',
   'jsdoc/check-examples': 'off',
@@ -60,4 +60,4 @@ const config = {
   'jsdoc/valid-types': 'error'
 } satisfies ESLint.ConfigData['rules'];
 
-export default config;
+export default rules;

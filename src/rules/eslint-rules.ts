@@ -2,7 +2,7 @@
 
 import type { ESLint } from 'eslint';
 
-const config = {
+const rules = {
   ...{
     // Possible Problems
     'array-callback-return': ['error', { checkForEach: true }],
@@ -220,4 +220,4 @@ const config = {
   }
 } satisfies ESLint.ConfigData['rules'];
 
-export default config;
+export default rules;

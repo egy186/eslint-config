@@ -2,6 +2,7 @@ import type { ESLint } from 'eslint';
 
 const config = {
   parser: '@typescript-eslint/parser',
+  parserOptions: { sourceType: 'module' },
   plugins: ['@typescript-eslint'],
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
