@@ -1,13 +1,16 @@
 'use strict';
 
-const _ = require('lodash');
-const base = require('./base');
-const jsdoc = require('./jsdoc');
-const stylistic = require('./stylistic');
+const baseRules = require('./lib/base-rules');
+const jsdocRules = require('./lib/jsdoc-rules');
+const stylisticRules = require('./lib/stylistic-rules');
 
-module.exports = _.mergeWith(base, jsdoc, stylistic, (objValue, srcValue) => {
-  if (Array.isArray(objValue)) {
-    return objValue.concat(srcValue);
+module.exports = {
+  env: { es2022: true },
+  plugins: ['jsdoc', '@stylistic'],
+  reportUnusedDisableDirectives: true,
+  rules: {
+    ...baseRules,
+    ...jsdocRules,
+    ...stylisticRules
   }
-  return undefined;
-});
+};

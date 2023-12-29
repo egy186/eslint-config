@@ -1,6 +1,5 @@
 'use strict';
 
-const _ = require('lodash');
 const node = require('./node');
 
 module.exports = {
@@ -9,5 +8,5 @@ module.exports = {
     node: false
   },
   // Disable all node rules
-  rules: _.mapValues(node.rules, () => 'off')
+  rules: Object.fromEntries(Object.keys(node.rules).map(rule => [rule, 'off']))
 };
