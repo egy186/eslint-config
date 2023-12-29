@@ -1,6 +1,6 @@
-'use strict';
+import type { ESLint } from 'eslint';
 
-module.exports = {
+const config = {
   env: { jest: true },
   plugins: ['jest'],
   rules: {
@@ -59,4 +59,6 @@ module.exports = {
     'max-lines-per-function': 'off',
     'max-statements': 'off'
   }
-};
+} satisfies ESLint.ConfigData;
+
+export default config;

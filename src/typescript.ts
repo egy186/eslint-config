@@ -1,6 +1,6 @@
-'use strict';
+import type { ESLint } from 'eslint';
 
-module.exports = {
+const config = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   rules: {
@@ -170,4 +170,6 @@ module.exports = {
     'prefer-destructuring': 'off',
     'require-await': 'off'
   }
-};
+} satisfies ESLint.ConfigData;
+
+export default config;

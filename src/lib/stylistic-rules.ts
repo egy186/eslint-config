@@ -1,8 +1,8 @@
-'use strict';
-
 /* eslint max-lines: "off" */
 
-module.exports = {
+import type { ESLint } from 'eslint';
+
+const config = {
   '@stylistic/array-bracket-newline': 'error',
   '@stylistic/array-bracket-spacing': ['error', 'never'],
   '@stylistic/array-element-newline': [
@@ -48,7 +48,9 @@ module.exports = {
     'error',
     2,
     {
+      // eslint-disable-next-line @typescript-eslint/naming-convention
       MemberExpression: 1,
+      // eslint-disable-next-line @typescript-eslint/naming-convention
       SwitchCase: 1
     }
   ],
@@ -175,4 +177,6 @@ module.exports = {
       before: false
     }
   ]
-};
+} satisfies ESLint.ConfigData['rules'];
+
+export default config;

@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./dist/typescript');
+module.exports = require('./dist/typescript').default;

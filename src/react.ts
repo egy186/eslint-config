@@ -1,6 +1,6 @@
-'use strict';
+import type { ESLint } from 'eslint';
 
-module.exports = {
+const config = {
   parserOptions: {
     ecmaFeatures: { jsx: true },
     jsxPragma: null
@@ -147,4 +147,6 @@ module.exports = {
     'react/void-dom-elements-no-children': 'error'
   },
   settings: { react: { version: 'detect' } }
-};
+} satisfies ESLint.ConfigData;
+
+export default config;

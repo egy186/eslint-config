@@ -1,19 +1,17 @@
-'use strict';
-
 class Tester {
-  #expectedRules = [];
+  readonly #expectedRules: readonly string[] = [];
 
-  #pluginNameSeparator = '/';
+  readonly #pluginNameSeparator = '/';
 
-  constructor (expectedRules) {
+  public constructor (expectedRules: readonly string[]) {
     this.#expectedRules = expectedRules;
   }
 
-  static #exclude (array, values) {
+  static #exclude <T>(array: readonly T[], values: readonly T[]): readonly T[] {
     return array.filter(item => !values.includes(item));
   }
 
-  test (listed, pluginName) {
+  public test (listed: Readonly<{ readonly [key: string]: unknown }>, pluginName?: string): boolean {
     const listedKeys = this.#pickBy(Object.keys(listed), pluginName);
     const expectedKeys = this.#pickBy(this.#expectedRules, pluginName);
 
@@ -35,7 +33,7 @@ class Tester {
     return pass;
   }
 
-  #pickBy (rules, pluginName) {
+  #pickBy (rules: readonly string[], pluginName?: string): readonly string[] {
     return rules.filter(key => {
       if (typeof pluginName === 'string') {
         return key.startsWith(`${pluginName}${this.#pluginNameSeparator}`);
@@ -45,4 +43,6 @@ class Tester {
   }
 }
 
-module.exports = Tester;
+export { Tester };
+
+export default Tester;

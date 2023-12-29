@@ -1,6 +1,6 @@
-'use strict';
+import type { ESLint } from 'eslint';
 
-module.exports = {
+const config = {
   parserOptions: { sourceType: 'module' },
   plugins: ['import'],
   rules: {
@@ -50,4 +50,6 @@ module.exports = {
     'import/unambiguous': 'error',
     'no-duplicate-imports': 'off'
   }
-};
+} satisfies ESLint.ConfigData;
+
+export default config;

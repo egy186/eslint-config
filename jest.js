@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./dist/jest');
+module.exports = require('./dist/jest').default;
