@@ -2,7 +2,7 @@
 
 import type { ESLint } from 'eslint';
 
-const config = {
+const rules = {
   '@stylistic/array-bracket-newline': 'error',
   '@stylistic/array-bracket-spacing': ['error', 'never'],
   '@stylistic/array-element-newline': [
@@ -179,4 +179,4 @@ const config = {
   ]
 } satisfies ESLint.ConfigData['rules'];
 
-export default config;
+export default rules;

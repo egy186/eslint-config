@@ -1,7 +1,7 @@
 {
   "extends": [
     "./index.js",
-    "./n.js"
+    "./commonjs.js"
   ],
   "ignorePatterns": [
     "dist/**"
@@ -9,7 +9,6 @@
   "overrides": [
     {
       "extends": [
-        "./modules.js",
         "./typescript.js"
       ],
       "files": [

@@ -31,10 +31,9 @@
   "files": [
     "dist",
     "browser.js",
+    "commonjs.js",
     "index.js",
     "jest.js",
-    "modules.js",
-    "node.js",
     "react.js",
     "typescript.js"
   ],

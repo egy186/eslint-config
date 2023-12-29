@@ -1,7 +1,7 @@
 import type { RuleInfo } from '@eslint-stylistic/metadata';
 import eslint from 'eslint/use-at-your-own-risk';
 // @ts-expect-error TS7016
-// eslint-disable-next-line import/no-namespace, sort-imports
+// eslint-disable-next-line sort-imports
 import * as importPlugin from 'eslint-plugin-import';
 // @ts-expect-error TS7016
 import jestPlugin from 'eslint-plugin-jest';
