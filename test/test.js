@@ -1,41 +1,31 @@
 'use strict';
 
-const _ = require('lodash');
-const checkRules = require('./check-rules');
-const omitDeprecated = require('./omit-deprecated');
-
-// All rules
-const eslintRules = omitDeprecated(Object.fromEntries(require('eslint/use-at-your-own-risk').builtinRules));
-const importRules = omitDeprecated(require('eslint-plugin-import').rules);
-const jestRules = omitDeprecated(require('eslint-plugin-jest').rules);
-const jsdocRules = omitDeprecated(require('eslint-plugin-jsdoc').rules);
-const nRules = omitDeprecated(require('eslint-plugin-n').rules);
-const reactRules = omitDeprecated(require('eslint-plugin-react').rules);
-const reactHooksRules = omitDeprecated(require('eslint-plugin-react-hooks').rules);
-const stylisticRules = omitDeprecated(_.keyBy(require('@eslint-stylistic/metadata').rules, 'name'));
-const typeScriptRules = omitDeprecated(require('@typescript-eslint/eslint-plugin').rules);
+const Tester = require('./tester');
+const allRules = require('./all-rules');
 
 // My rules
-const eslint = require('../lib/base-rules');
-const jest = require('../jest').rules;
-const jsdoc = require('../lib/jsdoc-rules');
-const modules = require('../modules').rules;
-const node = require('../node').rules;
-const react = require('../react').rules;
-const stylistic = require('../lib/stylistic-rules');
-const typeScript = require('../typescript').rules;
+const baseRules = require('../lib/base-rules');
+const jest = require('../jest');
+const jsdocRules = require('../lib/jsdoc-rules');
+const modules = require('../modules');
+const node = require('../node');
+const react = require('../react');
+const stylisticRules = require('../lib/stylistic-rules');
+const typeScript = require('../typescript');
 
 // Test
-const pass = _.every([
-  checkRules(eslint, eslintRules),
-  checkRules(jest, jestRules, 'jest/'),
-  checkRules(jsdoc, jsdocRules, 'jsdoc/'),
-  checkRules(modules, importRules, 'import/'),
-  checkRules(node, nRules, 'n/'),
-  checkRules(react, reactRules, 'react/'),
-  checkRules(react, reactHooksRules, 'react-hooks/'),
-  checkRules(stylistic, stylisticRules, '@stylistic/'),
-  checkRules(typeScript, typeScriptRules, '@typescript-eslint/')
-]);
+const tester = new Tester(allRules);
+
+const pass = [
+  tester.test(baseRules),
+  tester.test(jest.rules, 'jest'),
+  tester.test(jsdocRules, 'jsdoc'),
+  tester.test(modules.rules, 'import'),
+  tester.test(node.rules, 'n'),
+  tester.test(react.rules, 'react-hooks'),
+  tester.test(react.rules, 'react'),
+  tester.test(stylisticRules, '@stylistic'),
+  tester.test(typeScript.rules, '@typescript-eslint')
+].every(isOk => isOk);
 
 process.exitCode = pass ? 0 : 1;

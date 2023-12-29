@@ -5,7 +5,7 @@ const jsdocRules = require('./lib/jsdoc-rules');
 const stylisticRules = require('./lib/stylistic-rules');
 
 module.exports = {
-  env: { es2021: true },
+  env: { es2022: true },
   plugins: ['jsdoc', '@stylistic'],
   reportUnusedDisableDirectives: true,
   rules: {
