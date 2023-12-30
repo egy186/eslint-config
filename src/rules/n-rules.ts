@@ -3,7 +3,7 @@ import type { ESLint } from 'eslint';
 const rules = {
   'n/callback-return': 'error',
   'n/exports-style': 'error',
-  'n/file-extension-in-import': 'error',
+  'n/file-extension-in-import': ['error', 'always'],
   'n/global-require': 'error',
   'n/handle-callback-err': ['error', '^(err|error)$'],
   'n/no-callback-literal': 'error',
