@@ -75,8 +75,7 @@ const config = {
   ],
   parserOptions: { sourceType: 'script' },
   // Disable all import rules
-  rules: Object.fromEntries(Object.entries(index.rules).filter(([name]) => !name.startsWith('import/'))),
-  settings: { 'import/resolver': { typescript: true } }
+  rules: Object.fromEntries(Object.entries(index.rules).filter(([name]) => !name.startsWith('import/')))
 };
 
 module.exports = config;
