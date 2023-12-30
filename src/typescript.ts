@@ -170,7 +170,8 @@ const config = {
     'no-use-before-define': 'off',
     'prefer-destructuring': 'off',
     'require-await': 'off'
-  }
+  },
+  settings: { 'import/resolver': { typescript: true } }
 } satisfies ESLint.ConfigData;
 
 export default config;
