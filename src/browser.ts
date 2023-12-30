@@ -6,8 +6,11 @@ const config = {
     browser: true,
     node: false
   },
-  // Disable all node rules
-  rules: Object.fromEntries(Object.keys(nodeRules).map(rule => [rule, 'off']))
+  rules: {
+    // Disable all node rules
+    ...Object.fromEntries(Object.keys(nodeRules).map(rule => [rule, 'off'])),
+    'import/no-nodejs-modules': 'error'
+  }
 } satisfies ESLint.ConfigData;
 
 export default config;
