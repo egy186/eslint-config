@@ -6,7 +6,11 @@ const rules = {
   'import/dynamic-import-chunkname': 'error',
   'import/export': 'error',
   'import/exports-last': 'error',
-  'import/extensions': ['error', 'always'],
+  'import/extensions': [
+    'error',
+    'always',
+    { ignorePackages: true }
+  ],
   'import/first': 'error',
   'import/group-exports': 'error',
   'import/max-dependencies': 'error',
