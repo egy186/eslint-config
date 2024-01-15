@@ -8,10 +8,11 @@ const rules = {
   'import/exports-last': 'error',
   'import/extensions': [
     'error',
+    'ignorePackages',
     {
-      ignorePackages: true,
-      js: 'always',
+      cts: 'never',
       jsx: 'never',
+      mts: 'never',
       ts: 'never',
       tsx: 'never'
     }
