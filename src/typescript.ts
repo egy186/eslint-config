@@ -67,6 +67,7 @@ const config = {
       }
     ],
     '@typescript-eslint/no-array-constructor': 'error',
+    '@typescript-eslint/no-array-delete': 'error',
     '@typescript-eslint/no-base-to-string': 'error',
     '@typescript-eslint/no-confusing-non-null-assertion': 'error',
     '@typescript-eslint/no-confusing-void-expression': ['error', { ignoreVoidOperator: true }],
@@ -137,6 +138,7 @@ const config = {
     '@typescript-eslint/prefer-namespace-keyword': 'error',
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/prefer-optional-chain': 'error',
+    '@typescript-eslint/prefer-promise-reject-errors': 'error',
     '@typescript-eslint/prefer-readonly': 'error',
     '@typescript-eslint/prefer-readonly-parameter-types': 'error',
     '@typescript-eslint/prefer-reduce-type-parameter': 'error',
@@ -172,6 +174,7 @@ const config = {
     'no-unused-expressions': 'off',
     'no-use-before-define': 'off',
     'prefer-destructuring': 'off',
+    'prefer-promise-reject-errors': 'off',
     'require-await': 'off'
   },
   settings: { 'import/resolver': { typescript: true } }
