@@ -7,13 +7,13 @@
     "url": "https://github.com/egy186/eslint-config/issues"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "~1.5.4",
+    "@stylistic/eslint-plugin": "~1.6.0",
     "eslint-plugin-import": "~2.29.1",
     "eslint-plugin-jsdoc": "~48.0.2",
     "eslint-plugin-n": "~16.6.2"
   },
   "devDependencies": {
-    "@eslint-stylistic/metadata": "~1.5.4",
+    "@eslint-stylistic/metadata": "~1.6.0",
     "@types/eslint": "^8.56.2",
     "@types/node": "^20.11.5",
     "@typescript-eslint/eslint-plugin": "~6.19.0",
