@@ -131,6 +131,7 @@ const config = {
     '@typescript-eslint/prefer-as-const': 'error',
     '@typescript-eslint/prefer-destructuring': 'error',
     '@typescript-eslint/prefer-enum-initializers': 'error',
+    '@typescript-eslint/prefer-find': 'error',
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'off',
     '@typescript-eslint/prefer-includes': 'error',
