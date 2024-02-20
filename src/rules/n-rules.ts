@@ -22,7 +22,7 @@ const rules = {
   'n/no-restricted-require': 'off',
   'n/no-sync': 'error',
   'n/no-unpublished-bin': 'error',
-  'n/no-unpublished-import': 'error',
+  'n/no-unpublished-import': ['error', { ignoreTypeImport: true }],
   'n/no-unpublished-require': 'error',
   'n/no-unsupported-features/es-builtins': 'error',
   'n/no-unsupported-features/es-syntax': 'error',
