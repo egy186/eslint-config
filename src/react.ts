@@ -11,6 +11,7 @@ const config = {
     'react-hooks/rules-of-hooks': 'error',
     'react/boolean-prop-naming': 'error',
     'react/button-has-type': 'error',
+    'react/checked-requires-onchange-or-readonly': 'error',
     'react/default-props-match-prop-types': 'error',
     'react/destructuring-assignment': ['error', 'always'],
     'react/display-name': 'error',
