@@ -160,7 +160,7 @@ const config = {
     '@typescript-eslint/triple-slash-reference': 'error',
     '@typescript-eslint/typedef': 'error',
     '@typescript-eslint/unbound-method': 'error',
-    '@typescript-eslint/unified-signatures': 'error',
+    '@typescript-eslint/unified-signatures': ['error', { ignoreDifferentlyNamedParameters: true }],
     camelcase: 'off',
     'class-methods-use-this': 'off',
     'consistent-return': 'off',
