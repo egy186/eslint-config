@@ -161,6 +161,7 @@ const config = {
     '@typescript-eslint/typedef': 'error',
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': ['error', { ignoreDifferentlyNamedParameters: true }],
+    '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
     camelcase: 'off',
     'class-methods-use-this': 'off',
     'consistent-return': 'off',
