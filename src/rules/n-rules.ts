@@ -6,6 +6,7 @@ const rules = {
   'n/file-extension-in-import': ['error', 'always'],
   'n/global-require': 'error',
   'n/handle-callback-err': ['error', '^(err|error)$'],
+  'n/hashbang': 'error',
   'n/no-callback-literal': 'error',
   'n/no-deprecated-api': 'error',
   'n/no-exports-assign': 'error',
@@ -34,10 +35,10 @@ const rules = {
   'n/prefer-global/text-encoder': 'error',
   'n/prefer-global/url': 'error',
   'n/prefer-global/url-search-params': 'error',
+  'n/prefer-node-protocol': 'error',
   'n/prefer-promises/dns': 'error',
   'n/prefer-promises/fs': 'error',
-  'n/process-exit-as-throw': 'error',
-  'n/shebang': 'error'
+  'n/process-exit-as-throw': 'error'
 } satisfies ESLint.ConfigData['rules'];
 
 export default rules;

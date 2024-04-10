@@ -6,7 +6,6 @@ import * as importPlugin from 'eslint-plugin-import';
 // @ts-expect-error TS7016
 import jestPlugin from 'eslint-plugin-jest';
 import jsdocPlugin from 'eslint-plugin-jsdoc';
-// @ts-expect-error TS7016
 import nPlugin from 'eslint-plugin-n';
 // @ts-expect-error TS7016
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
