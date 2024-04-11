@@ -1,6 +1,7 @@
 import type { ESLint } from 'eslint';
 
 const config = {
+  env: { jest: true },
   plugins: ['jest'],
   rules: {
     'jest/consistent-test-it': 'error',
@@ -38,7 +39,7 @@ const config = {
     'jest/prefer-expect-resolves': 'error',
     'jest/prefer-hooks-in-order': 'error',
     'jest/prefer-hooks-on-top': 'error',
-    'jest/prefer-importing-jest-globals': 'error',
+    'jest/prefer-importing-jest-globals': 'off',
     'jest/prefer-lowercase-title': 'error',
     'jest/prefer-mock-promise-shorthand': 'error',
     'jest/prefer-snapshot-hint': 'error',
@@ -57,8 +58,7 @@ const config = {
     'jest/valid-expect-in-promise': 'error',
     'jest/valid-title': 'error',
     'max-lines-per-function': 'off',
-    'max-statements': 'off',
-    'n/no-unpublished-import': ['error', { allowModules: ['@jest/globals'] }]
+    'max-statements': 'off'
   }
 } satisfies ESLint.ConfigData;
 
