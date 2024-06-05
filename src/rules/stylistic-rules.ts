@@ -38,7 +38,8 @@ const rules = {
   '@stylistic/computed-property-spacing': ['error', 'never'],
   '@stylistic/dot-location': ['error', 'property'],
   '@stylistic/eol-last': 'error',
-  '@stylistic/func-call-spacing': ['error', 'never'], // Alias of `@stylistic/function-call-spacing`
+  // Alias of `@stylistic/function-call-spacing`
+  '@stylistic/func-call-spacing': ['error', 'never'],
   '@stylistic/function-call-argument-newline': ['error', 'consistent'],
   '@stylistic/function-call-spacing': ['error', 'never'],
   '@stylistic/function-paren-newline': ['error', 'multiline'],
@@ -69,6 +70,7 @@ const rules = {
   '@stylistic/jsx-curly-spacing': 'error',
   '@stylistic/jsx-equals-spacing': 'error',
   '@stylistic/jsx-first-prop-new-line': 'error',
+  '@stylistic/jsx-function-call-newline': 'error',
   '@stylistic/jsx-indent': ['error', 2],
   '@stylistic/jsx-indent-props': ['error', 2],
   '@stylistic/jsx-max-props-per-line': 'error',
@@ -95,12 +97,14 @@ const rules = {
       before: true
     }
   ],
+  '@stylistic/line-comment-position': 'error',
   '@stylistic/linebreak-style': 'error',
   '@stylistic/lines-around-comment': 'off',
   '@stylistic/lines-between-class-members': 'error',
   '@stylistic/max-len': 'off',
   '@stylistic/max-statements-per-line': 'error',
   '@stylistic/member-delimiter-style': 'error',
+  '@stylistic/multiline-comment-style': 'error',
   '@stylistic/multiline-ternary': ['error', 'always-multiline'],
   '@stylistic/new-parens': 'error',
   '@stylistic/newline-per-chained-call': 'off',

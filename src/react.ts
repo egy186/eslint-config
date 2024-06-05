@@ -30,15 +30,23 @@ const config = {
     'react/hook-use-state': 'error',
     'react/iframe-missing-sandbox': 'error',
     'react/jsx-boolean-value': 'error',
-    'react/jsx-child-element-spacing': 'off', // Migrated to @stylistic/jsx-child-element-spacing
-    'react/jsx-closing-bracket-location': 'off', // Migrated to @stylistic/jsx-closing-bracket-location
-    'react/jsx-closing-tag-location': 'off', // Migrated to @stylistic/jsx-closing-tag-location
-    'react/jsx-curly-brace-presence': 'off', // Migrated to @stylistic/jsx-curly-brace-presence
-    'react/jsx-curly-newline': 'off', // Migrated to @stylistic/jsx-curly-newline
-    'react/jsx-curly-spacing': 'off', // Migrated to @stylistic/jsx-curly-spacing
-    'react/jsx-equals-spacing': 'off', // Migrated to @stylistic/jsx-equals-spacing
+    // Migrated to @stylistic/jsx-child-element-spacing
+    'react/jsx-child-element-spacing': 'off',
+    // Migrated to @stylistic/jsx-closing-bracket-location
+    'react/jsx-closing-bracket-location': 'off',
+    // Migrated to @stylistic/jsx-closing-tag-location
+    'react/jsx-closing-tag-location': 'off',
+    // Migrated to @stylistic/jsx-curly-brace-presence
+    'react/jsx-curly-brace-presence': 'off',
+    // Migrated to @stylistic/jsx-curly-newline
+    'react/jsx-curly-newline': 'off',
+    // Migrated to @stylistic/jsx-curly-spacing
+    'react/jsx-curly-spacing': 'off',
+    // Migrated to @stylistic/jsx-equals-spacing
+    'react/jsx-equals-spacing': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
-    'react/jsx-first-prop-new-line': 'off', // Migrated to @stylistic/jsx-first-prop-new-line
+    // Migrated to @stylistic/jsx-first-prop-new-line
+    'react/jsx-first-prop-new-line': 'off',
     'react/jsx-fragments': ['error', 'element'],
     'react/jsx-handler-names': [
       'error',
@@ -47,8 +55,10 @@ const config = {
         checkLocalVariables: true
       }
     ],
-    'react/jsx-indent': 'off', // Migrated to @stylistic/jsx-indent
-    'react/jsx-indent-props': 'off', // Migrated to @stylistic/jsx-indent-props
+    // Migrated to @stylistic/jsx-indent
+    'react/jsx-indent': 'off',
+    // Migrated to @stylistic/jsx-indent-props
+    'react/jsx-indent-props': 'off',
     'react/jsx-key': [
       'error',
       {
@@ -58,8 +68,10 @@ const config = {
       }
     ],
     'react/jsx-max-depth': 'error',
-    'react/jsx-max-props-per-line': 'off', // Migrated to @stylistic/jsx-max-props-per-line
-    'react/jsx-newline': 'off', // Migrated to @stylistic/jsx-newline
+    // Migrated to @stylistic/jsx-max-props-per-line
+    'react/jsx-max-props-per-line': 'off',
+    // Migrated to @stylistic/jsx-newline
+    'react/jsx-newline': 'off',
     'react/jsx-no-bind': 'error',
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-constructed-context-values': 'error',
@@ -78,15 +90,20 @@ const config = {
     'react/jsx-no-target-blank': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-no-useless-fragment': 'error',
-    'react/jsx-one-expression-per-line': 'off', // Migrated to @stylistic/jsx-one-expression-per-line
+    // Migrated to @stylistic/jsx-one-expression-per-line
+    'react/jsx-one-expression-per-line': 'off',
     'react/jsx-pascal-case': 'error',
-    'react/jsx-props-no-multi-spaces': 'off', // Migrated to @stylistic/jsx-props-no-multi-spaces
+    // Migrated to @stylistic/jsx-props-no-multi-spaces
+    'react/jsx-props-no-multi-spaces': 'off',
     'react/jsx-props-no-spreading': 'off',
-    'react/jsx-sort-props': 'off', // Migrated to @stylistic/jsx-sort-props
-    'react/jsx-tag-spacing': 'off', // Migrated to @stylistic/jsx-tag-spacing
+    // Migrated to @stylistic/jsx-sort-props
+    'react/jsx-sort-props': 'off',
+    // Migrated to @stylistic/jsx-tag-spacing
+    'react/jsx-tag-spacing': 'off',
     'react/jsx-uses-react': 'off',
     'react/jsx-uses-vars': 'error',
-    'react/jsx-wrap-multilines': 'off', // Migrated to @stylistic/jsx-wrap-multilines
+    // Migrated to @stylistic/jsx-wrap-multilines
+    'react/jsx-wrap-multilines': 'off',
     'react/no-access-state-in-setstate': 'error',
     'react/no-adjacent-inline-elements': 'error',
     'react/no-array-index-key': 'error',
@@ -127,7 +144,8 @@ const config = {
     'react/require-default-props': 'error',
     'react/require-optimization': 'error',
     'react/require-render-return': 'error',
-    'react/self-closing-comp': 'off', // Migrated to @stylistic/self-closing-comp
+    // Migrated to @stylistic/self-closing-comp
+    'react/self-closing-comp': 'off',
     'react/sort-comp': [
       'error',
       {
