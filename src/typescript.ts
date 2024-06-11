@@ -153,7 +153,6 @@ const config = {
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/restrict-template-expressions': 'error',
     '@typescript-eslint/return-await': ['error', 'always'],
-    '@typescript-eslint/sort-type-constituents': 'error',
     '@typescript-eslint/strict-boolean-expressions': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
     '@typescript-eslint/triple-slash-reference': 'error',
