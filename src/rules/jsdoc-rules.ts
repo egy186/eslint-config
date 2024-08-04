@@ -10,6 +10,7 @@ const rules = {
   'jsdoc/check-property-names': 'error',
   'jsdoc/check-syntax': 'error',
   'jsdoc/check-tag-names': 'error',
+  'jsdoc/check-template-names': 'error',
   'jsdoc/check-types': 'error',
   'jsdoc/check-values': 'error',
   'jsdoc/convert-to-jsdoc-comments': 'off',
