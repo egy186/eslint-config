@@ -42,6 +42,7 @@ const rulesToRuleNames = (rules: Rules, pluginName?: string): readonly string[] 
     return name;
   });
 
+// eslint-disable-next-line @typescript-eslint/no-deprecated
 const eslintRules = rulesToRuleNames(Object.fromEntries(eslint.builtinRules));
 const importRules = rulesToRuleNames((importPlugin as Plugin).rules, 'import');
 const jestRules = rulesToRuleNames((jestPlugin as Plugin).rules, 'jest');
