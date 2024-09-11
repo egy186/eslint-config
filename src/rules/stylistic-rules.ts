@@ -134,7 +134,7 @@ const rules = {
   '@stylistic/no-trailing-spaces': 'error',
   '@stylistic/no-whitespace-before-property': 'error',
   '@stylistic/nonblock-statement-body-position': 'error',
-  '@stylistic/object-curly-newline': ['error', { multiline: true }],
+  '@stylistic/object-curly-newline': 'error',
   '@stylistic/object-curly-spacing': ['error', 'always'],
   '@stylistic/object-property-newline': 'error',
   '@stylistic/one-var-declaration-per-line': 'off',
