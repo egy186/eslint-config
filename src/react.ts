@@ -95,6 +95,7 @@ const config = {
     'react/jsx-pascal-case': 'error',
     // Migrated to @stylistic/jsx-props-no-multi-spaces
     'react/jsx-props-no-multi-spaces': 'off',
+    'react/jsx-props-no-spread-multi': 'error',
     'react/jsx-props-no-spreading': 'off',
     // Migrated to @stylistic/jsx-sort-props
     'react/jsx-sort-props': 'off',
