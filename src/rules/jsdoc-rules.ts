@@ -18,6 +18,7 @@ const rules = {
   'jsdoc/implements-on-classes': 'error',
   'jsdoc/imports-as-dependencies': 'error',
   'jsdoc/informative-docs': 'error',
+  'jsdoc/lines-before-block': 'error',
   'jsdoc/match-description': 'error',
   'jsdoc/match-name': 'off',
   'jsdoc/multiline-blocks': 'error',
