@@ -8,62 +8,49 @@
 npm install @egy186/eslint-config
 ```
 
-## `.eslintrc.json`
+## `eslint.config.js`
 
-Node.js, ESM:
+Node.js:
 
-```json
-{
-  "extends": [
-    "@egy186/eslint-config"
-  ]
-}
-```
+```js
+import base from '@egy186/eslint-config';
 
-Node.js, CommonJS:
-
-```json
-{
-  "extends": [
-    "@egy186/eslint-config",
-    "@egy186/eslint-config/commonjs"
-  ]
-}
+export default [
+  {
+    ...base,
+    files: ['**/*.js']
+  }
+];
 ```
 
 Browser, React:
 
-```json
-{
-  "extends": [
-    "@egy186/eslint-config",
-    "@egy186/eslint-config/browser",
-    "@egy186/eslint-config/react"
-  ]
-}
+```js
+import base from '@egy186/eslint-config';
+import browser from '@egy186/eslint-config/browser';
+import react from '@egy186/eslint-config/react';
+
+export default [
+  base,
+  browser,
+  react
+];
 ```
 
 TypeScript:
 
-```json
-{
-  "extends": [
-    "@egy186/eslint-config",
-    "@egy186/eslint-config/typescript"
-  ],
-  "parserOptions": {
-    "project": "./path/to/tsconfig.json"
-  }
-}
+```js
+import base from '@egy186/eslint-config';
+import typescript from '@egy186/eslint-config/typescript';
+
+export default [base, typescript];
 ```
 
 Jest:
 
-```json
-{
-  "extends": [
-    "@egy186/eslint-config",
-    "@egy186/eslint-config/jest"
-  ]
-}
+```js
+import base from '@egy186/eslint-config';
+import jest from '@egy186/eslint-config/jest';
+
+export default [base, jest];
 ```

@@ -1,11 +1,22 @@
-import type { ESLint } from 'eslint';
+import type { ESLint, Linter } from 'eslint';
+import { fixupPluginRules } from '@eslint/compat';
+// @ts-expect-error TS7016
+import react from 'eslint-plugin-react';
+// @ts-expect-error TS7016
+import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 const config = {
-  parserOptions: {
-    ecmaFeatures: { jsx: true },
-    jsxPragma: null
+  files: ['**/*.{jsx,tsx}'],
+  languageOptions: {
+    parserOptions: {
+      ecmaFeatures: { jsx: true },
+      jsxPragma: null
+    }
   },
-  plugins: ['react', 'react-hooks'],
+  plugins: {
+    react: react as ESLint.Plugin,
+    'react-hooks': fixupPluginRules(reactHooksPlugin as ESLint.Plugin)
+  },
   rules: {
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
@@ -167,6 +178,6 @@ const config = {
     'react/void-dom-elements-no-children': 'error'
   },
   settings: { react: { version: 'detect' } }
-} satisfies ESLint.ConfigData;
+} satisfies Linter.FlatConfig;
 
 export default config;

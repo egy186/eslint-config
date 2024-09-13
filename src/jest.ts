@@ -1,8 +1,16 @@
-import type { ESLint } from 'eslint';
+import type { ESLint, Linter } from 'eslint';
+import globals from 'globals';
+// @ts-expect-error TS7016
+import jest from 'eslint-plugin-jest';
 
 const config = {
-  env: { jest: true },
-  plugins: ['jest'],
+  files: ['**/*.{js,jsx,mjs,cjs}', '**/*.{ts,tsx,mts,cts}'],
+  languageOptions: {
+    globals: {
+      ...globals.jest
+    }
+  },
+  plugins: { jest: jest as ESLint.Plugin },
   rules: {
     'jest/consistent-test-it': 'error',
     'jest/expect-expect': 'error',
@@ -69,6 +77,6 @@ const config = {
     'max-lines-per-function': 'off',
     'max-statements': 'off'
   }
-} satisfies ESLint.ConfigData;
+} satisfies Linter.FlatConfig;
 
 export default config;

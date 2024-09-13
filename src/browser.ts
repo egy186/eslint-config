@@ -1,16 +1,21 @@
-import type { ESLint } from 'eslint';
-import nodeRules from './rules/n-rules.js';
+import type { ESLint, Linter } from 'eslint';
+// @ts-expect-error TS7016
+import { flatConfigs } from 'eslint-plugin-import';
+import globals from 'globals';
 
 const config = {
-  env: {
-    browser: true,
-    node: false
+  files: ['**/*.{js,jsx,mjs,cjs}', '**/*.{ts,tsx,mts,cts}'],
+  languageOptions: {
+    globals: {
+      ...globals.browser
+    }
+  },
+  plugins: {
+    import: (flatConfigs as { recommended: { plugins: { import: ESLint.Plugin } } }).recommended.plugins.import
   },
   rules: {
-    // Disable all node rules
-    ...Object.fromEntries(Object.keys(nodeRules).map(rule => [rule, 'off'])),
     'import/no-nodejs-modules': 'error'
   }
-} satisfies ESLint.ConfigData;
+} satisfies Linter.FlatConfig;
 
 export default config;
