@@ -33,32 +33,7 @@
   "engines": {
     "node": ">=18.18.0"
   },
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    },
-    "./browser": {
-      "types": "./dist/browser.d.ts",
-      "default": "./dist/browser.js"
-    },
-    "./commonjs": {
-      "types": "./dist/commonjs.d.ts",
-      "default": "./dist/commonjs.js"
-    },
-    "./jest": {
-      "types": "./dist/jest.d.ts",
-      "default": "./dist/jest.js"
-    },
-    "./react": {
-      "types": "./dist/react.d.ts",
-      "default": "./dist/react.js"
-    },
-    "./typescript": {
-      "types": "./dist/typescript.d.ts",
-      "default": "./dist/typescript.js"
-    }
-  },
+  "exports": "./dist/index.js",
   "files": [
     "dist"
   ],
@@ -114,5 +89,6 @@
     "test": "jiti test/test.ts",
     "typecheck": "tsc --project tsconfig.base.json --noEmit"
   },
-  "type": "module"
+  "type": "module",
+  "types": "./dist/index.d.ts"
 }

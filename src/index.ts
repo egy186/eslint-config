@@ -1,56 +1,6 @@
-import type { ESLint, Linter } from 'eslint';
-import eslintRules from './rules/eslint-rules.js';
-// @ts-expect-error TS7016
-import { flatConfigs } from 'eslint-plugin-import';
-import globals from 'globals';
-import importRules from './rules/import-rules.js';
-import jsdoc from 'eslint-plugin-jsdoc';
-import jsdocRules from './rules/jsdoc-rules.js';
-import nPlugin from 'eslint-plugin-n';
-import nRules from './rules/n-rules.js';
-import stylistic from '@stylistic/eslint-plugin';
-// eslint-disable-next-line import/max-dependencies
-import stylisticRules from './rules/stylistic-rules.js';
-
-const config = {
-  files: ['**/*.{js,jsx,mjs}', '**/*.{ts,tsx,mts}'],
-  languageOptions: {
-    globals: {
-      ...globals.es2023,
-      ...globals.node
-    },
-    parserOptions: {
-      ecmaVersion: 2023
-    },
-    sourceType: 'module'
-  },
-  linterOptions: {
-    reportUnusedDisableDirectives: true
-  },
-  plugins: {
-    '@stylistic': stylistic as ESLint.Plugin,
-    import: (flatConfigs as { recommended: { plugins: { import: ESLint.Plugin } } }).recommended.plugins.import,
-    jsdoc,
-    n: nPlugin
-  },
-  rules: {
-    ...eslintRules,
-    ...importRules,
-    ...jsdocRules,
-    ...nRules,
-    ...stylisticRules
-  },
-  settings: {
-    'import/parsers': {
-      espree: [
-        '.js',
-        '.jsx',
-        '.mjs',
-        '.cjs'
-      ]
-    },
-    'import/resolver': { node: true }
-  }
-} satisfies Linter.FlatConfig;
-
-export default config;
+export { default as base, default } from './base.js';
+export { default as browser } from './browser.js';
+export { default as commonjs } from './commonjs.js';
+export { default as jest } from './jest.js';
+export { default as react } from './react.js';
+export { default as typescript } from './typescript.js';

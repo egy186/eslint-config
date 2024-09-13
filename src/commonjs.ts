@@ -1,16 +1,16 @@
 import type { Linter } from 'eslint';
+import base from './base.js';
 import importRules from './rules/import-rules.js';
-import index from './index.js';
 
 const config = {
-  ...index,
+  ...base,
   files: ['**/*.{cjs,cts}'],
   languageOptions: {
-    ...index.languageOptions,
+    ...base.languageOptions,
     sourceType: 'commonjs'
   },
   rules: {
-    ...index.rules,
+    ...base.rules,
     // Disable all import rules
     ...Object.fromEntries(Object.keys(importRules).map(rule => [rule, 'off']))
   }

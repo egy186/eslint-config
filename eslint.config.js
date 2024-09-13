@@ -1,13 +1,12 @@
 import jiti from 'jiti';
 
 const req = jiti(import.meta.filename);
-const index = req('./src/index.ts').default;
-const typescript = req('./src/typescript.ts').default;
+const { base, typescript } = req('./src/index.ts');
 
 /** @satisfies {import('eslint').Linter.FlatConfig[]} */
 const config = [
   { ignores: ['dist/**/*'] },
-  index,
+  base,
   {
     ...typescript,
     languageOptions: {
