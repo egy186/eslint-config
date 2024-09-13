@@ -4,6 +4,7 @@ const req = jiti(import.meta.filename);
 const index = req('./src/index.ts').default;
 const typescript = req('./src/typescript.ts').default;
 
+/** @satisfies {import('eslint').Linter.FlatConfig[]} */
 const config = [
   { ignores: ['dist/**/*'] },
   index,
@@ -13,7 +14,8 @@ const config = [
       ...typescript.languageOptions,
       parserOptions: {
         ...typescript.languageOptions.parserOptions,
-        project: './tsconfig.base.json'
+        project: './tsconfig.base.json',
+        projectService: false
       }
     },
     rules: {

@@ -6,7 +6,7 @@ const config = {
   languageOptions: {
     parser: tseslint.parser as Linter.FlatConfigParserModule,
     parserOptions: {
-      project: true,
+      projectService: true,
       sourceType: 'module'
     }
   },
