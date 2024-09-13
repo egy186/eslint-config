@@ -10,7 +10,7 @@ npm install @egy186/eslint-config
 
 ## `eslint.config.js`
 
-Node.js:
+Node.js, ESM:
 
 ```js
 import base from '@egy186/eslint-config';
@@ -21,6 +21,14 @@ export default [
     files: ['**/*.js']
   }
 ];
+```
+
+Node.js, CommonJS:
+
+```js
+import commonjs from '@egy186/eslint-config/commonjs';
+
+export default [commonjs];
 ```
 
 Browser, React:
