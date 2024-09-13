@@ -10,8 +10,8 @@ import nPlugin from 'eslint-plugin-n';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 // @ts-expect-error TS7016
 import reactPlugin from 'eslint-plugin-react';
-import stylisticPluginMetadata from '@eslint-stylistic/metadata';
-import typescriptPlugin from 'typescript-eslint';
+import { rules as stylisticPluginRules } from '@eslint-stylistic/metadata';
+import { plugin as typescriptPlugin } from 'typescript-eslint';
 
 interface Rule {
   readonly meta?: Readonly<object>;
@@ -49,8 +49,8 @@ const nRules = rulesToRuleNames((nPlugin as Plugin).rules, 'n');
 const reactHooksRules = rulesToRuleNames((reactHooksPlugin as Plugin).rules, 'react-hooks');
 const reactRules = rulesToRuleNames((reactPlugin as Plugin).rules, 'react');
 // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
-const stylisticRules = rulesToRuleNames(Object.fromEntries(stylisticPluginMetadata.rules.map((rule: RuleInfo) => [rule.name, rule])), '@stylistic');
-const typescriptRules = rulesToRuleNames(typescriptPlugin.plugin.rules as Rules, '@typescript-eslint');
+const stylisticRules = rulesToRuleNames(Object.fromEntries(stylisticPluginRules.map((rule: RuleInfo) => [rule.name, rule])), '@stylistic');
+const typescriptRules = rulesToRuleNames(typescriptPlugin.rules as Rules, '@typescript-eslint');
 
 const allRules = [
   ...eslintRules,
