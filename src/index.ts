@@ -13,11 +13,14 @@ import stylistic from '@stylistic/eslint-plugin';
 import stylisticRules from './rules/stylistic-rules.js';
 
 const config = {
-  files: ['**/*.{js,jsx,mjs,cjs}', '**/*.{ts,tsx,mts,cts}'],
+  files: ['**/*.{js,jsx,mjs}', '**/*.{ts,tsx,mts}'],
   languageOptions: {
     globals: {
       ...globals.es2023,
       ...globals.node
+    },
+    parserOptions: {
+      ecmaVersion: 2023
     },
     sourceType: 'module'
   },
@@ -36,6 +39,16 @@ const config = {
     ...jsdocRules,
     ...nRules,
     ...stylisticRules
+  },
+  settings: {
+    'import/parsers': {
+      espree: [
+        '.js',
+        '.jsx',
+        '.mjs',
+        '.cjs'
+      ]
+    }
   }
 } satisfies Linter.FlatConfig;
 

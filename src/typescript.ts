@@ -1,17 +1,17 @@
 import type { ESLint, Linter } from 'eslint';
-import tseslint from 'typescript-eslint';
+import { parser, plugin } from 'typescript-eslint';
 
 const config = {
   files: ['**/*.{ts,tsx,mts,cts}'],
   languageOptions: {
-    parser: tseslint.parser as Linter.FlatConfigParserModule,
+    parser: parser as Linter.FlatConfigParserModule,
     parserOptions: {
       projectService: true,
       sourceType: 'module'
     }
   },
   plugins: {
-    '@typescript-eslint': tseslint.plugin as ESLint.Plugin
+    '@typescript-eslint': plugin as ESLint.Plugin
   },
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
@@ -201,7 +201,21 @@ const config = {
     'prefer-promise-reject-errors': 'off',
     'require-await': 'off'
   },
-  settings: { 'import/resolver': { typescript: true } }
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': [
+        '.js',
+        '.jsx',
+        '.mjs',
+        '.cjs',
+        '.ts',
+        '.tsx',
+        '.mts',
+        '.cts'
+      ]
+    },
+    'import/resolver': { typescript: true }
+  }
 } satisfies Linter.FlatConfig;
 
 export default config;
