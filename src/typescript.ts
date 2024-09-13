@@ -124,7 +124,14 @@ const config = {
     '@typescript-eslint/no-unsafe-return': 'error',
     '@typescript-eslint/no-unsafe-unary-minus': 'error',
     '@typescript-eslint/no-unused-expressions': ['error', { enforceForJSX: true }],
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '^_',
+        caughtErrorsIgnorePattern: '^_',
+        destructuredArrayIgnorePattern: '^_'
+      }
+    ],
     '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/no-useless-empty-export': 'error',
