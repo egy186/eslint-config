@@ -48,7 +48,8 @@ const config = {
         '.mjs',
         '.cjs'
       ]
-    }
+    },
+    'import/resolver': { node: true }
   }
 } satisfies Linter.FlatConfig;
 
