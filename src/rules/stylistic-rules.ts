@@ -182,6 +182,6 @@ const rules = {
       before: false
     }
   ]
-} satisfies ESLint.ConfigData['rules'];
+} as const satisfies ESLint.ConfigData['rules'];
 
 export default rules;

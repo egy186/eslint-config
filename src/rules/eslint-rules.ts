@@ -218,6 +218,6 @@ const rules = {
     'line-comment-position': 'off',
     'unicode-bom': ['error', 'never']
   }
-} satisfies ESLint.ConfigData['rules'];
+} as const satisfies ESLint.ConfigData['rules'];
 
 export default rules;

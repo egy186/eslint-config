@@ -51,6 +51,6 @@ const config = {
     },
     'import/resolver': { node: true }
   }
-} satisfies Linter.FlatConfig;
+} as const satisfies Linter.FlatConfig;
 
 export default config;

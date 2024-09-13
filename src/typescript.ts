@@ -216,6 +216,6 @@ const config = {
     },
     'import/resolver': { typescript: true }
   }
-} satisfies Linter.FlatConfig;
+} as const satisfies Linter.FlatConfig;
 
 export default config;

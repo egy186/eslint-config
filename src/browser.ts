@@ -16,6 +16,6 @@ const config = {
   rules: {
     'import/no-nodejs-modules': 'error'
   }
-} satisfies Linter.FlatConfig;
+} as const satisfies Linter.FlatConfig;
 
 export default config;

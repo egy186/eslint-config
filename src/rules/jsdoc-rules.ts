@@ -62,6 +62,6 @@ const rules = {
   ],
   'jsdoc/text-escaping': ['error', { escapeHTML: true }],
   'jsdoc/valid-types': 'error'
-} satisfies ESLint.ConfigData['rules'];
+} as const satisfies ESLint.ConfigData['rules'];
 
 export default rules;

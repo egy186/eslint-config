@@ -178,6 +178,6 @@ const config = {
     'react/void-dom-elements-no-children': 'error'
   },
   settings: { react: { version: 'detect' } }
-} satisfies Linter.FlatConfig;
+} as const satisfies Linter.FlatConfig;
 
 export default config;

@@ -14,6 +14,6 @@ const config = {
     // Disable all import rules
     ...Object.fromEntries(Object.keys(importRules).map(rule => [rule, 'off']))
   }
-} satisfies Linter.FlatConfig;
+} as const satisfies Linter.FlatConfig;
 
 export default config;
