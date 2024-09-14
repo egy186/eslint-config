@@ -1,20 +1,22 @@
-import type { ESLint, Linter } from 'eslint';
-// @ts-expect-error TS7016
-import { flatConfigs } from 'eslint-plugin-import';
+import type { Linter } from 'eslint';
+import base from './base.js';
 import globals from 'globals';
 
 const config = {
-  files: ['**/*.{js,jsx,mjs,cjs}', '**/*.{ts,tsx,mts,cts}'],
+  ...base,
   languageOptions: {
+    ...base.languageOptions,
     globals: {
+      ...globals.es2023,
       ...globals.browser
     }
   },
-  plugins: {
-    import: (flatConfigs as { recommended: { plugins: { import: ESLint.Plugin } } }).recommended.plugins.import
-  },
   rules: {
-    'import/no-nodejs-modules': 'error'
+    ...base.rules,
+    'import/no-nodejs-modules': 'error',
+    'n/no-unsupported-features/es-builtins': 'off',
+    'n/no-unsupported-features/es-syntax': 'off',
+    'n/no-unsupported-features/node-builtins': 'off'
   }
 } as const satisfies Linter.FlatConfig;
 
