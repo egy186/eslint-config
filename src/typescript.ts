@@ -225,4 +225,18 @@ const config = {
   }
 } as const satisfies Linter.FlatConfig;
 
+const typescriptConfig = (parserOptions: Readonly<{ project: string }>): Linter.FlatConfig => ({
+  ...config,
+  languageOptions: {
+    ...config.languageOptions,
+    parserOptions: {
+      ...config.languageOptions.parserOptions,
+      projectService: false,
+      ...parserOptions
+    }
+  }
+}) as const satisfies Linter.FlatConfig;
+
+export { typescriptConfig };
+
 export default config;

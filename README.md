@@ -38,6 +38,14 @@ import { base, typescript } from '@egy186/eslint-config';
 export default [base, typescript];
 ```
 
+TypeScript, tsconfig:
+
+```js
+import { base, typescriptConfig } from '@egy186/eslint-config';
+
+export default [base, typescriptConfig({ project: 'path/to/tsconfig.eslint.json' })];
+```
+
 Jest:
 
 ```js

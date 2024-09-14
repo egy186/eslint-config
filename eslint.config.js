@@ -1,7 +1,9 @@
 import jiti from 'jiti';
 
 const req = jiti(import.meta.filename);
-const { base, typescript } = req('./src/index.ts');
+const { base, typescriptConfig } = req('./src/index.ts');
+
+const typescript = typescriptConfig({ project: './tsconfig.base.json' });
 
 /** @satisfies {import('eslint').Linter.FlatConfig[]} */
 const config = [
@@ -9,14 +11,6 @@ const config = [
   base,
   {
     ...typescript,
-    languageOptions: {
-      ...typescript.languageOptions,
-      parserOptions: {
-        ...typescript.languageOptions.parserOptions,
-        project: './tsconfig.base.json',
-        projectService: false
-      }
-    },
     rules: {
       ...typescript.rules,
       '@typescript-eslint/naming-convention': [
