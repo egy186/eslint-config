@@ -214,7 +214,14 @@ const config = {
         '.cts'
       ]
     },
-    'import/resolver': { typescript: true }
+    'import/resolver': { typescript: true },
+    n: {
+      typescriptExtensionMap: [
+        ['.ts', '.js'],
+        ['.mts', '.mjs'],
+        ['.tsx', '.js']
+      ]
+    }
   }
 } as const satisfies Linter.FlatConfig;
 
