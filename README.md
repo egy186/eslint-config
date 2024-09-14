@@ -25,13 +25,9 @@ export { commonjs as default } from '@egy186/eslint-config';
 Browser, React:
 
 ```js
-import { base, browser, react } from '@egy186/eslint-config';
+import { browser, react } from '@egy186/eslint-config';
 
-export default [
-  base,
-  browser,
-  react
-];
+export default [browser, react];
 ```
 
 TypeScript:
@@ -45,8 +41,7 @@ export default [base, typescript];
 Jest:
 
 ```js
-import base from '@egy186/eslint-config';
-import jest from '@egy186/eslint-config/jest';
+import { base, jest } from '@egy186/eslint-config';
 
 export default [base, jest];
 ```
