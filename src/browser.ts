@@ -1,16 +1,23 @@
-import type { ESLint } from 'eslint';
-import nodeRules from './rules/n-rules.js';
+import type { Linter } from 'eslint';
+import base from './base.js';
+import globals from 'globals';
 
 const config = {
-  env: {
-    browser: true,
-    node: false
+  ...base,
+  languageOptions: {
+    ...base.languageOptions,
+    globals: {
+      ...globals.es2023,
+      ...globals.browser
+    }
   },
   rules: {
-    // Disable all node rules
-    ...Object.fromEntries(Object.keys(nodeRules).map(rule => [rule, 'off'])),
-    'import/no-nodejs-modules': 'error'
+    ...base.rules,
+    'import/no-nodejs-modules': 'error',
+    'n/no-unsupported-features/es-builtins': 'off',
+    'n/no-unsupported-features/es-syntax': 'off',
+    'n/no-unsupported-features/node-builtins': 'off'
   }
-} satisfies ESLint.ConfigData;
+} as const satisfies Linter.FlatConfig;
 
 export default config;

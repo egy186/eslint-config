@@ -39,6 +39,6 @@ const rules = {
   'n/prefer-promises/dns': 'error',
   'n/prefer-promises/fs': 'error',
   'n/process-exit-as-throw': 'error'
-} satisfies ESLint.ConfigData['rules'];
+} as const satisfies ESLint.ConfigData['rules'];
 
 export default rules;

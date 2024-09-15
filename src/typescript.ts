@@ -1,12 +1,18 @@
-import type { ESLint } from 'eslint';
+import type { ESLint, Linter } from 'eslint';
+import { parser, plugin } from 'typescript-eslint';
 
 const config = {
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    project: true,
-    sourceType: 'module'
+  files: ['**/*.{ts,tsx,mts,cts}'],
+  languageOptions: {
+    parser: parser as Linter.FlatConfigParserModule,
+    parserOptions: {
+      projectService: true,
+      sourceType: 'module'
+    }
   },
-  plugins: ['@typescript-eslint'],
+  plugins: {
+    '@typescript-eslint': plugin as ESLint.Plugin
+  },
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'error',
@@ -195,7 +201,42 @@ const config = {
     'prefer-promise-reject-errors': 'off',
     'require-await': 'off'
   },
-  settings: { 'import/resolver': { typescript: true } }
-} satisfies ESLint.ConfigData;
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': [
+        '.js',
+        '.jsx',
+        '.mjs',
+        '.cjs',
+        '.ts',
+        '.tsx',
+        '.mts',
+        '.cts'
+      ]
+    },
+    'import/resolver': { typescript: true },
+    n: {
+      typescriptExtensionMap: [
+        ['.ts', '.js'],
+        ['.mts', '.mjs'],
+        ['.tsx', '.js']
+      ]
+    }
+  }
+} as const satisfies Linter.FlatConfig;
+
+const typescriptConfig = (parserOptions: Readonly<{ project: string }>): Linter.FlatConfig => ({
+  ...config,
+  languageOptions: {
+    ...config.languageOptions,
+    parserOptions: {
+      ...config.languageOptions.parserOptions,
+      projectService: false,
+      ...parserOptions
+    }
+  }
+}) as const satisfies Linter.FlatConfig;
+
+export { typescriptConfig };
 
 export default config;

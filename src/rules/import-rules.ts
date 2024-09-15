@@ -56,6 +56,6 @@ const rules = {
   'import/prefer-default-export': 'error',
   'import/unambiguous': 'error',
   'no-duplicate-imports': 'off'
-} satisfies ESLint.ConfigData['rules'];
+} as const satisfies ESLint.ConfigData['rules'];
 
 export default rules;

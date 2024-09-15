@@ -1,30 +1,6 @@
-import type { ESLint } from 'eslint';
-import eslintRules from './rules/eslint-rules.js';
-import importRules from './rules/import-rules.js';
-import jsdocRules from './rules/jsdoc-rules.js';
-import nRules from './rules/n-rules.js';
-import stylisticRules from './rules/stylistic-rules.js';
-
-const config = {
-  env: {
-    es2022: true,
-    node: true
-  },
-  parserOptions: { sourceType: 'module' },
-  plugins: [
-    'import',
-    'jsdoc',
-    'n',
-    '@stylistic'
-  ],
-  reportUnusedDisableDirectives: true,
-  rules: {
-    ...eslintRules,
-    ...importRules,
-    ...jsdocRules,
-    ...nRules,
-    ...stylisticRules
-  }
-} satisfies ESLint.ConfigData;
-
-export default config;
+export { default as base, default } from './base.js';
+export { default as browser } from './browser.js';
+export { default as commonjs } from './commonjs.js';
+export { default as jest } from './jest.js';
+export { default as react } from './react.js';
+export { default as typescript, typescriptConfig } from './typescript.js';
