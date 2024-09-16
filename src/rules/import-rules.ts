@@ -3,7 +3,7 @@ import type { ESLint } from 'eslint';
 const rules = {
   'import/consistent-type-specifier-style': 'error',
   'import/default': 'error',
-  'import/dynamic-import-chunkname': 'error',
+  'import/dynamic-import-chunkname': 'off',
   'import/export': 'error',
   'import/exports-last': 'error',
   'import/extensions': [
