@@ -180,4 +180,6 @@ const config = {
   settings: { react: { version: 'detect' } }
 } as const satisfies Linter.FlatConfig;
 
+export { config as react };
+
 export default config;

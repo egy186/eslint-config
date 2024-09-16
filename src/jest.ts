@@ -79,4 +79,6 @@ const config = {
   }
 } as const satisfies Linter.FlatConfig;
 
+export { config as jest };
+
 export default config;

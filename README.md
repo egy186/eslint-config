@@ -25,7 +25,8 @@ export { commonjs as default } from '@egy186/eslint-config';
 Browser, React:
 
 ```js
-import { browser, react } from '@egy186/eslint-config';
+import { browser } from '@egy186/eslint-config';
+import { react } from '@egy186/eslint-config/react';
 
 export default [browser, react];
 ```
@@ -33,7 +34,8 @@ export default [browser, react];
 TypeScript:
 
 ```js
-import { base, typescript } from '@egy186/eslint-config';
+import { base } from '@egy186/eslint-config';
+import { typescript } from '@egy186/eslint-config/typescript';
 
 export default [base, typescript];
 ```
@@ -41,7 +43,8 @@ export default [base, typescript];
 TypeScript, tsconfig:
 
 ```js
-import { base, typescriptConfig } from '@egy186/eslint-config';
+import { base } from '@egy186/eslint-config';
+import { typescriptConfig } from '@egy186/eslint-config/typescript';
 
 export default [base, typescriptConfig({ project: 'path/to/tsconfig.eslint.json' })];
 ```
@@ -49,7 +52,8 @@ export default [base, typescriptConfig({ project: 'path/to/tsconfig.eslint.json'
 Jest:
 
 ```js
-import { base, jest } from '@egy186/eslint-config';
+import { base } from '@egy186/eslint-config';
+import { jest } from '@egy186/eslint-config/jest';
 
 export default [base, jest];
 ```

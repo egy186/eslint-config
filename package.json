@@ -33,7 +33,24 @@
   "engines": {
     "node": ">=18.18.0"
   },
-  "exports": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./jest": {
+      "types": "./dist/jest.d.ts",
+      "default": "./dist/jest.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "default": "./dist/react.js"
+    },
+    "./typescript": {
+      "types": "./dist/typescript.d.ts",
+      "default": "./dist/typescript.js"
+    }
+  },
   "files": [
     "dist"
   ],

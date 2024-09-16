@@ -237,6 +237,6 @@ const typescriptConfig = (parserOptions: Readonly<{ project: readonly string[] |
   }
 }) as const satisfies Linter.FlatConfig;
 
-export { typescriptConfig };
+export { config as typescript, typescriptConfig };
 
 export default config;

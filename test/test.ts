@@ -4,12 +4,12 @@ import { allRules } from './all-rules.js';
 // My rules
 import eslintRules from '../src/rules/eslint-rules.js';
 import importRules from '../src/rules/import-rules.js';
-import jest from '../src/jest.js';
+import { jest } from '../src/jest.js';
 import jsdocRules from '../src/rules/jsdoc-rules.js';
 import nRules from '../src/rules/n-rules.js';
-import react from '../src/react.js';
+import { react } from '../src/react.js';
 import stylisticRules from '../src/rules/stylistic-rules.js';
-import typescript from '../src/typescript.js';
+import { typescript } from '../src/typescript.js';
 
 // Test
 const tester = new Tester(allRules);
