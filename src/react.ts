@@ -31,6 +31,7 @@ const config = {
     'react/forbid-elements': 'off',
     'react/forbid-foreign-prop-types': 'error',
     'react/forbid-prop-types': 'error',
+    'react/forward-ref-uses-ref': 'error',
     'react/function-component-definition': [
       'error',
       {
