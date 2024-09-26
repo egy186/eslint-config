@@ -1,8 +1,8 @@
-import jiti from 'jiti';
+import { createJiti } from 'jiti';
 
-const req = jiti(import.meta.filename);
-const { base } = req('./src/index.ts');
-const { typescriptConfig } = req('./src/typescript.ts');
+const jiti = createJiti(import.meta.url);
+const { base } = await jiti.import('./src/index.ts');
+const { typescriptConfig } = await jiti.import('./src/typescript.ts');
 
 const typescript = typescriptConfig({ project: './tsconfig.base.json' });
 
