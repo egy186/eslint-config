@@ -1,6 +1,5 @@
 import type { ESLint, Linter } from 'eslint';
 import { fixupPluginRules } from '@eslint/compat';
-// @ts-expect-error TS7016
 import react from 'eslint-plugin-react';
 // @ts-expect-error TS7016
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
