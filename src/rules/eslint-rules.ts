@@ -58,6 +58,7 @@ const rules = {
     'no-unused-private-class-members': 'error',
     'no-unused-vars': 'error',
     'no-use-before-define': 'error',
+    'no-useless-assignment': 'error',
     'no-useless-backreference': 'error',
     'require-atomic-updates': 'error',
     'use-isnan': 'error',
