@@ -25,7 +25,7 @@ const config = {
     sourceType: 'module'
   },
   linterOptions: {
-    reportUnusedDisableDirectives: true
+    reportUnusedDisableDirectives: 'error'
   },
   plugins: {
     '@stylistic': stylistic as ESLint.Plugin,
