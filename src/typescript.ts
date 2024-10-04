@@ -4,7 +4,7 @@ import { parser, plugin } from 'typescript-eslint';
 const config = {
   files: ['**/*.{ts,tsx,mts,cts}'],
   languageOptions: {
-    parser: parser as Linter.FlatConfigParserModule,
+    parser: parser as Linter.Parser,
     parserOptions: {
       projectService: true,
       sourceType: 'module'
@@ -223,9 +223,9 @@ const config = {
       ]
     }
   }
-} as const satisfies Linter.FlatConfig;
+} as const satisfies Linter.Config;
 
-const typescriptConfig = (parserOptions: Readonly<{ project: readonly string[] | boolean | string }>): Linter.FlatConfig => ({
+const typescriptConfig = (parserOptions: Readonly<{ project: readonly string[] | boolean | string }>): Linter.Config => ({
   ...config,
   languageOptions: {
     ...config.languageOptions,
@@ -235,7 +235,7 @@ const typescriptConfig = (parserOptions: Readonly<{ project: readonly string[] |
       ...parserOptions
     }
   }
-}) as const satisfies Linter.FlatConfig;
+}) as const satisfies Linter.Config;
 
 export { config as typescript, typescriptConfig };
 

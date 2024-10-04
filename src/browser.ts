@@ -18,6 +18,6 @@ const config = {
     'n/no-unsupported-features/es-syntax': 'off',
     'n/no-unsupported-features/node-builtins': 'off'
   }
-} as const satisfies Linter.FlatConfig;
+} as const satisfies Linter.Config;
 
 export default config;

@@ -38,7 +38,6 @@ const rules = {
     'no-loss-of-precision': 'error',
     'no-misleading-character-class': 'error',
     'no-new-native-nonconstructor': 'error',
-    'no-new-symbol': 'error',
     'no-obj-calls': 'error',
     'no-promise-executor-return': 'error',
     'no-prototype-builtins': 'error',
@@ -57,14 +56,7 @@ const rules = {
     'no-unsafe-negation': 'error',
     'no-unsafe-optional-chaining': ['error', { disallowArithmeticOperators: true }],
     'no-unused-private-class-members': 'error',
-    'no-unused-vars': [
-      'error',
-      {
-        args: 'after-used',
-        caughtErrors: 'all',
-        vars: 'all'
-      }
-    ],
+    'no-unused-vars': 'error',
     'no-use-before-define': 'error',
     'no-useless-backreference': 'error',
     'require-atomic-updates': 'error',
@@ -105,7 +97,6 @@ const rules = {
     'max-nested-callbacks': 'error',
     'max-params': 'off',
     'max-statements': 'warn',
-    'multiline-comment-style': 'error',
     'new-cap': 'error',
     'no-alert': 'error',
     'no-array-constructor': 'error',
@@ -215,7 +206,6 @@ const rules = {
   },
   ...{
     // Layout & Formatting
-    'line-comment-position': 'off',
     'unicode-bom': ['error', 'never']
   }
 } as const satisfies ESLint.ConfigData['rules'];

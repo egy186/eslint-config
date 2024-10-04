@@ -15,11 +15,11 @@
   },
   "devDependencies": {
     "@eslint-stylistic/metadata": "~2.8.0",
-    "@eslint/js": "~8.57.0",
-    "@types/eslint": "^8.56.12",
+    "@eslint/js": "~9.11.1",
+    "@types/eslint": "^9.6.1",
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^20.16.10",
-    "eslint": "~8.57.1",
+    "eslint": "~9.11.1",
     "eslint-import-resolver-typescript": "~3.6.3",
     "eslint-plugin-jest": "~28.8.3",
     "eslint-plugin-react": "~7.37.1",
@@ -61,7 +61,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "peerDependencies": {
-    "eslint": "^8.50.0",
+    "eslint": "^9.11.1",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-jest": "^28.8.3",
     "eslint-plugin-react": "^7.36.1",
@@ -99,7 +99,7 @@
   "scripts": {
     "build": "tsc --build",
     "clean": "npm run build -- --clean",
-    "lint": "eslint .",
+    "lint": "eslint",
     "prepare": "husky",
     "test": "jiti test/test.ts",
     "typecheck": "tsc --project tsconfig.base.json --noEmit"

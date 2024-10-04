@@ -77,7 +77,7 @@ const config = {
     'max-lines-per-function': 'off',
     'max-statements': 'off'
   }
-} as const satisfies Linter.FlatConfig;
+} as const satisfies Linter.Config;
 
 export { config as jest };
 
