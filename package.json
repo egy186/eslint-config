@@ -15,7 +15,6 @@
   },
   "devDependencies": {
     "@eslint-stylistic/metadata": "~2.8.0",
-    "@eslint/compat": "~1.1.1",
     "@eslint/js": "~8.57.0",
     "@types/eslint": "^8.56.12",
     "@types/eslint__js": "^8.42.3",
@@ -24,7 +23,7 @@
     "eslint-import-resolver-typescript": "~3.6.3",
     "eslint-plugin-jest": "~28.8.3",
     "eslint-plugin-react": "~7.37.1",
-    "eslint-plugin-react-hooks": "~4.6.2",
+    "eslint-plugin-react-hooks": "~5.1.0-rc-459fd418-20241001",
     "husky": "^9.1.6",
     "jiti": "^1.21.6",
     "typescript": "~5.5.4",
@@ -62,12 +61,11 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "peerDependencies": {
-    "@eslint/compat": "^1.1.1",
     "eslint": "^8.50.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-jest": "^28.8.3",
     "eslint-plugin-react": "^7.36.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc-459fd418-20241001",
     "typescript": "^5.0.4",
     "typescript-eslint": "^8.5.0"
   },
