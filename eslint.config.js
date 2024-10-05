@@ -1,14 +1,10 @@
-import createJiti from 'jiti';
+import { createJiti } from 'jiti';
 
 const jiti = createJiti(import.meta.url);
-const { base } = jiti('./src/index.ts');
-const { typescriptConfig } = jiti('./src/typescript.ts');
+const { base } = await jiti.import('./src/index.ts');
+const { typescriptConfig } = await jiti.import('./src/typescript.ts');
 
-const typescript = typescriptConfig({
-  projectService: {
-    allowDefaultProject: ['test/*.ts']
-  }
-});
+const typescript = typescriptConfig({ projectService: { allowDefaultProject: ['test/*.ts'] } });
 
 /** @satisfies {import('eslint').Linter.FlatConfig[]} */
 const config = [
