@@ -1,5 +1,8 @@
 import type { ESLint, Linter } from 'eslint';
 import { parser, plugin } from 'typescript-eslint';
+import type { configs } from 'typescript-eslint';
+
+type ParserOptions = NonNullable<(NonNullable<typeof configs.base.languageOptions>)['parserOptions']>;
 
 const config = {
   files: ['**/*.{ts,tsx,mts,cts}'],
@@ -230,16 +233,16 @@ const config = {
   }
 } as const satisfies Linter.FlatConfig;
 
-const typescriptConfig = (parserOptions: Readonly<{ project: readonly string[] | boolean | string }>): Linter.FlatConfig => ({
+// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
+const typescriptConfig = (parserOptions: ParserOptions): Linter.FlatConfig => ({
   ...config,
   languageOptions: {
     ...config.languageOptions,
     parserOptions: {
-      ...config.languageOptions.parserOptions,
-      projectService: false,
+      sourceType: 'module',
       ...parserOptions
     }
-  }
+  } as Linter.FlatConfig['languageOptions']
 }) as const satisfies Linter.FlatConfig;
 
 export { config as typescript, typescriptConfig };
