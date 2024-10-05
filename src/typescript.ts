@@ -1,5 +1,8 @@
 import type { ESLint, Linter } from 'eslint';
 import { parser, plugin } from 'typescript-eslint';
+import type { configs } from 'typescript-eslint';
+
+type ParserOptions = NonNullable<(NonNullable<typeof configs.base.languageOptions>)['parserOptions']>;
 
 const config = {
   files: ['**/*.{ts,tsx,mts,cts}'],
@@ -181,6 +184,11 @@ const config = {
     'consistent-return': 'off',
     'default-param-last': 'off',
     'dot-notation': 'off',
+    'import/default': 'off',
+    'import/named': 'off',
+    'import/namespace': 'off',
+    'import/no-named-as-default-member': 'off',
+    'import/no-unresolved': 'off',
     'init-declarations': 'off',
     'max-params': 'off',
     'no-array-constructor': 'off',
@@ -225,16 +233,16 @@ const config = {
   }
 } as const satisfies Linter.Config;
 
-const typescriptConfig = (parserOptions: Readonly<{ project: readonly string[] | boolean | string }>): Linter.Config => ({
+// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
+const typescriptConfig = (parserOptions: ParserOptions): Linter.Config => ({
   ...config,
   languageOptions: {
     ...config.languageOptions,
     parserOptions: {
-      ...config.languageOptions.parserOptions,
-      projectService: false,
+      sourceType: 'module',
       ...parserOptions
     }
-  }
+  } as Linter.Config['languageOptions']
 }) as const satisfies Linter.Config;
 
 export { config as typescript, typescriptConfig };

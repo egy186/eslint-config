@@ -36,6 +36,7 @@ const rules = {
   ],
   '@stylistic/comma-style': ['error', 'last'],
   '@stylistic/computed-property-spacing': ['error', 'never'],
+  '@stylistic/curly-newline': ['error', 'always'],
   '@stylistic/dot-location': ['error', 'property'],
   '@stylistic/eol-last': 'error',
   // Alias of `@stylistic/function-call-spacing`
