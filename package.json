@@ -104,7 +104,7 @@
     "lint": "eslint .",
     "prepare": "husky",
     "test": "jiti test/test.ts",
-    "typecheck": "tsc --project tsconfig.base.json --noEmit"
+    "typecheck": "tsc --project tsconfig.typecheck.json"
   },
   "type": "module",
   "types": "./dist/index.d.ts"
