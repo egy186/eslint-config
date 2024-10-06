@@ -46,7 +46,7 @@ TypeScript, tsconfig:
 import { base } from '@egy186/eslint-config';
 import { typescriptConfig } from '@egy186/eslint-config/typescript';
 
-export default [base, typescriptConfig({ project: 'path/to/tsconfig.eslint.json' })];
+export default [base, typescriptConfig({ projectService: { allowDefaultProject: ['*.ts'] } })];
 ```
 
 Jest:
