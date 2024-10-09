@@ -7,7 +7,7 @@ type ParserOptions = NonNullable<(NonNullable<typeof configs.base.languageOption
 const config = {
   files: ['**/*.{ts,tsx,mts,cts}'],
   languageOptions: {
-    parser: parser as Linter.FlatConfigParserModule,
+    parser: parser as Linter.Parser,
     parserOptions: {
       projectService: true,
       sourceType: 'module'
@@ -231,10 +231,10 @@ const config = {
       ]
     }
   }
-} as const satisfies Linter.FlatConfig;
+} as const satisfies Linter.Config;
 
 // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
-const typescriptConfig = (parserOptions: ParserOptions): Linter.FlatConfig => ({
+const typescriptConfig = (parserOptions: ParserOptions): Linter.Config => ({
   ...config,
   languageOptions: {
     ...config.languageOptions,
@@ -242,8 +242,8 @@ const typescriptConfig = (parserOptions: ParserOptions): Linter.FlatConfig => ({
       sourceType: 'module',
       ...parserOptions
     }
-  } as Linter.FlatConfig['languageOptions']
-}) as const satisfies Linter.FlatConfig;
+  } as Linter.Config['languageOptions']
+}) as const satisfies Linter.Config;
 
 export { config as typescript, typescriptConfig };
 

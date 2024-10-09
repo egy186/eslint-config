@@ -6,7 +6,7 @@ const { typescriptConfig } = await jiti.import('./src/typescript.ts');
 
 const typescript = typescriptConfig({ projectService: { allowDefaultProject: ['test/*.ts'] } });
 
-/** @satisfies {import('eslint').Linter.FlatConfig[]} */
+/** @satisfies {import('eslint').Linter.Config[]} */
 const config = [
   { ignores: ['dist/**/*'] },
   base,
