@@ -1,6 +1,5 @@
-import type { ESLint, Linter } from 'eslint';
+import type { Linter } from 'eslint';
 import globals from 'globals';
-// @ts-expect-error TS7016
 import jest from 'eslint-plugin-jest';
 
 const config = {
@@ -10,7 +9,7 @@ const config = {
       ...globals.jest
     }
   },
-  plugins: { jest: jest as ESLint.Plugin },
+  plugins: { jest },
   rules: {
     'jest/consistent-test-it': 'error',
     'jest/expect-expect': 'error',

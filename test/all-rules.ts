@@ -2,7 +2,6 @@ import type { RuleInfo } from '@eslint-stylistic/metadata';
 import eslint from '@eslint/js';
 // @ts-expect-error TS7016
 import { rules as importPluginRules } from 'eslint-plugin-import';
-// @ts-expect-error TS7016
 import jestPlugin from 'eslint-plugin-jest';
 import jsdocPlugin from 'eslint-plugin-jsdoc';
 import nPlugin from 'eslint-plugin-n';
@@ -42,7 +41,7 @@ const rulesToRuleNames = (rules: Rules, pluginName?: string): readonly string[] 
 
 const eslintRules = Object.keys(eslint.configs.all.rules as { [name: string]: unknown });
 const importRules = rulesToRuleNames(importPluginRules as Rules, 'import');
-const jestRules = rulesToRuleNames((jestPlugin as Plugin).rules, 'jest');
+const jestRules = rulesToRuleNames(jestPlugin.rules, 'jest');
 const jsdocRules = rulesToRuleNames((jsdocPlugin as Plugin).rules, 'jsdoc');
 const nRules = rulesToRuleNames((nPlugin as Plugin).rules, 'n');
 const reactHooksRules = rulesToRuleNames((reactHooksPlugin as Plugin).rules, 'react-hooks');
