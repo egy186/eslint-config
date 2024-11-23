@@ -3,7 +3,7 @@ import globals from 'globals';
 import jest from 'eslint-plugin-jest';
 
 const config = {
-  files: ['**/*.{js,jsx,mjs,cjs}', '**/*.{ts,tsx,mts,cts}'],
+  files: ['**/*.{spec,test}.{js,jsx,mjs,cjs}', '**/*.{spec,test}.{ts,tsx,mts,cts}'],
   languageOptions: {
     globals: {
       ...globals.jest
