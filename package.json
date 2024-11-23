@@ -47,6 +47,10 @@
     "./typescript": {
       "types": "./dist/typescript.d.ts",
       "default": "./dist/typescript.js"
+    },
+    "./vitest": {
+      "types": "./dist/vitest.d.ts",
+      "default": "./dist/vitest.js"
     }
   },
   "files": [
