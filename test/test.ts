@@ -10,6 +10,8 @@ import nRules from '../src/rules/n-rules.js';
 import { react } from '../src/react.js';
 import stylisticRules from '../src/rules/stylistic-rules.js';
 import { typescript } from '../src/typescript.js';
+// eslint-disable-next-line import/max-dependencies
+import { vitest } from '../src/vitest.js';
 
 // Test
 const tester = new Tester(allRules);
@@ -23,7 +25,8 @@ const pass = [
   tester.test(react.rules, 'react-hooks'),
   tester.test(react.rules, 'react'),
   tester.test(stylisticRules, '@stylistic'),
-  tester.test(typescript.rules, '@typescript-eslint')
+  tester.test(typescript.rules, '@typescript-eslint'),
+  tester.test(vitest.rules, 'vitest')
 ].every(isOk => isOk);
 
 process.exitCode = pass ? 0 : 1;

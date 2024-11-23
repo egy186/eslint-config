@@ -57,3 +57,12 @@ import { jest } from '@egy186/eslint-config/jest';
 
 export default [base, jest];
 ```
+
+Vitest:
+
+```js
+import { base } from '@egy186/eslint-config';
+import { vitest } from '@egy186/eslint-config/vitest';
+
+export default [base, vitest];
+```

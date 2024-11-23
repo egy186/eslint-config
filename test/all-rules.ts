@@ -10,6 +10,7 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import reactPlugin from 'eslint-plugin-react';
 import { rules as stylisticPluginRules } from '@eslint-stylistic/metadata';
 import { plugin as typescriptPlugin } from 'typescript-eslint';
+import vitestPlugin from '@vitest/eslint-plugin';
 
 interface Rule {
   readonly meta?: Readonly<object>;
@@ -49,6 +50,7 @@ const reactRules = rulesToRuleNames((reactPlugin as unknown as Plugin).rules, 'r
 // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
 const stylisticRules = rulesToRuleNames(Object.fromEntries(stylisticPluginRules.map((rule: RuleInfo) => [rule.name, rule])), '@stylistic');
 const typescriptRules = rulesToRuleNames(typescriptPlugin.rules as Rules, '@typescript-eslint');
+const vitestRules = rulesToRuleNames(vitestPlugin.rules, 'vitest');
 
 const allRules = [
   ...eslintRules,
@@ -59,7 +61,8 @@ const allRules = [
   ...reactHooksRules,
   ...reactRules,
   ...stylisticRules,
-  ...typescriptRules
+  ...typescriptRules,
+  ...vitestRules
 ];
 
 export { allRules };
