@@ -40,13 +40,13 @@ const rulesToRuleNames = (rules: Rules, pluginName?: string): readonly string[] 
     return name;
   });
 
-const eslintRules = Object.keys(eslint.configs.all.rules as { [name: string]: unknown });
+const eslintRules = Object.keys(eslint.configs.all.rules);
 const importRules = rulesToRuleNames(importPluginRules as Rules, 'import');
 const jestRules = rulesToRuleNames(jestPlugin.rules, 'jest');
-const jsdocRules = rulesToRuleNames((jsdocPlugin as Plugin).rules, 'jsdoc');
-const nRules = rulesToRuleNames((nPlugin as Plugin).rules, 'n');
+const jsdocRules = rulesToRuleNames(jsdocPlugin.rules ?? {}, 'jsdoc');
+const nRules = rulesToRuleNames(nPlugin.rules ?? {}, 'n');
 const reactHooksRules = rulesToRuleNames((reactHooksPlugin as Plugin).rules, 'react-hooks');
-const reactRules = rulesToRuleNames((reactPlugin as unknown as Plugin).rules, 'react');
+const reactRules = rulesToRuleNames(reactPlugin.rules, 'react');
 // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
 const stylisticRules = rulesToRuleNames(Object.fromEntries(stylisticPluginRules.map((rule: RuleInfo) => [rule.name, rule])), '@stylistic');
 const typescriptRules = rulesToRuleNames(typescriptPlugin.rules as Rules, '@typescript-eslint');
