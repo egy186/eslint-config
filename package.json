@@ -16,17 +16,17 @@
   "devDependencies": {
     "@eslint-stylistic/metadata": "~2.12.1",
     "@eslint/js": "~9.17.0",
-    "@types/node": "^22.10.2",
-    "@vitest/eslint-plugin": "~1.1.20",
+    "@types/node": "^22.10.5",
+    "@vitest/eslint-plugin": "~1.1.24",
     "eslint": "~9.17.0",
     "eslint-import-resolver-typescript": "~3.7.0",
     "eslint-plugin-jest": "~28.10.0",
-    "eslint-plugin-react": "~7.37.2",
-    "eslint-plugin-react-hooks": "~5.0.0",
+    "eslint-plugin-react": "~7.37.3",
+    "eslint-plugin-react-hooks": "~5.1.0",
     "husky": "^9.1.7",
     "jiti": "^2.4.2",
     "typescript": "~5.7.2",
-    "typescript-eslint": "~8.18.1"
+    "typescript-eslint": "~8.19.1"
   },
   "engines": {
     "node": ">=18.18.0"
