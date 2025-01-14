@@ -1,12 +1,9 @@
-import { createJiti } from 'jiti';
+import type { Linter } from 'eslint';
+import { base } from '@egy186/eslint-config';
+import { typescriptConfig } from '@egy186/eslint-config/typescript';
 
-const jiti = createJiti(import.meta.url);
-const { base } = await jiti.import('./src/index.ts');
-const { typescriptConfig } = await jiti.import('./src/typescript.ts');
+const typescript = typescriptConfig({ projectService: { allowDefaultProject: ['*.ts', 'test/*.ts'] } });
 
-const typescript = typescriptConfig({ projectService: { allowDefaultProject: ['test/*.ts'] } });
-
-/** @satisfies {import('eslint').Linter.Config[]} */
 const config = [
   { ignores: ['dist/**/*'] },
   base,
@@ -56,6 +53,6 @@ const config = [
       ]
     }
   }
-];
+] as const satisfies Linter.Config[];
 
 export default config;
