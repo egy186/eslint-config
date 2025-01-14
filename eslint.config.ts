@@ -1,6 +1,13 @@
+// eslint-disable-next-line import/no-namespace
+import type * as index from './src/index.js';
+// eslint-disable-next-line import/no-namespace
+import type * as ts from './src/typescript.js';
 import type { Linter } from 'eslint';
-import { base } from '@egy186/eslint-config';
-import { typescriptConfig } from '@egy186/eslint-config/typescript';
+import { createJiti } from 'jiti';
+
+const jiti = createJiti(import.meta.url);
+const { base } = await jiti.import<typeof index>('./src/index.ts');
+const { typescriptConfig } = await jiti.import<typeof ts>('./src/typescript.ts');
 
 const typescript = typescriptConfig({ projectService: { allowDefaultProject: ['*.ts', 'test/*.ts'] } });
 
