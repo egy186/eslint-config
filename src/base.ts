@@ -23,7 +23,8 @@ const config = {
     sourceType: 'module'
   },
   linterOptions: {
-    reportUnusedDisableDirectives: 'error'
+    reportUnusedDisableDirectives: 'error',
+    reportUnusedInlineConfigs: 'error'
   },
   plugins: {
     '@stylistic': stylistic as ESLint.Plugin,

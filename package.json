@@ -15,10 +15,10 @@
   },
   "devDependencies": {
     "@eslint-stylistic/metadata": "~2.13.0",
-    "@eslint/js": "~9.18.0",
+    "@eslint/js": "~9.19.0",
     "@types/node": "^22.10.6",
     "@vitest/eslint-plugin": "~1.1.24",
-    "eslint": "~9.18.0",
+    "eslint": "~9.19.0",
     "eslint-import-resolver-typescript": "~3.7.0",
     "eslint-plugin-jest": "~28.10.0",
     "eslint-plugin-react": "~7.37.3",
@@ -65,7 +65,7 @@
   "main": "./dist/index.js",
   "peerDependencies": {
     "@vitest/eslint-plugin": "^1.1.10",
-    "eslint": "^9.11.1",
+    "eslint": "^9.19.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-jest": "^28.8.3",
     "eslint-plugin-react": "^7.36.1",
