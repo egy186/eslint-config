@@ -5,7 +5,6 @@ import { rules as importPluginRules } from 'eslint-plugin-import';
 import jestPlugin from 'eslint-plugin-jest';
 import jsdocPlugin from 'eslint-plugin-jsdoc';
 import nPlugin from 'eslint-plugin-n';
-// @ts-expect-error TS7016
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import reactPlugin from 'eslint-plugin-react';
 import { rules as stylisticPluginRules } from '@eslint-stylistic/metadata';
@@ -18,10 +17,6 @@ interface Rule {
 
 interface Rules {
   readonly [key: string]: Rule;
-}
-
-interface Plugin {
-  readonly rules: Rules;
 }
 
 const ruleIsDeprecated = (rule: Rule): boolean => {
@@ -45,7 +40,7 @@ const importRules = rulesToRuleNames(importPluginRules as Rules, 'import');
 const jestRules = rulesToRuleNames(jestPlugin.rules, 'jest');
 const jsdocRules = rulesToRuleNames(jsdocPlugin.rules ?? {}, 'jsdoc');
 const nRules = rulesToRuleNames(nPlugin.rules ?? {}, 'n');
-const reactHooksRules = rulesToRuleNames((reactHooksPlugin as Plugin).rules, 'react-hooks');
+const reactHooksRules = rulesToRuleNames(reactHooksPlugin.rules, 'react-hooks');
 const reactRules = rulesToRuleNames(reactPlugin.rules, 'react');
 // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
 const stylisticRules = rulesToRuleNames(Object.fromEntries(stylisticPluginRules.map((rule: RuleInfo) => [rule.name, rule])), '@stylistic');

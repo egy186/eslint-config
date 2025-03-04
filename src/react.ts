@@ -1,6 +1,5 @@
-import type { ESLint, Linter } from 'eslint';
+import type { Linter } from 'eslint';
 import react from 'eslint-plugin-react';
-// @ts-expect-error TS7016
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 const config = {
@@ -12,8 +11,8 @@ const config = {
     }
   },
   plugins: {
-    react: react as ESLint.Plugin,
-    'react-hooks': reactHooksPlugin as ESLint.Plugin
+    react,
+    'react-hooks': reactHooksPlugin
   },
   rules: {
     'react-hooks/exhaustive-deps': 'error',
