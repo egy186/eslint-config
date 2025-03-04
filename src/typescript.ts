@@ -245,8 +245,8 @@ const typescriptConfig = (parserOptions: ParserOptions): Linter.Config => ({
       sourceType: 'module',
       ...parserOptions
     }
-  } as Linter.Config['languageOptions']
-}) as const satisfies Linter.Config;
+  }
+});
 
 export { config as typescript, typescriptConfig };
 
