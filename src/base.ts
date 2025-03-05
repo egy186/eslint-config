@@ -27,7 +27,7 @@ const config = {
     reportUnusedInlineConfigs: 'error'
   },
   plugins: {
-    '@stylistic': stylistic as ESLint.Plugin,
+    '@stylistic': stylistic,
     import: importPlugin as ESLint.Plugin,
     jsdoc,
     n: nPlugin
