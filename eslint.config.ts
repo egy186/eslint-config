@@ -2,7 +2,7 @@
 import type * as index from './src/index.js';
 // eslint-disable-next-line import/no-namespace
 import type * as ts from './src/typescript.js';
-import type { Linter } from 'eslint';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import { createJiti } from 'jiti';
 
 const jiti = createJiti(import.meta.url);
@@ -11,8 +11,8 @@ const { typescriptConfig } = await jiti.import<typeof ts>('./src/typescript.ts')
 
 const typescript = typescriptConfig({ projectService: { allowDefaultProject: ['*.ts', 'test/*.ts'] } });
 
-const config = [
-  { ignores: ['dist/**/*'] },
+const config = defineConfig([
+  globalIgnores(['dist/**/*']),
   base,
   {
     ...typescript,
@@ -60,6 +60,6 @@ const config = [
       ]
     }
   }
-] as const satisfies Linter.Config[];
+]);
 
 export default config;
