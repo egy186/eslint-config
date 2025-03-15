@@ -1,13 +1,13 @@
 class Tester {
-  readonly #expectedRules: readonly string[] = [];
+  readonly #expectedRules: ReadonlyArray<string> = [];
 
   readonly #pluginNameSeparator = '/';
 
-  public constructor (expectedRules: readonly string[]) {
+  public constructor (expectedRules: ReadonlyArray<string>) {
     this.#expectedRules = expectedRules;
   }
 
-  static #exclude <T>(array: readonly T[], values: readonly T[]): readonly T[] {
+  static #exclude <T>(array: ReadonlyArray<T>, values: ReadonlyArray<T>): ReadonlyArray<T> {
     return array.filter(item => !values.includes(item));
   }
 
@@ -33,7 +33,7 @@ class Tester {
     return pass;
   }
 
-  #pickBy (rules: readonly string[], pluginName?: string): readonly string[] {
+  #pickBy (rules: ReadonlyArray<string>, pluginName?: string): ReadonlyArray<string> {
     return rules.filter(key => {
       if (typeof pluginName === 'string') {
         return key.startsWith(`${pluginName}${this.#pluginNameSeparator}`);

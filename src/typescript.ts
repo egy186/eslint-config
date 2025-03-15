@@ -18,7 +18,13 @@ const config = {
   },
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
-    '@typescript-eslint/array-type': 'error',
+    '@typescript-eslint/array-type': [
+      'error',
+      {
+        default: 'generic',
+        readonly: 'generic'
+      }
+    ],
     '@typescript-eslint/await-thenable': 'error',
     '@typescript-eslint/ban-ts-comment': 'error',
     '@typescript-eslint/ban-tslint-comment': 'error',
