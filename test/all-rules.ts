@@ -21,7 +21,7 @@ interface Rules {
 
 const ruleIsDeprecated = (rule: Rule): boolean => {
   const meta = rule.meta ?? {};
-  return 'deprecated' in meta ? meta.deprecated === true : false;
+  return 'deprecated' in meta ? meta.deprecated !== false : false;
 };
 
 const rulesToRuleNames = (rules: Rules, pluginName?: string): ReadonlyArray<string> => [...Object.entries(rules)]
