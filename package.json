@@ -9,24 +9,24 @@
   "dependencies": {
     "@stylistic/eslint-plugin": "~4.2.0",
     "eslint-plugin-import": "~2.31.0",
-    "eslint-plugin-jsdoc": "~50.6.6",
+    "eslint-plugin-jsdoc": "~50.6.9",
     "eslint-plugin-n": "~17.16.2",
     "globals": "^16.0.0"
   },
   "devDependencies": {
     "@eslint-stylistic/metadata": "~4.2.0",
     "@eslint/js": "~9.23.0",
-    "@types/node": "^22.13.11",
+    "@types/node": "^22.13.13",
     "@vitest/eslint-plugin": "~1.1.38",
     "eslint": "~9.23.0",
-    "eslint-import-resolver-typescript": "~4.2.2",
+    "eslint-import-resolver-typescript": "~4.2.3",
     "eslint-plugin-jest": "~28.11.0",
     "eslint-plugin-react": "~7.37.4",
     "eslint-plugin-react-hooks": "~5.2.0",
     "husky": "^9.1.7",
     "jiti": "^2.4.2",
     "typescript": "~5.8.2",
-    "typescript-eslint": "~8.27.0"
+    "typescript-eslint": "~8.28.0"
   },
   "engines": {
     "node": ">=18.18.0"
