@@ -17,7 +17,7 @@
     "@eslint-stylistic/metadata": "~4.2.0",
     "@eslint/js": "~9.23.0",
     "@types/node": "^22.13.13",
-    "@vitest/eslint-plugin": "~1.1.38",
+    "@vitest/eslint-plugin": "~1.1.42",
     "eslint": "~9.23.0",
     "eslint-import-resolver-typescript": "~4.2.3",
     "eslint-plugin-jest": "~28.11.0",
@@ -64,7 +64,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "peerDependencies": {
-    "@vitest/eslint-plugin": "^1.1.37",
+    "@vitest/eslint-plugin": "^1.1.42",
     "eslint": "^9.19.0",
     "eslint-import-resolver-typescript": "^4.2.2",
     "eslint-plugin-jest": "^28.8.3",
