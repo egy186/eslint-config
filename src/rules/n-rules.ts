@@ -22,6 +22,7 @@ const rules = {
   'n/no-restricted-import': 'off',
   'n/no-restricted-require': 'off',
   'n/no-sync': 'error',
+  'n/no-top-level-await': ['error', { ignoreBin: true }],
   'n/no-unpublished-bin': 'error',
   'n/no-unpublished-import': ['error', { ignoreTypeImport: true }],
   'n/no-unpublished-require': 'error',
