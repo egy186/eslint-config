@@ -1,7 +1,6 @@
-import type { ESLint, Linter } from 'eslint';
+import type { Linter } from 'eslint';
 import eslintRules from './rules/eslint-rules.js';
 import globals from 'globals';
-// @ts-expect-error TS7016
 import importPlugin from 'eslint-plugin-import';
 import importRules from './rules/import-rules.js';
 import jsdoc from 'eslint-plugin-jsdoc';
@@ -28,7 +27,7 @@ const config = {
   },
   plugins: {
     '@stylistic': stylistic,
-    import: importPlugin as ESLint.Plugin,
+    import: importPlugin,
     jsdoc,
     n: nPlugin
   },

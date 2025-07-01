@@ -4,6 +4,7 @@ const rules = {
   'import/consistent-type-specifier-style': 'error',
   'import/default': 'error',
   'import/dynamic-import-chunkname': 'off',
+  'import/enforce-node-protocol-usage': ['error', 'always'],
   'import/export': 'error',
   'import/exports-last': 'error',
   'import/extensions': [

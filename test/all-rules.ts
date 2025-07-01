@@ -1,6 +1,5 @@
 import type { RuleInfo } from '@eslint-stylistic/metadata';
 import eslint from '@eslint/js';
-// @ts-expect-error TS7016
 import { rules as importPluginRules } from 'eslint-plugin-import';
 import jestPlugin from 'eslint-plugin-jest';
 import jsdocPlugin from 'eslint-plugin-jsdoc';
@@ -36,7 +35,7 @@ const rulesToRuleNames = (rules: Rules, pluginName?: string): ReadonlyArray<stri
   });
 
 const eslintRules = Object.keys(eslint.configs.all.rules);
-const importRules = rulesToRuleNames(importPluginRules as Rules, 'import');
+const importRules = rulesToRuleNames(importPluginRules, 'import');
 const jestRules = rulesToRuleNames(jestPlugin.rules, 'jest');
 const jsdocRules = rulesToRuleNames(jsdocPlugin.rules ?? {}, 'jsdoc');
 const nRules = rulesToRuleNames(nPlugin.rules ?? {}, 'n');
