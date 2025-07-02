@@ -1,4 +1,3 @@
-import type { RuleInfo } from '@eslint-stylistic/metadata';
 import eslint from '@eslint/js';
 import { rules as importPluginRules } from 'eslint-plugin-import';
 import jestPlugin from 'eslint-plugin-jest';
@@ -6,7 +5,7 @@ import jsdocPlugin from 'eslint-plugin-jsdoc';
 import nPlugin from 'eslint-plugin-n';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import reactPlugin from 'eslint-plugin-react';
-import { rules as stylisticPluginRules } from '@eslint-stylistic/metadata';
+import stylistic from '@stylistic/eslint-plugin';
 import { plugin as typescriptPlugin } from 'typescript-eslint';
 import vitestPlugin from '@vitest/eslint-plugin';
 
@@ -41,8 +40,7 @@ const jsdocRules = rulesToRuleNames(jsdocPlugin.rules ?? {}, 'jsdoc');
 const nRules = rulesToRuleNames(nPlugin.rules ?? {}, 'n');
 const reactHooksRules = rulesToRuleNames(reactHooksPlugin.rules, 'react-hooks');
 const reactRules = rulesToRuleNames(reactPlugin.rules, 'react');
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
-const stylisticRules = rulesToRuleNames(Object.fromEntries(stylisticPluginRules.map((rule: RuleInfo) => [rule.name, rule])), '@stylistic');
+const stylisticRules = rulesToRuleNames(stylistic.rules, '@stylistic');
 const typescriptRules = rulesToRuleNames(typescriptPlugin.rules as Rules, '@typescript-eslint');
 const vitestRules = rulesToRuleNames(vitestPlugin.rules, 'vitest');
 
