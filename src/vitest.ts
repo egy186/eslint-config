@@ -1,9 +1,9 @@
-import type { Linter } from 'eslint';
+import type { ESLint, Linter } from 'eslint';
 import vitest from '@vitest/eslint-plugin';
 
 const config = {
   files: ['**/*.{spec,test}.{js,jsx,mjs,cjs}', '**/*.{spec,test}.{ts,tsx,mts,cts}'],
-  plugins: { vitest },
+  plugins: { vitest: vitest as unknown as ESLint.Plugin },
   rules: {
     'max-lines-per-function': 'off',
     'max-statements': 'off',
@@ -47,6 +47,8 @@ const config = {
     'vitest/padding-around-describe-blocks': 'error',
     'vitest/padding-around-expect-groups': 'error',
     'vitest/padding-around-test-blocks': 'error',
+    'vitest/prefer-called-once': 'error',
+    'vitest/prefer-called-times': 'off',
     'vitest/prefer-called-with': 'error',
     'vitest/prefer-comparison-matcher': 'error',
     'vitest/prefer-describe-function-title': 'error',
@@ -79,7 +81,8 @@ const config = {
     'vitest/valid-describe-callback': 'error',
     'vitest/valid-expect': 'error',
     'vitest/valid-expect-in-promise': 'error',
-    'vitest/valid-title': 'error'
+    'vitest/valid-title': 'error',
+    'vitest/warn-todo': 'error'
   }
 } as const satisfies Linter.Config;
 
