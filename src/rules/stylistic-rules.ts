@@ -39,8 +39,6 @@ const rules = {
   '@stylistic/curly-newline': ['error', 'always'],
   '@stylistic/dot-location': ['error', 'property'],
   '@stylistic/eol-last': 'error',
-  // Alias of `@stylistic/function-call-spacing`
-  '@stylistic/func-call-spacing': ['error', 'never'],
   '@stylistic/function-call-argument-newline': ['error', 'consistent'],
   '@stylistic/function-call-spacing': ['error', 'never'],
   '@stylistic/function-paren-newline': ['error', 'multiline'],
