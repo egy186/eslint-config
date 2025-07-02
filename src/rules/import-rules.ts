@@ -31,7 +31,7 @@ const rules = {
   'import/no-cycle': 'error',
   'import/no-default-export': 'off',
   'import/no-deprecated': 'error',
-  'import/no-duplicates': 'error',
+  'import/no-duplicates': 'off',
   'import/no-dynamic-require': 'error',
   'import/no-empty-named-blocks': 'error',
   'import/no-extraneous-dependencies': 'off',
@@ -55,8 +55,7 @@ const rules = {
   'import/no-webpack-loader-syntax': 'error',
   'import/order': 'off',
   'import/prefer-default-export': 'error',
-  'import/unambiguous': 'error',
-  'no-duplicate-imports': 'off'
+  'import/unambiguous': 'error'
 } as const satisfies ESLint.ConfigData['rules'];
 
 export default rules;
