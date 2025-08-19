@@ -143,7 +143,7 @@ const rules = {
   '@stylistic/quotes': [
     'error',
     'single',
-    'avoid-escape'
+    { avoidEscape: true }
   ],
   '@stylistic/rest-spread-spacing': ['error', 'never'],
   '@stylistic/semi': ['error', 'always'],
