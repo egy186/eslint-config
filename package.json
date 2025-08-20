@@ -53,7 +53,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "!dist/test"
   ],
   "homepage": "https://github.com/egy186/eslint-config#readme",
   "keywords": [
@@ -107,8 +108,8 @@
     "clean": "npm run build -- --clean",
     "lint": "eslint",
     "prepare": "husky",
-    "test": "jiti test/test.ts",
-    "typecheck": "tsc --project tsconfig.typecheck.json"
+    "pretest": "npm run build",
+    "test": "node ./dist/test/test.js"
   },
   "type": "module",
   "types": "./dist/index.d.ts"

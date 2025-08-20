@@ -2,16 +2,16 @@ import { Tester } from './tester.js';
 import { allRules } from './all-rules.js';
 
 // My rules
-import eslintRules from '../src/rules/eslint-rules.js';
-import importRules from '../src/rules/import-rules.js';
-import { jest } from '../src/jest.js';
-import jsdocRules from '../src/rules/jsdoc-rules.js';
-import nRules from '../src/rules/n-rules.js';
-import { react } from '../src/react.js';
-import stylisticRules from '../src/rules/stylistic-rules.js';
-import { typescript } from '../src/typescript.js';
+import eslintRules from '../rules/eslint-rules.js';
+import importRules from '../rules/import-rules.js';
+import { jest } from '../jest.js';
+import jsdocRules from '../rules/jsdoc-rules.js';
+import nRules from '../rules/n-rules.js';
+import { react } from '../react.js';
+import stylisticRules from '../rules/stylistic-rules.js';
+import { typescript } from '../typescript.js';
 // eslint-disable-next-line import/max-dependencies
-import { vitest } from '../src/vitest.js';
+import { vitest } from '../vitest.js';
 
 // Test
 const tester = new Tester(allRules);
