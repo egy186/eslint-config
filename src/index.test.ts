@@ -1,6 +1,6 @@
 import type { Rules } from './test-utils/rules-to-rule-names.js';
 import { strict as assert } from 'node:assert';
-import { base } from '@egy186/eslint-config';
+import { base } from './index.js';
 import eslint from '@eslint/js';
 import { rules as importPluginRules } from 'eslint-plugin-import';
 import jsdocPlugin from 'eslint-plugin-jsdoc';

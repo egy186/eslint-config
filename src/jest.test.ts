@@ -1,5 +1,5 @@
 import { strict as assert } from 'node:assert';
-import { jest } from '@egy186/eslint-config/jest';
+import { jest } from './jest.js';
 import jestPlugin from 'eslint-plugin-jest';
 import { rulesToRuleNames } from './test-utils/rules-to-rule-names.js';
 import { test } from 'node:test';
