@@ -54,7 +54,9 @@
   },
   "files": [
     "dist",
-    "!dist/test"
+    "!dist/test-utils",
+    "!dist/**/*.test.js",
+    "!dist/**/*.test.d.ts"
   ],
   "homepage": "https://github.com/egy186/eslint-config#readme",
   "keywords": [
@@ -109,7 +111,7 @@
     "lint": "eslint",
     "prepare": "husky",
     "pretest": "npm run build",
-    "test": "node ./dist/test/test.js"
+    "test": "node --test **/*.test.js"
   },
   "type": "module",
   "types": "./dist/index.d.ts"
