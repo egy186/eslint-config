@@ -6,7 +6,7 @@ import { rules as importPluginRules } from 'eslint-plugin-import';
 import jsdocPlugin from 'eslint-plugin-jsdoc';
 import nPlugin from 'eslint-plugin-n';
 import { rulesToRuleNames } from './test-utils/rules-to-rule-names.js';
-import stylistic from '@stylistic/eslint-plugin';
+import stylisticPlugin from '@stylistic/eslint-plugin';
 import { test } from 'node:test';
 
 const baseRules = Object.keys(base.rules);
@@ -20,7 +20,7 @@ test('eslint rules', () => {
 
 test('stylistic rules', () => {
   const actual = new Set(baseRules.filter(rule => rule.startsWith('@stylistic/')));
-  const expected = new Set(rulesToRuleNames(stylistic.rules, '@stylistic'));
+  const expected = new Set(rulesToRuleNames(stylisticPlugin.rules, '@stylistic'));
 
   assert.deepStrictEqual(actual, expected);
 });
