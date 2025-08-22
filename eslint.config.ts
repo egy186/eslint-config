@@ -57,6 +57,19 @@ const config = defineConfig([
           format: ['PascalCase'],
           selector: 'typeLike'
         }
+      ],
+      '@typescript-eslint/no-floating-promises': [
+        'error',
+        {
+          allowForKnownSafeCalls: [
+            {
+              from: 'package',
+              name: ['test'],
+              package: 'node:test'
+            }
+          ],
+          ignoreVoid: true
+        }
       ]
     }
   }
