@@ -1,8 +1,8 @@
 import type { ESLint, Linter } from 'eslint';
 import { parser, plugin } from 'typescript-eslint';
-import type { configs } from 'typescript-eslint';
+import type { ConfigArray } from 'typescript-eslint';
 
-type ParserOptions = NonNullable<(NonNullable<typeof configs.base.languageOptions>)['parserOptions']>;
+type ParserOptions = NonNullable<(NonNullable<ConfigArray[number]['languageOptions']>)['parserOptions']>;
 
 const config = {
   files: ['**/*.{ts,tsx,mts,cts}'],

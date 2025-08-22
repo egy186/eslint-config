@@ -27,7 +27,7 @@ test('stylistic rules', () => {
 
 test('jsdoc rules', () => {
   const actual = new Set(baseRules.filter(rule => rule.startsWith('jsdoc/')));
-  const expected = new Set(rulesToRuleNames(jsdocPlugin.rules ?? {}, 'jsdoc'));
+  const expected = new Set(rulesToRuleNames(jsdocPlugin.rules, 'jsdoc'));
 
   assert.deepStrictEqual(actual, expected);
 });
@@ -41,7 +41,7 @@ test('import rules', () => {
 
 test('n rules', () => {
   const actual = new Set(baseRules.filter(rule => rule.startsWith('n/')));
-  const expected = new Set(rulesToRuleNames(nPlugin.rules ?? {}, 'n'));
+  const expected = new Set(rulesToRuleNames(nPlugin.rules, 'n'));
 
   assert.deepStrictEqual(actual, expected);
 });

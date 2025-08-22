@@ -10,7 +10,7 @@ const ruleIsDeprecated = (rule: Rule): boolean => {
   return 'deprecated' in meta ? meta.deprecated !== false : false;
 };
 
-const rulesToRuleNames = (rules: Rules, pluginName?: string): ReadonlyArray<string> => [...Object.entries(rules)]
+const rulesToRuleNames = (rules?: Rules, pluginName?: string): ReadonlyArray<string> => [...Object.entries(rules ?? {})]
   // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   .filter(([, rule]) => !ruleIsDeprecated(rule))
   // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
