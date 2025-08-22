@@ -44,12 +44,10 @@ jobs:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
       with:
-        node-version: lts/*
+        node-version: 24
         registry-url: https://registry.npmjs.org/
         scope: egy186
     - run: npm ci
     - run: npm run build
-    - run: npm publish --provenance --access public
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    - run: npm publish --access public
       if: contains(github.ref, 'tags/v')
