@@ -200,6 +200,7 @@ const rules = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
+    'preserve-caught-error': ['error', { requireCatchParameter: true }],
     radix: 'error',
     'require-await': 'error',
     'require-unicode-regexp': 'error',
