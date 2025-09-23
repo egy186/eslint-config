@@ -31,6 +31,9 @@ const rules = {
   'jsdoc/no-restricted-syntax': 'off',
   'jsdoc/no-types': 'off',
   'jsdoc/no-undefined-types': 'error',
+  'jsdoc/prefer-import-tag': 'off',
+  'jsdoc/reject-any-type': 'error',
+  'jsdoc/reject-function-type': 'error',
   'jsdoc/require-asterisk-prefix': 'error',
   'jsdoc/require-description': 'off',
   'jsdoc/require-description-complete-sentence': 'error',
@@ -38,6 +41,8 @@ const rules = {
   'jsdoc/require-file-overview': 'off',
   'jsdoc/require-hyphen-before-param-description': 'error',
   'jsdoc/require-jsdoc': 'off',
+  'jsdoc/require-next-description': 'off',
+  'jsdoc/require-next-type': 'error',
   'jsdoc/require-param': 'error',
   'jsdoc/require-param-description': 'error',
   'jsdoc/require-param-name': 'error',
@@ -50,10 +55,15 @@ const rules = {
   'jsdoc/require-returns-check': 'error',
   'jsdoc/require-returns-description': 'error',
   'jsdoc/require-returns-type': 'error',
+  'jsdoc/require-tags': 'off',
   'jsdoc/require-template': 'error',
   'jsdoc/require-throws': 'error',
+  'jsdoc/require-throws-description': 'off',
+  'jsdoc/require-throws-type': 'error',
   'jsdoc/require-yields': 'error',
   'jsdoc/require-yields-check': 'error',
+  'jsdoc/require-yields-description': 'off',
+  'jsdoc/require-yields-type': 'error',
   'jsdoc/sort-tags': 'error',
   'jsdoc/tag-lines': [
     'error',
@@ -61,6 +71,7 @@ const rules = {
     { startLines: 1 }
   ],
   'jsdoc/text-escaping': ['error', { escapeHTML: true }],
+  'jsdoc/type-formatting': 'error',
   'jsdoc/valid-types': 'error'
 } as const satisfies ESLint.ConfigData['rules'];
 
