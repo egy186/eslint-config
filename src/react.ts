@@ -102,7 +102,7 @@ const config = {
     // Migrated to @stylistic/jsx-one-expression-per-line
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-pascal-case': 'error',
-    // Migrated to @stylistic/jsx-props-no-multi-spaces
+    // Migrated to @stylistic/no-multi-spaces
     'react/jsx-props-no-multi-spaces': 'off',
     'react/jsx-props-no-spread-multi': 'error',
     'react/jsx-props-no-spreading': 'off',
