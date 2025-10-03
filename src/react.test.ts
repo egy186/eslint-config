@@ -1,3 +1,4 @@
+import type { ESLint } from 'eslint';
 import { strict as assert } from 'node:assert';
 import { react } from './react.js';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
@@ -16,7 +17,7 @@ test('react rules', () => {
 
 test('react-hooks rules', () => {
   const actual = new Set(reactRules.filter(rule => rule.startsWith('react-hooks/')));
-  const expected = new Set(rulesToRuleNames(reactHooksPlugin.rules, 'react-hooks'));
+  const expected = new Set(rulesToRuleNames((reactHooksPlugin as ESLint.Plugin).rules, 'react-hooks'));
 
   assert.deepStrictEqual(actual, expected);
 });
