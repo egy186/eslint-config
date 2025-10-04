@@ -31,7 +31,6 @@ const config = {
     'react-hooks/invariant': 'off',
     'react-hooks/memoized-effect-dependencies': 'off',
     'react-hooks/no-deriving-state-in-effects': 'off',
-    'react-hooks/no-unused-directives': 'off',
     'react-hooks/preserve-manual-memoization': 'error',
     'react-hooks/purity': 'error',
     'react-hooks/refs': 'error',
