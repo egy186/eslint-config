@@ -5,7 +5,7 @@
 ## Install
 
 ```sh
-npm install @egy186/eslint-config
+npm install -D eslint @egy186/eslint-config
 ```
 
 ## `eslint.config.js`
@@ -24,6 +24,10 @@ export { commonjs as default } from '@egy186/eslint-config';
 
 Browser, React:
 
+```sh
+npm install -D eslint-plugin-react eslint-plugin-react-hooks
+```
+
 ```js
 import { browser } from '@egy186/eslint-config';
 import { react } from '@egy186/eslint-config/react';
@@ -32,6 +36,10 @@ export default [browser, react];
 ```
 
 TypeScript:
+
+```sh
+npm install -D typescript-eslint eslint-import-resolver-typescript
+```
 
 ```js
 import { base } from '@egy186/eslint-config';
@@ -42,6 +50,10 @@ export default [base, typescript];
 
 TypeScript, tsconfig:
 
+```sh
+npm install -D typescript-eslint eslint-import-resolver-typescript
+```
+
 ```js
 import { base } from '@egy186/eslint-config';
 import { typescriptConfig } from '@egy186/eslint-config/typescript';
@@ -51,6 +63,10 @@ export default [base, typescriptConfig({ projectService: { allowDefaultProject: 
 
 Jest:
 
+```sh
+npm install -D eslint-plugin-jest
+```
+
 ```js
 import { base } from '@egy186/eslint-config';
 import { jest } from '@egy186/eslint-config/jest';
@@ -59,6 +75,10 @@ export default [base, jest];
 ```
 
 Vitest:
+
+```sh
+npm install -D @vitest/eslint-plugin
+```
 
 ```js
 import { base } from '@egy186/eslint-config';
