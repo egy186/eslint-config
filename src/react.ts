@@ -1,4 +1,4 @@
-import type { Linter } from 'eslint';
+import type { ESLint, Linter } from 'eslint';
 import react from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
@@ -12,7 +12,7 @@ const config = {
   },
   plugins: {
     react,
-    'react-hooks': reactHooksPlugin
+    'react-hooks': reactHooksPlugin as ESLint.Plugin
   },
   rules: {
     'react-hooks/automatic-effect-dependencies': 'off',
@@ -43,6 +43,7 @@ const config = {
     'react-hooks/todo': 'off',
     'react-hooks/unsupported-syntax': 'error',
     'react-hooks/use-memo': 'error',
+    'react-hooks/void-use-memo': 'error',
     'react/boolean-prop-naming': 'error',
     'react/button-has-type': 'error',
     'react/checked-requires-onchange-or-readonly': 'error',
