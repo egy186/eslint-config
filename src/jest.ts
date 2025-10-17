@@ -2,6 +2,11 @@ import type { Linter } from 'eslint';
 import globals from 'globals';
 import jest from 'eslint-plugin-jest';
 
+process.emitWarning('`@egy186/eslint-config/jest` is deprecated. Use `@egy186/eslint-config/vitest` instead.', { type: 'DeprecationWarning' });
+
+/**
+ * @deprecated Use `@egy186/eslint-config/vitest` instead.
+ */
 const config = {
   files: ['**/*.{spec,test}.{js,jsx,mjs,cjs}', '**/*.{spec,test}.{ts,tsx,mts,cts}'],
   languageOptions: {
@@ -79,6 +84,8 @@ const config = {
   }
 } as const satisfies Linter.Config;
 
+// eslint-disable-next-line @typescript-eslint/no-deprecated
 export { config as jest };
 
+// eslint-disable-next-line @typescript-eslint/no-deprecated
 export default config;

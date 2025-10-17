@@ -5,6 +5,7 @@ import { rulesToRuleNames } from './test-utils/rules-to-rule-names.js';
 import { test } from 'node:test';
 
 test('jest rules', () => {
+  // eslint-disable-next-line @typescript-eslint/no-deprecated
   const actual = new Set(Object.keys(jest.rules).filter(rule => rule.startsWith('jest/')));
   const expected = new Set(rulesToRuleNames(jestPlugin.rules, 'jest'));
 
