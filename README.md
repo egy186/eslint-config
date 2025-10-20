@@ -61,19 +61,6 @@ import { typescriptConfig } from '@egy186/eslint-config/typescript';
 export default [base, typescriptConfig({ projectService: { allowDefaultProject: ['*.ts'] } })];
 ```
 
-Jest:
-
-```sh
-npm install -D eslint-plugin-jest
-```
-
-```js
-import { base } from '@egy186/eslint-config';
-import { jest } from '@egy186/eslint-config/jest';
-
-export default [base, jest];
-```
-
 Vitest:
 
 ```sh
