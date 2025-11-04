@@ -1,9 +1,9 @@
-import type { ESLint, Linter } from 'eslint';
+import type { Linter } from 'eslint';
 import vitest from '@vitest/eslint-plugin';
 
 const config = {
   files: ['**/*.{spec,test}.{js,jsx,mjs,cjs}', '**/*.{spec,test}.{ts,tsx,mts,cts}'],
-  plugins: { vitest: vitest as unknown as ESLint.Plugin },
+  plugins: { vitest },
   rules: {
     'max-lines-per-function': 'off',
     'max-statements': 'off',
