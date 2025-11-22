@@ -142,6 +142,7 @@ const config = {
     '@typescript-eslint/no-unsafe-type-assertion': 'off',
     '@typescript-eslint/no-unsafe-unary-minus': 'error',
     '@typescript-eslint/no-unused-expressions': ['error', { enforceForJSX: true }],
+    '@typescript-eslint/no-unused-private-class-members': 'error',
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
@@ -211,6 +212,7 @@ const config = {
     'no-shadow': 'off',
     'no-throw-literal': 'off',
     'no-unused-expressions': 'off',
+    'no-unused-private-class-members': 'off',
     'no-unused-vars': 'off',
     'no-use-before-define': 'off',
     'no-useless-constructor': 'off',
