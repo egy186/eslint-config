@@ -78,7 +78,13 @@ const rules = {
   'jsdoc/ts-no-empty-object-type': 'error',
   'jsdoc/ts-no-unnecessary-template-expression': 'error',
   'jsdoc/ts-prefer-function-type': 'error',
-  'jsdoc/type-formatting': ['error', { stringQuotes: 'single' }],
+  'jsdoc/type-formatting': [
+    'error',
+    {
+      arrayBrackets: 'angle',
+      stringQuotes: 'single'
+    }
+  ],
   'jsdoc/valid-types': 'error'
 } as const satisfies ESLint.ConfigData['rules'];
 
