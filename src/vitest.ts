@@ -13,6 +13,15 @@ const config = {
         allowModules: ['vitest']
       }
     ],
+    'vitest/consistent-each-for': [
+      'error',
+      {
+        describe: 'each',
+        it: 'for',
+        suite: 'each',
+        test: 'for'
+      }
+    ],
     'vitest/consistent-test-filename': 'error',
     'vitest/consistent-test-it': 'error',
     'vitest/consistent-vitest-vi': 'error',
@@ -79,6 +88,7 @@ const config = {
     'vitest/prefer-vi-mocked': 'error',
     'vitest/require-awaited-expect-poll': 'error',
     'vitest/require-hook': 'error',
+    'vitest/require-import-vi-mock': 'error',
     'vitest/require-local-test-context-for-concurrent-snapshots': 'error',
     'vitest/require-mock-type-parameters': 'error',
     'vitest/require-to-throw-message': 'error',
