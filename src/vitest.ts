@@ -100,6 +100,11 @@ const config = {
     'vitest/valid-expect-in-promise': 'error',
     'vitest/valid-title': 'error',
     'vitest/warn-todo': 'error'
+  },
+  settings: {
+    vitest: {
+      typecheck: true
+    }
   }
 } as const satisfies Linter.Config;
 
