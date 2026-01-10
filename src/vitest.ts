@@ -93,6 +93,7 @@ const config = {
     'vitest/require-hook': 'error',
     'vitest/require-local-test-context-for-concurrent-snapshots': 'error',
     'vitest/require-mock-type-parameters': 'error',
+    'vitest/require-test-timeout': 'off',
     'vitest/require-to-throw-message': 'error',
     'vitest/require-top-level-describe': 'error',
     'vitest/valid-describe-callback': 'error',
