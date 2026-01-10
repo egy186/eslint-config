@@ -78,7 +78,6 @@ const rules = {
   '@stylistic/jsx-pascal-case': 'error',
   '@stylistic/jsx-quotes': ['error', 'prefer-double'],
   '@stylistic/jsx-self-closing-comp': 'error',
-  '@stylistic/jsx-sort-props': 'error',
   '@stylistic/jsx-tag-spacing': ['error', { beforeClosing: 'never' }],
   '@stylistic/jsx-wrap-multilines': 'error',
   '@stylistic/key-spacing': [
