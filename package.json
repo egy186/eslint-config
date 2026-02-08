@@ -45,7 +45,8 @@
     "./vitest": {
       "types": "./dist/vitest.d.ts",
       "default": "./dist/vitest.js"
-    }
+    },
+    "./package.json": "./package.json"
   },
   "files": [
     "dist",
