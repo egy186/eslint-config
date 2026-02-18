@@ -8,14 +8,14 @@ import { test } from 'node:test';
 
 const reactRules = Object.keys(react.rules);
 
-test('react rules', () => {
+await test('react rules', () => {
   const actual = new Set(reactRules.filter(rule => rule.startsWith('react/')));
   const expected = new Set(rulesToRuleNames(reactPlugin.rules, 'react'));
 
   assert.deepStrictEqual(actual, expected);
 });
 
-test('react-hooks rules', () => {
+await test('react-hooks rules', () => {
   const actual = new Set(reactRules.filter(rule => rule.startsWith('react-hooks/')));
   const expected = new Set(rulesToRuleNames((reactHooksPlugin as ESLint.Plugin).rules, 'react-hooks'));
 

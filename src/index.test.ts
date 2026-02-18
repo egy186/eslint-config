@@ -11,35 +11,35 @@ import { test } from 'node:test';
 
 const baseRules = Object.keys(base.rules);
 
-test('eslint rules', () => {
+await test('eslint rules', () => {
   const actual = new Set(baseRules.filter(rule => !rule.includes('/')));
   const expected = new Set(rulesToRuleNames(eslint.configs.all.rules as Rules));
 
   assert.deepStrictEqual(actual, expected);
 });
 
-test('stylistic rules', () => {
+await test('stylistic rules', () => {
   const actual = new Set(baseRules.filter(rule => rule.startsWith('@stylistic/')));
   const expected = new Set(rulesToRuleNames(stylisticPlugin.rules, '@stylistic'));
 
   assert.deepStrictEqual(actual, expected);
 });
 
-test('jsdoc rules', () => {
+await test('jsdoc rules', () => {
   const actual = new Set(baseRules.filter(rule => rule.startsWith('jsdoc/')));
   const expected = new Set(rulesToRuleNames(jsdocPlugin.rules, 'jsdoc'));
 
   assert.deepStrictEqual(actual, expected);
 });
 
-test('import rules', () => {
+await test('import rules', () => {
   const actual = new Set(baseRules.filter(rule => rule.startsWith('import/')));
   const expected = new Set(rulesToRuleNames(importPluginRules, 'import'));
 
   assert.deepStrictEqual(actual, expected);
 });
 
-test('n rules', () => {
+await test('n rules', () => {
   const actual = new Set(baseRules.filter(rule => rule.startsWith('n/')));
   const expected = new Set(rulesToRuleNames(nPlugin.rules, 'n'));
 
