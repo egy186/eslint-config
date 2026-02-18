@@ -61,11 +61,6 @@ const config = {
         selector: 'variable'
       },
       {
-        format: ['camelCase', 'snake_case'],
-        leadingUnderscore: 'allow',
-        selector: 'property'
-      },
-      {
         format: ['camelCase'],
         leadingUnderscore: 'allow',
         selector: 'parameter'
