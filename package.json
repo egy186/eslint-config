@@ -42,6 +42,10 @@
       "types": "./dist/typescript.d.ts",
       "default": "./dist/typescript.js"
     },
+    "./typescript-react": {
+      "types": "./dist/typescript-react.d.ts",
+      "default": "./dist/typescript-react.js"
+    },
     "./vitest": {
       "types": "./dist/vitest.d.ts",
       "default": "./dist/vitest.js"

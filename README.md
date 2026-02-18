@@ -61,6 +61,20 @@ import { typescriptConfig } from '@egy186/eslint-config/typescript';
 export default [base, typescriptConfig({ projectService: { allowDefaultProject: ['*.ts'] } })];
 ```
 
+Browser, TypeScript, React:
+
+```sh
+npm install -D typescript-eslint eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks
+```
+
+```js
+import { browser } from '@egy186/eslint-config';
+import { typescript } from '@egy186/eslint-config/typescript';
+import { typescriptReact } from '@egy186/eslint-config/typescript-react';
+
+export default [browser, typescript, typescriptReact];
+```
+
 Vitest:
 
 ```sh
