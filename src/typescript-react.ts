@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint';
 import { react } from './react.js';
 
 const config = {
@@ -40,7 +41,7 @@ const config = {
       }
     ]
   }
-};
+} as const satisfies Linter.Config;
 
 export { config as typescriptReact };
 
