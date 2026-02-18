@@ -5,7 +5,7 @@ import { test } from 'node:test';
 import { typescript } from './typescript.js';
 import { plugin as typescriptPlugin } from 'typescript-eslint';
 
-test('typescript rules', () => {
+await test('typescript rules', () => {
   const actual = new Set(Object.keys(typescript.rules).filter(rule => rule.startsWith('@typescript-eslint/')));
   const expected = new Set(rulesToRuleNames((typescriptPlugin as ESLint.Plugin).rules, '@typescript-eslint'));
 

@@ -4,7 +4,7 @@ import { test } from 'node:test';
 import { vitest } from './vitest.js';
 import vitestPlugin from '@vitest/eslint-plugin';
 
-test('vitest rules', () => {
+await test('vitest rules', () => {
   const actual = new Set(Object.keys(vitest.rules).filter(rule => rule.startsWith('vitest/')));
   const expected = new Set(rulesToRuleNames(vitestPlugin.rules, 'vitest'));
 
