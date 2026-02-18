@@ -15,6 +15,7 @@ const config = {
     'react-hooks': reactHooksPlugin as ESLint.Plugin
   },
   rules: {
+    'max-lines-per-function': ['warn', 100],
     'react-hooks/automatic-effect-dependencies': 'off',
     'react-hooks/capitalized-calls': 'off',
     'react-hooks/component-hook-factories': 'error',
@@ -103,7 +104,7 @@ const config = {
         warnOnDuplicates: true
       }
     ],
-    'react/jsx-max-depth': 'error',
+    'react/jsx-max-depth': ['warn', { max: 5 }],
     // Migrated to @stylistic/jsx-max-props-per-line
     'react/jsx-max-props-per-line': 'off',
     // Migrated to @stylistic/jsx-newline
