@@ -2,28 +2,31 @@
   "compilerOptions": {
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "checkJs": true,
     "composite": true,
     "erasableSyntaxOnly": true,
     "esModuleInterop": true,
+    "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "lib": [
-      "ES2023"
+      "ES2024"
     ],
-    "module": "NodeNext",
+    "module": "nodenext",
+    "moduleDetection": "force",
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
+    "noUncheckedSideEffectImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "dist",
     "rootDir": "src",
     "skipLibCheck": true,
     "strict": true,
-    "target": "ES2023"
+    "target": "es2024",
+    "verbatimModuleSyntax": true
   },
   "include": [
     "src/**/*"
