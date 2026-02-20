@@ -72,6 +72,12 @@ const config = {
         selector: 'memberLike'
       },
       {
+        format: ['camelCase'],
+        leadingUnderscore: 'allow',
+        modifiers: ['protected'],
+        selector: 'memberLike'
+      },
+      {
         format: ['PascalCase'],
         selector: 'typeLike'
       }
