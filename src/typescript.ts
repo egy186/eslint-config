@@ -238,6 +238,16 @@ const config = {
     },
     'import/resolver': { typescript: true },
     n: {
+      convertPath: [
+        {
+          include: [
+            'src/bin/**/*.ts',
+            'src/bin/**/*.mts',
+            'src/bin/**/*.tsx'
+          ],
+          replace: ['^src/bin/(.+)$', 'bin/$1']
+        }
+      ],
       typescriptExtensionMap: [
         ['.ts', '.js'],
         ['.mts', '.mjs'],
