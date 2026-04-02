@@ -9,7 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "lib": [
-      "ES2024"
+      "ES2025"
     ],
     "module": "nodenext",
     "moduleDetection": "force",
@@ -25,7 +25,10 @@
     "rootDir": "src",
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2024",
+    "target": "es2025",
+    "types": [
+      "node"
+    ],
     "verbatimModuleSyntax": true
   },
   "include": [
