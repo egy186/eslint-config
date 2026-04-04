@@ -1,6 +1,6 @@
 # @egy186/eslint-config
 
-[![CI](https://github.com/egy186/eslint-config/workflows/CI/badge.svg)](https://github.com/egy186/eslint-config/actions?query=workflow%3ACI)
+[![CI](https://github.com/egy186/eslint-config/actions/workflows/ci.yml/badge.svg)](https://github.com/egy186/eslint-config/actions/workflows/ci.yml)
 
 ## Install
 
