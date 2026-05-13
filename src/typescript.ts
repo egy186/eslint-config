@@ -7,6 +7,7 @@ type ParserOptions = NonNullable<(NonNullable<ConfigArray[number]['languageOptio
 const config = {
   files: ['**/*.{ts,tsx,mts,cts}'],
   languageOptions: {
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
     parser: parser as Linter.Parser,
     parserOptions: {
       projectService: true,
@@ -14,6 +15,7 @@ const config = {
     }
   },
   plugins: {
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
     '@typescript-eslint': plugin as ESLint.Plugin
   },
   rules: {
