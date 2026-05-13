@@ -27,7 +27,7 @@
     "typescript-eslint": "~8.59.2"
   },
   "engines": {
-    "node": ">=20.19.2"
+    "node": ">=22.22.2"
   },
   "exports": {
     ".": {
