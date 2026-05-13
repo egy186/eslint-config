@@ -14,9 +14,9 @@ import stylisticRules from './rules/stylistic-rules.js';
 const config = {
   files: ['**/*.{js,jsx,mjs}', '**/*.{ts,tsx,mts}'],
   languageOptions: {
-    ecmaVersion: 2024,
+    ecmaVersion: 2025,
     globals: {
-      ...globals.es2023,
+      ...globals.es2025,
       ...globals.node
     },
     sourceType: 'module'

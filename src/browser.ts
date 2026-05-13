@@ -7,7 +7,7 @@ const config = {
   languageOptions: {
     ...base.languageOptions,
     globals: {
-      ...globals.es2023,
+      ...globals.es2025,
       ...globals.browser
     }
   },
