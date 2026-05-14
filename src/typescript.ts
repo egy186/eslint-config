@@ -221,6 +221,7 @@ const config = {
     'no-restricted-imports': 'off',
     'no-shadow': 'off',
     'no-throw-literal': 'off',
+    'no-undef': 'off',
     'no-unused-expressions': 'off',
     'no-unused-private-class-members': 'off',
     'no-unused-vars': 'off',
