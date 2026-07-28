@@ -9,7 +9,7 @@
   "dependencies": {
     "@stylistic/eslint-plugin": "~5.10.0",
     "eslint-plugin-import": "~2.32.0",
-    "eslint-plugin-jsdoc": "~63.0.10",
+    "eslint-plugin-jsdoc": "~63.2.2",
     "eslint-plugin-n": "~18.2.2",
     "globals": "^17.7.0"
   },
