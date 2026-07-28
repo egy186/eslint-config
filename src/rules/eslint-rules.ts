@@ -156,7 +156,7 @@ const rules = {
     'no-regex-spaces': 'error',
     'no-restricted-exports': 'off',
     'no-restricted-globals': 'off',
-    'no-restricted-imports': 'off',
+    'no-restricted-imports': 'error',
     'no-restricted-properties': 'off',
     'no-restricted-syntax': 'off',
     'no-return-assign': 'error',
