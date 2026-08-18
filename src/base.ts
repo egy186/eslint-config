@@ -3,7 +3,7 @@ import eslintRules from './rules/eslint-rules.js';
 import globals from 'globals';
 import importPlugin from 'eslint-plugin-import';
 import importRules from './rules/import-rules.js';
-import jsdoc from 'eslint-plugin-jsdoc';
+import jsdocPlugin from 'eslint-plugin-jsdoc';
 import jsdocRules from './rules/jsdoc-rules.js';
 import nPlugin from 'eslint-plugin-n';
 import nRules from './rules/n-rules.js';
@@ -28,7 +28,7 @@ const config = {
   plugins: {
     '@stylistic': stylistic,
     import: importPlugin,
-    jsdoc,
+    jsdoc: jsdocPlugin,
     n: nPlugin
   },
   rules: {
