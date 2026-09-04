@@ -1,6 +1,6 @@
-// eslint-disable-next-line import/no-namespace
+// eslint-disable-next-line import-x/no-namespace
 import type * as index from './src/index.js';
-// eslint-disable-next-line import/no-namespace
+// eslint-disable-next-line import-x/no-namespace
 import type * as ts from './src/typescript.js';
 import { defineConfig, globalIgnores } from 'eslint/config';
 import { createJiti } from 'jiti';

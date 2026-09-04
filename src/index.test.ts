@@ -2,7 +2,7 @@ import type { Rules } from './test-utils/rules-to-rule-names.js';
 import assert from 'node:assert/strict';
 import { base } from './index.js';
 import eslint from '@eslint/js';
-import { rules as importPluginRules } from 'eslint-plugin-import';
+import { rules as importXPluginRules } from 'eslint-plugin-import-x';
 import jsdocPlugin from 'eslint-plugin-jsdoc';
 import nPlugin from 'eslint-plugin-n';
 import { rulesToRuleNames } from './test-utils/rules-to-rule-names.js';
@@ -32,9 +32,9 @@ await test('jsdoc rules', () => {
   assert.deepStrictEqual(actual, expected);
 });
 
-await test('import rules', () => {
-  const actual = new Set(baseRules.filter(rule => rule.startsWith('import/')));
-  const expected = new Set(rulesToRuleNames(importPluginRules, 'import'));
+await test('import-x rules', () => {
+  const actual = new Set(baseRules.filter(rule => rule.startsWith('import-x/')));
+  const expected = new Set(rulesToRuleNames(importXPluginRules, 'import-x'));
 
   assert.deepStrictEqual(actual, expected);
 });

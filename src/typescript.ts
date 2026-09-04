@@ -1,6 +1,8 @@
 import type { ESLint, Linter } from 'eslint';
 import { parser, plugin } from 'typescript-eslint';
 import type { ConfigArray } from 'typescript-eslint';
+import { createNodeResolver } from 'eslint-plugin-import-x';
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 
 type ParserOptions = NonNullable<(NonNullable<ConfigArray[number]['languageOptions']>)['parserOptions']>;
 
@@ -197,11 +199,11 @@ const config = {
     'consistent-return': 'off',
     'default-param-last': 'off',
     'dot-notation': 'off',
-    'import/default': 'off',
-    'import/named': 'off',
-    'import/namespace': 'off',
-    'import/no-named-as-default-member': 'off',
-    'import/no-unresolved': 'off',
+    'import-x/default': 'off',
+    'import-x/named': 'off',
+    'import-x/namespace': 'off',
+    'import-x/no-named-as-default-member': 'off',
+    'import-x/no-unresolved': 'off',
     'init-declarations': 'off',
     'jsdoc/no-types': 'error',
     'jsdoc/no-undefined-types': 'off',
@@ -228,19 +230,7 @@ const config = {
     'require-await': 'off'
   },
   settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': [
-        '.js',
-        '.jsx',
-        '.mjs',
-        '.cjs',
-        '.ts',
-        '.tsx',
-        '.mts',
-        '.cts'
-      ]
-    },
-    'import/resolver': { typescript: true },
+    'import-x/resolver-next': [createTypeScriptImportResolver(), createNodeResolver()],
     n: {
       convertPath: [
         {
