@@ -1,6 +1,6 @@
-import type { ESLint, Linter } from 'eslint';
 import { parser, plugin } from 'typescript-eslint';
 import type { ConfigArray } from 'typescript-eslint';
+import type { Linter } from 'eslint';
 import { createNodeResolver } from 'eslint-plugin-import-x';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 
@@ -9,16 +9,14 @@ type ParserOptions = NonNullable<(NonNullable<ConfigArray[number]['languageOptio
 const config = {
   files: ['**/*.{ts,tsx,mts,cts}'],
   languageOptions: {
-    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-    parser: parser as Linter.Parser,
+    parser,
     parserOptions: {
       projectService: true,
       sourceType: 'module'
     }
   },
   plugins: {
-    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-    '@typescript-eslint': plugin as ESLint.Plugin
+    '@typescript-eslint': plugin
   },
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',

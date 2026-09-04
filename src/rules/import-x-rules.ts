@@ -40,7 +40,8 @@ const rules = {
   'import-x/no-self-import': 'error',
   'import-x/no-unassigned-import': 'error',
   'import-x/no-unresolved': 'error',
-  'import-x/no-unused-modules': 'error',
+  // No-op on ESLint 10
+  'import-x/no-unused-modules': 'off',
   'import-x/no-useless-path-segments': 'error',
   'import-x/no-webpack-loader-syntax': 'error',
   'import-x/order': 'off',
