@@ -1,16 +1,16 @@
 import type { ESLint } from 'eslint';
 import { strict as assert } from 'node:assert';
+import eslintReact from '@eslint-react/eslint-plugin';
 import { react } from './react.js';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
-import reactPlugin from 'eslint-plugin-react';
 import { rulesToRuleNames } from './test-utils/rules-to-rule-names.js';
 import { test } from 'node:test';
 
 const reactRules = Object.keys(react.rules);
 
 await test('react rules', () => {
-  const actual = new Set(reactRules.filter(rule => rule.startsWith('react/')));
-  const expected = new Set(rulesToRuleNames(reactPlugin.rules, 'react'));
+  const actual = new Set(reactRules.filter(rule => rule.startsWith('@eslint-react/')));
+  const expected = new Set(rulesToRuleNames(eslintReact.rules, '@eslint-react'));
 
   assert.deepStrictEqual(actual, expected);
 });
