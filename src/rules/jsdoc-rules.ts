@@ -32,6 +32,7 @@ const rules = {
   'jsdoc/no-restricted-syntax': 'off',
   'jsdoc/no-types': 'off',
   'jsdoc/no-undefined-types': 'error',
+  'jsdoc/no-unnecessary-type-assertion': 'off',
   'jsdoc/normalize-see-links': 'error',
   'jsdoc/prefer-import-tag': 'off',
   'jsdoc/reject-any-type': 'error',
