@@ -9,7 +9,9 @@ const reactRules = Object.keys(react.rules);
 
 await test('react rules', () => {
   const actual = new Set(reactRules.filter(rule => rule.startsWith('@eslint-react/')));
-  const expected = new Set(rulesToRuleNames(eslintReact.rules, '@eslint-react'));
+  const expected = new Set(rulesToRuleNames(eslintReact.rules, '@eslint-react')
+    // Ignore `x-*` rules
+    .filter(name => !name.startsWith('@eslint-react/x-')));
 
   assert.deepStrictEqual(actual, expected);
 });
