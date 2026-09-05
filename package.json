@@ -1,6 +1,6 @@
 {
   "name": "@egy186/eslint-config",
-  "version": "4.8.1",
+  "version": "5.0.0",
   "description": "Eslint shareable config",
   "keywords": [
     "eslint",
