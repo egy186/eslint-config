@@ -15,9 +15,7 @@ const config = {
       sourceType: 'module'
     }
   },
-  plugins: {
-    '@typescript-eslint': plugin
-  },
+  plugins: { '@typescript-eslint': plugin },
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': [
