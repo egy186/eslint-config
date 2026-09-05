@@ -39,6 +39,11 @@ const config = {
     ...stylisticRules
   },
   settings: {
+    'import-x/extensions': [
+      '.js',
+      '.cjs',
+      '.mjs'
+    ],
     'import-x/resolver-next': [createNodeResolver()]
   }
 } as const satisfies Linter.Config;

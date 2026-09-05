@@ -40,6 +40,25 @@ const config = {
         types: ['function']
       }
     ]
+  },
+  settings: {
+    'import-x/extensions': [
+      '.ts',
+      '.tsx',
+      '.cts',
+      '.mts',
+      '.js',
+      '.jsx',
+      '.cjs',
+      '.mjs'
+    ],
+    n: {
+      typescriptExtensionMap: [
+        ['.ts', '.js'],
+        ['.mts', '.mjs'],
+        ['.tsx', '.js']
+      ]
+    }
   }
 } as const satisfies Linter.Config;
 

@@ -6,7 +6,11 @@ const rules = {
   'import-x/dynamic-import-chunkname': 'off',
   'import-x/export': 'error',
   'import-x/exports-last': 'error',
-  'import-x/extensions': 'error',
+  'import-x/extensions': [
+    'error',
+    'ignorePackages',
+    { checkTypeImports: true }
+  ],
   'import-x/first': 'error',
   'import-x/group-exports': 'error',
   'import-x/max-dependencies': 'error',
@@ -35,7 +39,7 @@ const rules = {
   'import-x/no-nodejs-modules': 'off',
   'import-x/no-relative-packages': 'error',
   'import-x/no-relative-parent-imports': 'off',
-  'import-x/no-rename-default': 'error',
+  'import-x/no-rename-default': 'off',
   'import-x/no-restricted-paths': 'off',
   'import-x/no-self-import': 'error',
   'import-x/no-unassigned-import': 'error',

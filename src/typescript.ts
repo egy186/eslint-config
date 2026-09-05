@@ -198,6 +198,7 @@ const config = {
     'default-param-last': 'off',
     'dot-notation': 'off',
     'import-x/default': 'off',
+    'import-x/extensions': 'off',
     'import-x/named': 'off',
     'import-x/namespace': 'off',
     'import-x/no-named-as-default-member': 'off',
@@ -228,6 +229,14 @@ const config = {
     'require-await': 'off'
   },
   settings: {
+    'import-x/extensions': [
+      '.ts',
+      '.cts',
+      '.mts',
+      '.js',
+      '.cjs',
+      '.mjs'
+    ],
     'import-x/resolver-next': [createTypeScriptImportResolver(), createNodeResolver()],
     n: {
       convertPath: [

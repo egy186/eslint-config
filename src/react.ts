@@ -81,6 +81,14 @@ const config = {
     'react-hooks/unsupported-syntax': 'error',
     'react-hooks/use-memo': 'error',
     'react-hooks/void-use-memo': 'error'
+  },
+  settings: {
+    'import-x/extensions': [
+      '.js',
+      '.jsx',
+      '.cjs',
+      '.mjs'
+    ]
   }
 } as const satisfies Linter.Config;
 
