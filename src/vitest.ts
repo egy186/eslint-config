@@ -7,12 +7,7 @@ const config = {
   rules: {
     'max-lines-per-function': 'off',
     'max-statements': 'off',
-    'n/no-unpublished-import': [
-      'error',
-      {
-        allowModules: ['vitest']
-      }
-    ],
+    'n/no-unpublished-import': ['error', { allowModules: ['vitest'] }],
     'vitest/consistent-each-for': [
       'error',
       {
@@ -103,11 +98,7 @@ const config = {
     'vitest/valid-title': 'error',
     'vitest/warn-todo': 'error'
   },
-  settings: {
-    vitest: {
-      typecheck: true
-    }
-  }
+  settings: { vitest: { typecheck: true } }
 } as const satisfies Linter.Config;
 
 export { config as vitest };

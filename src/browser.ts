@@ -13,7 +13,7 @@ const config = {
   },
   rules: {
     ...base.rules,
-    'import/no-nodejs-modules': 'error',
+    'import-x/no-nodejs-modules': 'error',
     'n/no-unsupported-features/es-builtins': 'off',
     'n/no-unsupported-features/es-syntax': 'off',
     'n/no-unsupported-features/node-builtins': 'off'

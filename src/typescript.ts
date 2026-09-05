@@ -1,23 +1,20 @@
-import type { ESLint, Linter } from 'eslint';
 import { parser, plugin } from 'typescript-eslint';
 import type { ConfigArray } from 'typescript-eslint';
+import type { Linter } from 'eslint';
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 
 type ParserOptions = NonNullable<(NonNullable<ConfigArray[number]['languageOptions']>)['parserOptions']>;
 
 const config = {
   files: ['**/*.{ts,tsx,mts,cts}'],
   languageOptions: {
-    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-    parser: parser as Linter.Parser,
+    parser,
     parserOptions: {
       projectService: true,
       sourceType: 'module'
     }
   },
-  plugins: {
-    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-    '@typescript-eslint': plugin as ESLint.Plugin
-  },
+  plugins: { '@typescript-eslint': plugin },
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': [
@@ -197,11 +194,12 @@ const config = {
     'consistent-return': 'off',
     'default-param-last': 'off',
     'dot-notation': 'off',
-    'import/default': 'off',
-    'import/named': 'off',
-    'import/namespace': 'off',
-    'import/no-named-as-default-member': 'off',
-    'import/no-unresolved': 'off',
+    'import-x/default': 'off',
+    'import-x/extensions': 'off',
+    'import-x/named': 'off',
+    'import-x/namespace': 'off',
+    'import-x/no-named-as-default-member': 'off',
+    'import-x/no-unresolved': 'off',
     'init-declarations': 'off',
     'jsdoc/no-types': 'error',
     'jsdoc/no-undefined-types': 'off',
@@ -228,19 +226,17 @@ const config = {
     'require-await': 'off'
   },
   settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': [
-        '.js',
-        '.jsx',
-        '.mjs',
-        '.cjs',
-        '.ts',
-        '.tsx',
-        '.mts',
-        '.cts'
-      ]
-    },
-    'import/resolver': { typescript: true },
+    'import-x/extensions': [
+      '.ts',
+      '.tsx',
+      '.mts',
+      '.cts',
+      '.js',
+      '.jsx',
+      '.mjs',
+      '.cjs'
+    ],
+    'import-x/resolver-next': [createTypeScriptImportResolver()],
     n: {
       convertPath: [
         {
@@ -254,8 +250,9 @@ const config = {
       ],
       typescriptExtensionMap: [
         ['.ts', '.js'],
+        ['.tsx', '.js'],
         ['.mts', '.mjs'],
-        ['.tsx', '.js']
+        ['.cts', '.cjs']
       ]
     }
   }

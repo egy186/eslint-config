@@ -25,7 +25,7 @@ export { commonjs as default } from '@egy186/eslint-config';
 Browser, React:
 
 ```sh
-npm install -D eslint-plugin-react eslint-plugin-react-hooks
+npm install -D @eslint-react/eslint-plugin eslint-plugin-react-hooks
 ```
 
 ```js
@@ -64,7 +64,7 @@ export default [base, typescriptConfig({ projectService: { allowDefaultProject: 
 Browser, TypeScript, React:
 
 ```sh
-npm install -D typescript-eslint eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks
+npm install -D typescript-eslint eslint-import-resolver-typescript @eslint-react/eslint-plugin eslint-plugin-react-hooks
 ```
 
 ```js

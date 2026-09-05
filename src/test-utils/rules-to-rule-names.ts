@@ -1,6 +1,7 @@
 interface Rule {
   readonly meta?: Readonly<object>;
 }
+
 interface Rules {
   readonly [key: string]: Rule;
 }
@@ -11,10 +12,8 @@ const ruleIsDeprecated = (rule: Rule): boolean => {
 };
 
 const rulesToRuleNames = (rules?: Rules, pluginName?: string): ReadonlyArray<string> => [...Object.entries(rules ?? {})]
-  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
-  .filter(([, rule]) => !ruleIsDeprecated(rule))
-  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
-  .map(([name]) => {
+  .filter(([, rule]: readonly [string, Rule]) => !ruleIsDeprecated(rule))
+  .map(([name]: readonly [string, Rule]) => {
     if (typeof pluginName === 'string') {
       return `${pluginName}/${name}`;
     }

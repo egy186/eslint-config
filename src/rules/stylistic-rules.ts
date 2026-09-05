@@ -132,13 +132,38 @@ const rules = {
   '@stylistic/no-trailing-spaces': 'error',
   '@stylistic/no-whitespace-before-property': 'error',
   '@stylistic/nonblock-statement-body-position': 'error',
-  '@stylistic/object-curly-newline': 'error',
+  '@stylistic/object-curly-newline': [
+    'error',
+    {
+      // eslint-disable-next-line @typescript-eslint/naming-convention
+      ObjectExpression: {
+        minProperties: 2,
+        multiline: true
+      }
+    }
+  ],
   '@stylistic/object-curly-spacing': ['error', 'always'],
   '@stylistic/object-property-newline': 'error',
   '@stylistic/one-var-declaration-per-line': 'off',
   '@stylistic/operator-linebreak': ['error', 'before'],
   '@stylistic/padded-blocks': ['error', 'never'],
-  '@stylistic/padding-line-between-statements': 'error',
+  '@stylistic/padding-line-between-statements': [
+    'error',
+    {
+      blankLine: 'always',
+      next: [
+        'class',
+        'function',
+        'interface'
+      ],
+      prev: '*'
+    },
+    {
+      blankLine: 'never',
+      next: 'import',
+      prev: 'import'
+    }
+  ],
   '@stylistic/quote-props': ['error', 'as-needed'],
   '@stylistic/quotes': [
     'error',
