@@ -41,8 +41,8 @@ const config = {
   settings: {
     'import-x/extensions': [
       '.js',
-      '.cjs',
-      '.mjs'
+      '.mjs',
+      '.cjs'
     ],
     'import-x/resolver-next': [createNodeResolver()]
   }

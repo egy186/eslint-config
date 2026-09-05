@@ -228,11 +228,13 @@ const config = {
   settings: {
     'import-x/extensions': [
       '.ts',
-      '.cts',
+      '.tsx',
       '.mts',
+      '.cts',
       '.js',
-      '.cjs',
-      '.mjs'
+      '.jsx',
+      '.mjs',
+      '.cjs'
     ],
     'import-x/resolver-next': [createTypeScriptImportResolver()],
     n: {
@@ -248,8 +250,9 @@ const config = {
       ],
       typescriptExtensionMap: [
         ['.ts', '.js'],
+        ['.tsx', '.js'],
         ['.mts', '.mjs'],
-        ['.tsx', '.js']
+        ['.cts', '.cjs']
       ]
     }
   }

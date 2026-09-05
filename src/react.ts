@@ -131,8 +131,8 @@ const config = {
     'import-x/extensions': [
       '.js',
       '.jsx',
-      '.cjs',
-      '.mjs'
+      '.mjs',
+      '.cjs'
     ]
   }
 } as const satisfies Linter.Config;
