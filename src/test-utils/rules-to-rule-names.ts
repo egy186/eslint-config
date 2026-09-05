@@ -1,6 +1,7 @@
 interface Rule {
   readonly meta?: Readonly<object>;
 }
+
 interface Rules {
   readonly [key: string]: Rule;
 }

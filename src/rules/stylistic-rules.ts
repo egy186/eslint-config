@@ -147,7 +147,23 @@ const rules = {
   '@stylistic/one-var-declaration-per-line': 'off',
   '@stylistic/operator-linebreak': ['error', 'before'],
   '@stylistic/padded-blocks': ['error', 'never'],
-  '@stylistic/padding-line-between-statements': 'error',
+  '@stylistic/padding-line-between-statements': [
+    'error',
+    {
+      blankLine: 'always',
+      next: [
+        'class',
+        'function',
+        'interface'
+      ],
+      prev: '*'
+    },
+    {
+      blankLine: 'never',
+      next: 'import',
+      prev: 'import'
+    }
+  ],
   '@stylistic/quote-props': ['error', 'as-needed'],
   '@stylistic/quotes': [
     'error',
