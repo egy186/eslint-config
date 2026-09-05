@@ -1,7 +1,6 @@
 import { parser, plugin } from 'typescript-eslint';
 import type { ConfigArray } from 'typescript-eslint';
 import type { Linter } from 'eslint';
-import { createNodeResolver } from 'eslint-plugin-import-x';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 
 type ParserOptions = NonNullable<(NonNullable<ConfigArray[number]['languageOptions']>)['parserOptions']>;
@@ -235,7 +234,7 @@ const config = {
       '.cjs',
       '.mjs'
     ],
-    'import-x/resolver-next': [createTypeScriptImportResolver(), createNodeResolver()],
+    'import-x/resolver-next': [createTypeScriptImportResolver()],
     n: {
       convertPath: [
         {
