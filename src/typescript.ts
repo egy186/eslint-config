@@ -98,6 +98,7 @@ const config = {
     '@typescript-eslint/no-extraneous-class': 'error',
     '@typescript-eslint/no-floating-promises': ['error', { ignoreVoid: true }],
     '@typescript-eslint/no-for-in-array': 'error',
+    '@typescript-eslint/no-generated-empty-object-type': 'error',
     '@typescript-eslint/no-implied-eval': 'error',
     '@typescript-eslint/no-import-type-side-effects': 'error',
     '@typescript-eslint/no-inferrable-types': 'error',
