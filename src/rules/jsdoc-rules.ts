@@ -76,6 +76,7 @@ const rules = {
     { startLines: 1 }
   ],
   'jsdoc/text-escaping': ['error', { escapeHTML: true }],
+  'jsdoc/ts-ban-ts-comment': 'off',
   'jsdoc/ts-method-signature-style': 'error',
   'jsdoc/ts-no-empty-object-type': 'error',
   'jsdoc/ts-no-unnecessary-template-expression': 'error',
