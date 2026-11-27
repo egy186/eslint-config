@@ -3,15 +3,6 @@
 import type { ESLint } from 'eslint';
 
 const rules = {
-  '@stylistic/array-bracket-newline': 'error',
-  '@stylistic/array-bracket-spacing': ['error', 'never'],
-  '@stylistic/array-element-newline': [
-    'error',
-    {
-      minItems: 3,
-      multiline: true
-    }
-  ],
   '@stylistic/arrow-parens': ['error', 'as-needed'],
   '@stylistic/arrow-spacing': [
     'error',
@@ -40,10 +31,7 @@ const rules = {
   '@stylistic/dot-location': ['error', 'property'],
   '@stylistic/eol-last': 'error',
   '@stylistic/exp-jsx-props-style': 'off',
-  '@stylistic/exp-list-style': 'off',
-  '@stylistic/function-call-argument-newline': ['error', 'consistent'],
   '@stylistic/function-call-spacing': ['error', 'never'],
-  '@stylistic/function-paren-newline': ['error', 'multiline'],
   '@stylistic/generator-star-spacing': ['error', 'after'],
   '@stylistic/implicit-arrow-linebreak': ['error', 'beside'],
   '@stylistic/indent': [
@@ -79,6 +67,8 @@ const rules = {
   '@stylistic/jsx-pascal-case': 'error',
   '@stylistic/jsx-quotes': ['error', 'prefer-double'],
   '@stylistic/jsx-self-closing-comp': 'error',
+  '@stylistic/jsx-shorthand-boolean': 'error',
+  '@stylistic/jsx-shorthand-fragment': 'error',
   '@stylistic/jsx-tag-spacing': ['error', { beforeClosing: 'never' }],
   '@stylistic/jsx-wrap-multilines': 'error',
   '@stylistic/key-spacing': [
@@ -99,6 +89,21 @@ const rules = {
   '@stylistic/linebreak-style': 'error',
   '@stylistic/lines-around-comment': 'off',
   '@stylistic/lines-between-class-members': 'error',
+  '@stylistic/list-style': [
+    'error',
+    {
+      empty: 'never',
+      multiLine: { minItems: 1 },
+      overrides: {
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        ArrayExpression: { singleLine: { maxItems: 3 } },
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        ObjectExpression: { singleLine: { maxItems: 1 } },
+        '{}': { singleLine: { spacing: 'always' } }
+      },
+      singleLine: { spacing: 'never' }
+    }
+  ],
   '@stylistic/max-len': 'off',
   '@stylistic/max-statements-per-line': 'error',
   '@stylistic/member-delimiter-style': 'error',
@@ -132,18 +137,6 @@ const rules = {
   '@stylistic/no-trailing-spaces': 'error',
   '@stylistic/no-whitespace-before-property': 'error',
   '@stylistic/nonblock-statement-body-position': 'error',
-  '@stylistic/object-curly-newline': [
-    'error',
-    {
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      ObjectExpression: {
-        minProperties: 2,
-        multiline: true
-      }
-    }
-  ],
-  '@stylistic/object-curly-spacing': ['error', 'always'],
-  '@stylistic/object-property-newline': 'error',
   '@stylistic/one-var-declaration-per-line': 'off',
   '@stylistic/operator-linebreak': ['error', 'before'],
   '@stylistic/padded-blocks': ['error', 'never'],

@@ -3,8 +3,8 @@
 import type { ESLint } from 'eslint';
 
 const rules = {
+  // Possible Problems
   ...{
-    // Possible Problems
     'array-callback-return': ['error', { checkForEach: true }],
     'constructor-super': 'error',
     'for-direction': 'error',
@@ -71,8 +71,8 @@ const rules = {
     'use-isnan': 'error',
     'valid-typeof': 'error'
   },
+  // Suggestions
   ...{
-    // Suggestions
     'accessor-pairs': 'error',
     'arrow-body-style': ['error', 'as-needed'],
     'block-scoped-var': 'error',
@@ -213,10 +213,8 @@ const rules = {
     'vars-on-top': 'error',
     yoda: 'error'
   },
-  ...{
-    // Layout & Formatting
-    'unicode-bom': ['error', 'never']
-  }
+  // Layout & Formatting
+  ...{ 'unicode-bom': ['error', 'never'] }
 } as const satisfies ESLint.ConfigData['rules'];
 
 export default rules;
