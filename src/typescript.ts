@@ -3,7 +3,7 @@ import type { ConfigArray } from 'typescript-eslint';
 import type { Linter } from 'eslint';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 
-type ParserOptions = NonNullable<(NonNullable<ConfigArray[number]['languageOptions']>)['parserOptions']>;
+type ParserOptions = NonNullable<NonNullable<ConfigArray[number]['languageOptions']>['parserOptions']>;
 
 const config = {
   files: ['**/*.{ts,tsx,mts,cts}'],
