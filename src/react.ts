@@ -88,6 +88,7 @@ const config = {
     '@eslint-react/set-state-in-effect': 'off',
     '@eslint-react/set-state-in-render': 'off',
     '@eslint-react/static-components': 'off',
+    '@eslint-react/unstable-exhaustive-deps': 'off',
     '@eslint-react/unsupported-syntax': 'off',
     '@eslint-react/use-memo': 'off',
     '@eslint-react/use-state': 'error',
