@@ -1,6 +1,10 @@
 import type { ESLint } from 'eslint';
 
 const rules = {
+  'import-x/avoid-barrel-files': 'error',
+  'import-x/avoid-importing-barrel-files': 'off',
+  'import-x/avoid-namespace-import': 'error',
+  'import-x/avoid-re-export-all': 'error',
   'import-x/consistent-type-specifier-style': 'error',
   'import-x/default': 'error',
   'import-x/dynamic-import-chunkname': 'off',
